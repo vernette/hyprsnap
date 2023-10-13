@@ -124,8 +124,9 @@ function cd() {
 
 export EDITOR=nvim
 alias lf=lfrun
-alias polyconf="$EDITOR ~/.config/polybar/config.ini"
-alias i3conf="$EDITOR ~/.config/i3/config"
+alias hyprconf="$EDITOR ~/.config/hypr/hyprpaper.conf"
+alias wayconf="$EDITOR ~/.config/waybar/config"
+alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
 export ANDROID_HOME="$HOME/opt/android/sdk"
 export ANDROID_SDK_ROOT="$HOME/opt/android/sdk"
 export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
