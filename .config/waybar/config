@@ -1,0 +1,115 @@
+{
+	"layer": "top",
+	"margin-top": 5,
+	"margin-left": 0,
+	"margin-right": 0,
+	"height": 30,
+	"spacing": 0,
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"memory",
+		"cpu"
+	],
+	"modules-right": [
+		"backlight",
+		"wireplumber",
+		"hyprland/language",
+		"battery",
+		"network",
+		"clock"
+	],
+	"hyprland/window": {
+		"format": "{title}",
+		"separate-outputs": false
+	},
+  "hyprland/language": {
+    "format": "<span font='16' rise='-1000'>󰗊</span> {}",
+    // "format": "󰗊 {}",
+    "format-en": "en",
+    "format-ru": "ru",
+    "keyboard-name": "kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard",
+    // "keyboard-name": "at-translated-set-2-keyboard",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+  },
+	"battery": {
+    "format": "<span font='16' rise='-1000'>{icon}</span> {capacity}%",
+		// "format": "{icon} {capacity}%",
+		"format-icons": [
+			"󱉞",
+      "󰂎",
+			"󰁺",
+			"󰁻",
+			"󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+			"󰁹",
+      "󰂄"
+		]
+	},
+	"network": {
+		"interface": "wlan0",
+    "format-wifi": "<span font='16' rise='-1000'>{icon}</span> {essid}",
+		// "format": "{ifname}",
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+      "󰤢",
+			"󰤥",
+      "󰤨"
+		],
+		//"format-wifi": "{icon} {essid}",
+		"format-disconnected": "󰤮 Wi-Fi not connected",
+		"max-length": 50
+	},
+	"wireplumber": {
+    "format": "<span font='16' rise='-1000'>{icon}</span> {volume}%",
+		// "format": "{icon} {volume}%",
+		"format-muted": "󰖁 muted",
+		"format-icons": [
+      "󰕿",
+			"󰖀",
+			"󰕾"
+		],
+    "tooltip": false,
+    "on-click": "changevolume mute",
+    "scroll-step": 5.0
+	},
+	"backlight": {
+		"device": "intel_backlight",
+    "format": "<span font='16' rise='-1000'>{icon}</span> {percent}%",
+		// "format": "{icon} {percent}%",
+		"format-icons": [
+			"󰃛",
+			"󰃜",
+			"󰃝",
+      "󰃞",
+			"󰃟",
+			"󰃠"
+		]
+	},
+	"clock": {
+    "format": "<span font='16' rise='-1000'>󱑓</span> {:%H:%M}",
+		// "format": "󱑓 {:%H:%M}",
+    "format-alt": "<span font='16' rise='-1000'>󰸗</span> {:%A %d.%m}",
+		// "format-alt": "󰸗 {:%A %d.%m}"
+	},
+	"cpu": {
+		"interval": 5,
+    "format": "<span font='16' rise='-1000'>󰘚</span> {usage}%",
+		// "format": "󰘚 {usage}%",
+		"max-length": 10
+	},
+	"memory": {
+		"interval": 5,
+    "format": "<span font='16' rise='-1000'>󰆼</span> {percentage}%",
+    // "format": "󰆼 {percentage}%",
+		"max-length": 10
+	}
+}
