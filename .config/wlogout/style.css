@@ -28,37 +28,37 @@ button:hover {
 }
 
 #lock {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/lock.png"));
 }
 
 #logout {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/suspend.png"));
 }
 
 #hibernate {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/hibernate.png"));
 }
 
 #shutdown {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-	margin: 3px;
+	margin: 8px;
 	border-radius: 20px;
 	background-image: image(url("icons/reboot.png"));
 }
