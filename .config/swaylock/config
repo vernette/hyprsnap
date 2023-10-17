@@ -26,6 +26,7 @@ inside-wrong-color=00000080
 ring-color=00000000
 ring-ver-color=00000000
 ring-wrong-color=00000000
+ring-clear-color=00000000
 
 line-color=00000000
 line-clear-color=00000000
@@ -37,4 +38,4 @@ text-clear-color=ffffff
 text-ver-color=ffffff
 text-wrong-color=ffffff
 
-bs-hl-color=ffffff
+bs-hl-color=ffffff80
