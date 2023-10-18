@@ -3,7 +3,7 @@
 * {
 	margin-top: 0px;
 	border-radius: 10;
-  	font-family: "JetbrainsMono Nerd Font", "Material Icons Round";
+  font-family: "JetbrainsMono Nerd Font", "Material Icons Round";
 	font-size: 16px;
 }
 
@@ -20,13 +20,12 @@ window#waybar.empty #window {
 	padding-left: 10px;
 	margin-bottom: 0px;
 	padding-right: 10px;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #workspaces button.active {
 	border-radius: 8px;
-	color: @background;
-	background-color: @color3;
+	color: @color3;
 }
 
 #window {
@@ -34,7 +33,7 @@ window#waybar.empty #window {
 	padding-right: 10px;
 	margin-left: 10px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #memory {
@@ -43,7 +42,7 @@ window#waybar.empty #window {
 	padding-right: 10px;
 	border-radius: 10px 0px 0px 10px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 #cpu {
 	padding-left: 10px;
@@ -51,7 +50,7 @@ window#waybar.empty #window {
 	padding-right: 10px;
 	border-radius: 0 10px 10px 0;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #backlight {
@@ -60,51 +59,56 @@ window#waybar.empty #window {
 	padding-right: 10px;
 	margin-bottom: 0px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #wireplumber {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
+	border-radius: 10px 0px 0px 10px;
 	margin-bottom: 0px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #language {
-	margin-left: 8px;
+	/* margin-left: 8px; */
 	padding-left: 10px;
 	margin-bottom: 0px;
 	padding-right: 10px;
+	border-radius: 0px 0px 0px 0px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #battery {
-	margin-left: 8px;
+	/* margin-left: 8px; */
 	padding-left: 10px;
 	padding-right: 10px;
+	border-radius: 0px 0px 0px 0px;
 	margin-bottom: 0px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #network {
-	margin-left: 8px;
+	/* margin-left: 8px; */
 	padding-left: 10px;
 	padding-right: 10px;
+	border-radius: 0px 0px 0px 0px;
 	margin-bottom: 0px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }
 
 #clock {
-	margin-left: 8px;
+	/* margin-left: 8px; */
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
+	border-radius: 0px 10px 10px 0px;
 	margin-right: 10px;
 	color: @color3;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 }

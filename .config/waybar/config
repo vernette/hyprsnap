@@ -86,7 +86,8 @@
             "󰂂",
             "󰁹",
             "󰂄"
-        ]
+        ],
+        "tooltip-format": "{timeTo}"
     },
     "network":{
         "interface":"wlan0",
@@ -98,8 +99,9 @@
             "󰤥",
             "󰤨"
         ],
-        "format-disconnected":"<span font='16' rise='-1000'>󰤮</span>",
-        "max-length":50
+        "format-disconnected":"<span font='16' rise='-1000'>󰤮</span> Wi-Fi not connected",
+        "tooltip": true,
+        "tooltip-format": "{essid}"
     },
     "clock":{
         "format":"<span font='16' rise='-1000'>󱑓</span> {:%H:%M}",
