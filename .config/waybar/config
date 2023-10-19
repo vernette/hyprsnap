@@ -2,6 +2,8 @@
     "layer":"top",
     "margin-top":5,
     "height":30,
+    "include": ["~/.config/waybar/modules.json"],
+    
     "modules-left":[
         "hyprland/workspaces",
         "hyprland/window"
@@ -15,96 +17,8 @@
         "wireplumber",
         "hyprland/language",
         "battery",
+        "bluetooth",
         "network",
         "clock"
-    ],
-    "hyprland/workspaces": {
-        "format": "{name}"
-    },
-    "hyprland/window":{
-        "format":"{title}",
-        "max-length":60,
-        "separate-outputs":false
-    },
-    "cpu":{
-        "interval":5,
-        "format":"<span font='16' rise='-1000'>󰘚</span> {usage}%",
-        "max-length":10
-    },
-    "memory":{
-        "interval":5,
-        "format":"<span font='16' rise='-1000'>󰆼</span> {percentage}%",
-        "max-length":10
-    },
-    "backlight":{
-        "device":"intel_backlight",
-        "format":"<span font='16' rise='-1000'>{icon}</span> {percent}%",
-        "format-icons":[
-            "󰃛",
-            "󰃜",
-            "󰃝",
-            "󰃞",
-            "󰃟",
-            "󰃠"
-        ],
-        "scroll-step":5.0,
-        "tooltip": false
-    },
-    "wireplumber":{
-        "format":"<span font='16' rise='-1000'>{icon}</span> {volume}%",
-        "format-muted":"󰖁 muted",
-        "format-icons":[
-            "󰕿",
-            "󰖀",
-            "󰕾"
-        ],
-        "tooltip":false,
-        "on-click":"changevolume mute",
-        "scroll-step":5.0
-    },
-    "hyprland/language":{
-        "format":"<span font='16' rise='-1000'>󰗊</span> {}",
-        "format-en":"en",
-        "format-ru":"ru",
-        "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
-        // "keyboard-name":"at-translated-set-2-keyboard",
-        "on-click":"hyprctl switchxkblayout at-translated-set-2-keyboard next"
-    },
-    "battery":{
-        "format":"<span font='16' rise='-1000'>{icon}</span> {capacity}%",
-        "format-icons":[
-            "󱉞",
-            "󰂎",
-            "󰁺",
-            "󰁻",
-            "󰁼",
-            "󰁽",
-            "󰁾",
-            "󰁿",
-            "󰂀",
-            "󰂁",
-            "󰂂",
-            "󰁹",
-            "󰂄"
-        ],
-        "tooltip-format": "{timeTo}"
-    },
-    "network":{
-        "interface":"wlan0",
-        "format-wifi":"<span font='16' rise='-1000'>{icon}</span> {essid}",
-        "format-icons":[
-            "󰤯",
-            "󰤟",
-            "󰤢",
-            "󰤥",
-            "󰤨"
-        ],
-        "format-disconnected":"<span font='16' rise='-1000'>󰤮</span> Wi-Fi not connected",
-        "tooltip": true,
-        "tooltip-format": "{essid}"
-    },
-    "clock":{
-        "format":"<span font='16' rise='-1000'>󱑓</span> {:%H:%M}",
-        "format-alt":"<span font='16' rise='-1000'>󰸗</span> {:%A %d.%m}"
-    }
+    ]
 }
