@@ -182,9 +182,9 @@ source = auto
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 gradient_count = 4
-gradient_color_1 = '{color3}'
+gradient_color_1 = '{color11}'
 gradient_color_2 = '{color3}'
-gradient_color_3 = '{color4}'
+gradient_color_3 = '{color9}'
 gradient_color_4 = '{color4}'
 
 [smoothing]
