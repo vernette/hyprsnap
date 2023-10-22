@@ -48,7 +48,7 @@
         "format-en":"en",
         "format-ru":"ru",
         "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
-        "keyboard-name":"at-translated-set-2-keyboard",
+        // "keyboard-name":"at-translated-set-2-keyboard",
         "on-click":"hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
     "battery":{
@@ -88,8 +88,8 @@
             "󰤨"
         ],
         "format-disconnected":"󰤮 Wi-Fi not connected",
-        "tooltip":true,
-        "tooltip-format":"{essid}"
+        "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
+        "tooltip":false
     },
     "clock":{
         "format":"󱑓 {:%H:%M}",
