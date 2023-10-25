@@ -124,6 +124,7 @@ function cd() {
 
 export EDITOR=nvim
 alias lf=lfrun
+alias ls=lsd
 alias hyprconf="$EDITOR ~/.config/hypr/hyprland.conf"
 alias wayconf="$EDITOR ~/.config/waybar/config"
 alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
