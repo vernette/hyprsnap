@@ -70,7 +70,7 @@ ZSH_THEME="gozilla"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search auto-notify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,8 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias ext_ip="curl -s ifconfig.me/ip"
 
 # Automatically activate venv when cd'ing into a directory
 function cd() {
@@ -137,6 +135,9 @@ export BROWSER=librewolf
 
 (cat ~/.cache/wal/sequences &)
 export PATH=/home/vernette/.local/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export AUTO_NOTIFY_THRESHOLD=20
+export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
+export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
