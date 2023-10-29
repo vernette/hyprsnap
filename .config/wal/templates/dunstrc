@@ -61,7 +61,7 @@
     progress_bar_max_width = 300
 
     # Corner radius for the progress bar. 0 disables rounded corners.
-    progress_bar_corner_radius = 0
+    progress_bar_corner_radius = 10
 
     # Corner radius for the icon image.
     icon_corner_radius = 5
@@ -73,7 +73,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0
+    # transparency = 80
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -95,7 +95,7 @@
     frame_width = 0
 
     # Defines color of the frame around the notification window.
-    frame_color = "#6F4B69"
+    frame_color = "#00000000"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -216,7 +216,7 @@
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 64
 
-    # Paths to default icons (only neccesary when not using recursive icon lookup)
+    # Paths to default icons (only nee6esary when not using recursive icon lookup)
     #icon_path = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/
     icon_path = /home/vernette/.config/dunst/icons/
 
@@ -251,7 +251,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 5
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -312,18 +312,21 @@
 
 
 [urgency_low]
-    background = "#6F4B69"
-    foreground = "#060C10"
+    background = "#00000033"
+    foreground = "{foreground}"
+    highlight = "{color11}"
     timeout = 5
 
 [urgency_normal]
-    background = "#6F4B69"
-    foreground = "#060C10"
+    background = "#00000033"
+    foreground = "{foreground}"
+    highlight = "{color11}"
     timeout = 5
 
 [urgency_critical]
-    background = "#6F4B69"
-    foreground = "#060C10"
+    background = "#00000033"
+    foreground = "{foreground}"
+    highlight = "{color11}"
     timeout = 5
 
 # Every section that isn't one of the above is interpreted as a rules to
