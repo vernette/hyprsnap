@@ -15,6 +15,7 @@
 - **Music Player:** spotify with spicetify, based on Rosepine theme
 - **Audio Visualizer:** cava
 - **Font:** JetBrainsMono Nerd Font
+- **Font icon theme:** Material Icons
 - **Lockscreen:** swaylock
 - **Power menu:** wlogout
 - **Colorscheme:** pywal16
