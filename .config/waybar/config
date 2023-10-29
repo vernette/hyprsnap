@@ -1,0 +1,24 @@
+{
+    "layer":"top",
+    "margin-top":5,
+    "height":1,
+    "include": ["~/.config/waybar/modules.json"],
+    
+    "modules-left":[
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center":[
+        "memory",
+        "cpu"
+    ],
+    "modules-right":[
+        "backlight",
+        "wireplumber",
+        "hyprland/language",
+        "battery",
+        "bluetooth",
+        "network",
+        "clock"
+    ]
+}
