@@ -1,0 +1,45 @@
+[Pywal]
+; https://rosepinetheme.com/palette
+text               = FFFFFF
+subtext            = e3e3e3
+nav-active         = {background.strip}
+nav-active-text    = {color3.strip}
+main               = {background.strip}
+main-secondary     = {background.strip}
+sidebar            = {background.strip}
+player             = {background.strip}
+card               = {color3.strip}
+shadow             = {color11.strip}
+button             = {background.strip}
+button-secondary   = {color3.strip}
+button-active      = {color3.strip}
+button-disabled    = {color8.strip}
+nav-active         = {background.strip}
+play-button        = {color3.strip}
+tab-active         = {color3.strip}
+notification       = {foreground.strip}
+notification-error = {background.strip}
+playback-bar       = {color3.strip}
+misc               = {color3.strip}
+
+; Description
+
+; text             = main text, playlist names in main field, name of playlist selected in sidebar, headings
+; subtext          = text in main buttons in sidebar, playlist names in sidebar, artist names, and mini infos
+; nav-active-text  = text in main buttons in sidebar when active
+; main             = main bg
+; main-secondary   = bg color of selected song rows, bg color of artist/track cards
+; sidebar          = sidebar bg
+; player           = player bg
+; card             = popup-card bg
+; shadow           = all shadows
+; button           = playlist buttons bg in sidebar, drop-down menus, now playing song, like button
+; button-secondary = download and options button
+; button-active    = hover on song selected
+; button-disabled  = seekbar bg, volume bar bg, scrollbar
+; nav-active       = sidebar buttons bg
+; play-button      = color of main play button in main field
+; tab-active       = button bg in main field (playlists, podcasts, artists, albums)
+; notification     = notification ('Added to liked songs' etc.)
+; playback-bar     = seekbar fg, volume bar fg, main play/pause button
+; misc             = miscellaneous
