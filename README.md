@@ -10,8 +10,8 @@
 - **Bar:** waybar
 - **App Launcher:** rofi
 - **Notification daemon:** dunst
-- **WiFi picker:** iwdrofimenu
-- **Bluetooth manager:** rofi-bluetooth
+- **WiFi menu:** iwdrofimenu
+- **Bluetooth menu:** rofi-bluetooth
 - **Music Player:** spotify with spicetify, based on Rosepine theme
 - **Audio Visualizer:** cava
 - **Font:** JetBrainsMono Nerd Font
