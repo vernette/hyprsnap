@@ -1,10 +1,10 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 * {
-	margin-top: 0px;
-	border-radius: 10px;
-  font-family: "JetbrainsMono Nerd Font", "Material Icons Round";
-	font-size: 18px;
+  font-family: "JetbrainsMono Nerd Font";
+  font-weight: bold;
+	font-size: 16px;
+  border-radius: 10px;
 }
 
 window#waybar {
@@ -15,117 +15,92 @@ window#waybar.empty #window {
     background: transparent;
 }
 
-window#waybar.solo {
-    background: transparent;
-}
-
 #workspaces {
 	margin-left: 10px;
 	padding-left: 10px;
-	margin-bottom: 0px;
 	padding-right: 10px;
-	background-color: rgba(56, 60, 74, .7);
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #workspaces button.active {
-	border-radius: 10px;
-	color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #window {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-left: 10px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #B5E8E0;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #memory {
-	margin-left: 10px;
 	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
-	border-radius: 10px 0px 0px 10px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+  border-radius: 10px 0px 0px 10px;
+	color: #F8BD96;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 #cpu {
-	/* margin-left: 10px; */
-	padding-left: 10px;
-	margin-bottom: 0px;
+	padding-left: 8px;
 	padding-right: 10px;
-	border-radius: 0px 10px 10px 0px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+  border-radius: 0px 10px 10px 0px;
+	color: #ABE9B3;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #backlight {
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #DDB6F2;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #wireplumber {
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 10px;
-	margin-bottom: 0px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #96CDFB;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #language {
 	margin-left: 10px;
 	padding-left: 10px;
-	margin-bottom: 0px;
 	padding-right: 10px;
-	border-radius: 10px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #B5E8E0;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #battery {
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 10px 0px 0px 10px;
-	margin-bottom: 0px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #F28FAD;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #bluetooth {
-	/* margin-left: 10px; */
+	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 0px 0px 0px 0px;
-	margin-bottom: 0px;
-  color: #000000;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #C9CBFF;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #network {
-	/* margin-left: 10px; */
+	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 0px 0px 0px 0px;
-	margin-bottom: 0px;
-	color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+	color: #E8A2AF;
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #clock {
-	/* margin-left: 10px; */
+	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 0px 10px 10px 0px;
 	margin-right: 10px;
-  color: #ffffff;
-	background-color: rgba(56, 60, 74, .7);
+  color: #F2CDCD;
+	background-color: rgba(0, 0, 0, 0.01);
 }
