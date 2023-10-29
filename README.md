@@ -11,7 +11,7 @@
 - **App Launcher:** rofi
 - **WiFi picker:** iwdrofimenu
 - **Bluetooth manager:** rofi-bluetooth
-- **Music Player:** spotify with spicetify
+- **Music Player:** spotify with spicetify, based on Rosepine theme
 - **Audio Visualizer:** cava
 - **Font:** JetBrainsMono Nerd Font
 - **Lockscreen:** swaylock
