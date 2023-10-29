@@ -9,6 +9,7 @@
 - **Editor:** neovim
 - **Bar:** waybar
 - **App Launcher:** rofi
+- **Notification daemon:** dunst
 - **WiFi picker:** iwdrofimenu
 - **Bluetooth manager:** rofi-bluetooth
 - **Music Player:** spotify with spicetify, based on Rosepine theme
