@@ -4,7 +4,7 @@
     },
     "hyprland/window":{
         "format":"{title}",
-        "max-length":70,
+        "max-length":65,
         "separate-outputs":false
     },
     "cpu":{
