@@ -9,13 +9,16 @@
 - **Editor:** neovim
 - **Bar:** waybar
 - **App Launcher:** rofi
-- **WiFi picker:** iwdrofimenu
-- **Bluetooth manager:** rofi-bluetooth
+- **Notification daemon:** dunst
+- **WiFi menu:** iwdrofimenu
+- **Bluetooth menu:** rofi-bluetooth
 - **Music Player:** spotify with spicetify, based on Rosepine theme
 - **Audio Visualizer:** cava
 - **Font:** JetBrainsMono Nerd Font
+- **Font icon theme:** Material Icons
 - **Lockscreen:** swaylock
 - **Power menu:** wlogout
+- **Colorscheme:** pywal16
 - **Wallpaper:** https://wallhaven.cc/w/2yoo1m
 
 ![image_2023-10-30_01-16-23](https://github.com/vernette/dotfiles/assets/38386813/efd98fd6-f1b6-49fa-a464-5deeec63d1ae)
