@@ -140,4 +140,3 @@ export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
