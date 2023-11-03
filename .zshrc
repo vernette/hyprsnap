@@ -125,6 +125,7 @@ alias lf=lfrun
 alias ls=lsd
 alias hyprconf="$EDITOR ~/.config/hypr/hyprland.conf"
 alias wayconf="$EDITOR ~/.config/waybar/config"
+alias waymoduleconf="$EDITOR ~/.config/waybar/modules.json"
 alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 export ANDROID_HOME="$HOME/opt/android/sdk"
