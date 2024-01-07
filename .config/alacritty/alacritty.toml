@@ -1,0 +1,41 @@
+live_config_reload = true
+
+[colors.primary]
+background = "#000000"
+foreground = "#FFFFFF"
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[scrolling]
+history = 10000
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/zsh"
+
+[window]
+dynamic_title = true
+opacity = 0.5
+
+[window.padding]
+x = 10
+y = 10
