@@ -133,6 +133,7 @@ export ANDROID_SDK_ROOT="$HOME/opt/android/sdk"
 export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
 export TMPDIR='/var/tmp'
 export BROWSER=librewolf
+export LIBINPUT_IGNORE_DEVICE="1"
 
 (cat ~/.cache/wal/sequences &)
 export PATH=/home/vernette/.local/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
