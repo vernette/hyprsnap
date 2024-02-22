@@ -3,7 +3,7 @@ configuration {
   font: "JetBrainsMono Nerd Font 12";
   modi: "drun";
   show-icons: true;
-  icon-theme: "Fluent";
+  icon-theme: "Plane";
 }
 
 window {
@@ -24,7 +24,6 @@ mainbox {
     orientation:                  horizontal;
     spacing:                      0px;
     margin:                       0px;
-    background-image:             url("~/Pictures/wallpaper.png", height);
     children:                     ["imagebox","listbox"];
 }
 
