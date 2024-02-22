@@ -1,64 +1,50 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 * {
+  font-size:18px;
   font-family: "JetBrainsMono Nerd Font";
+	border-radius: 20px;
 }
 
 window {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 button {
 	color: #FFFFFF;
-  font-size:18px;
-
+  background-color: rgba(0, 0, 0, 0.2);
+  outline-style: none;
+  border: none;
+  border-width: 0px;
   background-repeat: no-repeat;
-	background-position: center;
-	background-size: 30%;
-
-	border-style: solid;
-	background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: 20%;
+  box-shadow: none;
+  text-shadow: none;
+  animation: gradient_f 20s ease-in infinite;
 }
 
-button:focus,
-button:active,
-button:hover {
-    color: @color11;
-	  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#lock {
-	margin: 8px;
-	border-radius: 20px;
-	background-image: image(url("icons/lock.png"));
+button:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: 25%;
 }
 
 #logout {
-	margin: 8px;
-	border-radius: 20px;
+	margin: 3px;
 	background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
-	margin: 8px;
-	border-radius: 20px;
+	margin: 3px;
 	background-image: image(url("icons/suspend.png"));
 }
 
-#hibernate {
-	margin: 8px;
-	border-radius: 20px;
-	background-image: image(url("icons/hibernate.png"));
-}
-
 #shutdown {
-	margin: 8px;
-	border-radius: 20px;
+	margin: 3px;
 	background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-	margin: 8px;
-	border-radius: 20px;
+	margin: 3px;
 	background-image: image(url("icons/reboot.png"));
 }
