@@ -130,15 +130,18 @@ alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 export ANDROID_HOME="$HOME/opt/android/sdk"
 export ANDROID_SDK_ROOT="$HOME/opt/android/sdk"
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
-export TMPDIR='/var/tmp'
-export BROWSER=librewolf
+# export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
+# export JAVA_HOME="/usr/lib/jvm/java-21-openjfx"
 export LIBINPUT_IGNORE_DEVICE="1"
 
 (cat ~/.cache/wal/sequences &)
-export PATH=/home/vernette/.local/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=/home/vernette/.local/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/vernette/.cargo/bin
 export AUTO_NOTIFY_THRESHOLD=20
 export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
+export GPG_TTY=$(tty)
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+[[ -z $(command -v arTTY) ]] || arTTY
+eval "$(zoxide init --cmd cd zsh)"
