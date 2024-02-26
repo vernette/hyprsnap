@@ -7,7 +7,7 @@ configuration {
 }
 
 window {
-    width:                        900px;
+    width:                        800px;
     padding:                      0px;
     border:                       2px;
     border-color:                 #000000b3;
