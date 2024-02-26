@@ -20,7 +20,6 @@ window {
 }
 
 mainbox {
-    enabled:                      true;
     orientation:                  horizontal;
     spacing:                      0px;
     margin:                       0px;
@@ -87,7 +86,7 @@ listview {
     spacing:                      0px;
     padding:                      10px;
     margin:                       0px;
-    background-color:             #000000b3;
+    background-color:             transparent;
     border:0px;
 }
 
@@ -116,7 +115,7 @@ element normal.active {
 }
 
 element selected.normal {
-    background-color:            #00000099;
+    background-color:            #00000033;
     text-color:                  inherit;
 }
 
