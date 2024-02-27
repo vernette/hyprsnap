@@ -1,23 +1,25 @@
 {
     "layer":"top",
-    "margin-top":5,
-    "height":1,
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "fixed-center": true,
     "include": ["~/.config/waybar/modules.json"],
     
     "modules-left":[
-        "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
     ],
     "modules-center":[
-        "memory",
-        "cpu"
+        "hyprland/workspaces"
     ],
     "modules-right":[
+        "memory",
+        "cpu",
         "backlight",
         "wireplumber",
         "hyprland/language",
         "battery",
-        "bluetooth",
         "network",
         "clock"
     ]

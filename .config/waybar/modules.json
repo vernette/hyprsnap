@@ -1,21 +1,27 @@
 {
     "hyprland/workspaces":{
-        "format":"{name}"
+        "format": "{icon} {name}",
+        "format-icons": {
+          "active": "",
+          "default": ""
+        }
     },
     "hyprland/window":{
-        "format":"{title}",
+        "format":"󰣆  {title}",
         "max-length":60,
         "separate-outputs":false
     },
     "cpu":{
         "interval":5,
         "format":"󰘚 {usage}%",
-        "max-length":10
+        "max-length":10,
+        "on-click": "alacritty -e bashtop"
     },
     "memory":{
         "interval":5,
         "format":"󰆼 {percentage}%",
-        "max-length":10
+        "max-length":10,
+        "on-click": "alacritty -e bashtop"
     },
     "backlight":{
         "device":"intel_backlight",

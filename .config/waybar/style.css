@@ -1,106 +1,148 @@
 @import '../../.cache/wal/colors-waybar.css';
 
+@define-color bar-bg rgba(0, 0, 0, 0.01);
+@define-color main-bg rgba(0, 0, 0, 0.3);
+
 * {
   font-family: "JetbrainsMono Nerd Font";
   font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
   border-radius: 10px;
+  min-height: 0;
+  min-width: 0;
 }
 
 window#waybar {
-	background: transparent;
+	background: @bar-bg;
 }
 
 window#waybar.empty #window {  
-    background: transparent;
+   background: transparent;
+   color: transparent;
 }
 
-#workspaces {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: rgba(0, 0, 0, 0.01);
+tooltip {
+  background: rgba(0, 0, 0, 0.5);
+  color: @foreground;
+}
+
+
+#workspaces button {
+  margin: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 10px;
+  animation: ws_normal 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(0.33, 1.0, 0.68, 1.0);
 }
 
 #workspaces button.active {
-  background-color: rgba(0, 0, 0, 0.2);
+  background: @color6;
+  color: @background;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#workspaces button:hover,
+#workspaces button.urgent {
+  background: @color4;
+  color: @background;
 }
 
 #window {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: 10px;
-	color: #B5E8E0;
-	background-color: rgba(0, 0, 0, 0.01);
+  margin-left: 10px;
 }
 
 #memory {
-	padding-left: 10px;
+	/* padding-left: 10px; */
   border-radius: 10px 0px 0px 10px;
 	color: #F8BD96;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 #cpu {
-	padding-left: 8px;
-	padding-right: 10px;
-  border-radius: 0px 10px 10px 0px;
+	/* padding-left: 8px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #ABE9B3;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #backlight {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #DDB6F2;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #wireplumber {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #96CDFB;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #language {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #B5E8E0;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #battery {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #F28FAD;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #bluetooth {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #C9CBFF;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #network {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+  border-radius: 0px;
 	color: #E8A2AF;
-	background-color: rgba(0, 0, 0, 0.01);
 }
 
 #clock {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* margin-left: 10px; */
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
 	margin-right: 10px;
+  border-radius: 0px 10px 10px 0px;
   color: #F2CDCD;
-	background-color: rgba(0, 0, 0, 0.01);
+}
+
+#backlight,
+#network,
+#wireplumber,
+#language,
+#bluetooth,
+#clock,
+#memory,
+#cpu,
+#window,
+#workspaces {
+  background: @main-bg;
+  color: @color15;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#window,
+#clock {
+  padding-right: 10px;
 }
