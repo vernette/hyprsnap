@@ -1,0 +1,19 @@
+{
+  "art": "",
+  "bsfact": false,
+  "clear_screen": false,
+  "dataColors": [
+    "light_blue"
+  ],
+  "devexcuse": false,
+  "exclude": "",
+  "fieldColors": [
+    "blue"
+  ],
+  "fields": [],
+  "fit": true,
+  "fortune": false,
+  "match": "pokemon",
+  "random": true,
+  "sysinfo": false
+}
