@@ -2,8 +2,6 @@
     "layer":"top",
     "position": "top",
     "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
     "fixed-center": true,
     "include": ["~/.config/waybar/modules.json"],
     
