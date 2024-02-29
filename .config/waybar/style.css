@@ -14,6 +14,7 @@
 
 window#waybar {
 	background: @bar-bg;
+  border-radius: 0px;
 }
 
 window#waybar.empty #window {  
@@ -28,6 +29,7 @@ tooltip {
 
 
 #workspaces button {
+  color: @color15;
   margin: 3px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -56,69 +58,45 @@ tooltip {
 }
 
 #memory {
-	/* padding-left: 10px; */
   border-radius: 10px 0px 0px 10px;
 	color: #F8BD96;
 }
 #cpu {
-	/* padding-left: 8px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #ABE9B3;
 }
 
 #backlight {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #DDB6F2;
 }
 
 #wireplumber {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #96CDFB;
 }
 
 #language {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #B5E8E0;
 }
 
 #battery {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #F28FAD;
 }
 
 #bluetooth {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #C9CBFF;
 }
 
 #network {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
   border-radius: 0px;
 	color: #E8A2AF;
 }
 
 #clock {
-	/* margin-left: 10px; */
-	/* padding-left: 10px; */
-	/* padding-right: 10px; */
 	margin-right: 10px;
   border-radius: 0px 10px 10px 0px;
   color: #F2CDCD;
