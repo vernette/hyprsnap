@@ -141,7 +141,5 @@ export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 export GPG_TTY=$(tty)
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 [[ -z $(command -v arTTY) ]] || arTTY
 eval "$(zoxide init --cmd cd zsh)"
