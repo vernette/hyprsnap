@@ -78,6 +78,7 @@
         "tooltip-format":"{timeTo}"
     },
     "bluetooth":{
+        "format": "",
         "format-on":"",
         "format-off":"󰂲",
         "format-connected":"󰂱",

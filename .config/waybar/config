@@ -15,8 +15,9 @@
         "hyprland/language",
         "backlight",
         "wireplumber",
-        "battery",
+        "bluetooth",
         "network",
+        "battery",
         "clock"
     ]
 }
