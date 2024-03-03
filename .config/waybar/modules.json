@@ -25,7 +25,7 @@
     },
     "backlight":{
         "device":"intel_backlight",
-        "format":"{icon} {percent}%",
+        "format":"{icon}",
         "format-icons":[
             "󰃜",
             "󰃛",
