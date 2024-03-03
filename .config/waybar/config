@@ -12,11 +12,9 @@
         "hyprland/workspaces"
     ],
     "modules-right":[
-        "memory",
-        "cpu",
+        "hyprland/language",
         "backlight",
         "wireplumber",
-        "hyprland/language",
         "battery",
         "network",
         "clock"

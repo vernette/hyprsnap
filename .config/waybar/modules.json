@@ -38,8 +38,8 @@
         "tooltip":false
     },
     "wireplumber":{
-        "format":"{icon} {volume}%",
-        "format-muted":"󰖁 muted",
+        "format":"{icon}",
+        "format-muted":"󰖁",
         "format-icons":[
             "󰕿",
             "󰖀",
@@ -50,7 +50,7 @@
         "scroll-step":5.0
     },
     "hyprland/language":{
-        "format": "󰗊 {}",
+        "format": "{}",
         "format-en":"en",
         "format-ru":"ru",
         "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
@@ -58,9 +58,9 @@
         "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
     },
     "battery":{
-        "format":"{icon} {capacity}%",
-        "format-charging": "󰚥 {icon} {capacity}%",
-        "format-full": "Charged 󰂄 {capacity}%",
+        "format":"{icon}",
+        "format-charging": "󰚥 {icon}",
+        "format-full": "󰂄",
         "format-icons":[
             "󱉞",
             "󰂎",
@@ -78,15 +78,15 @@
         "tooltip-format":"{timeTo}"
     },
     "bluetooth":{
-        "format-on":" {status}",
-        "format-off":"󰂲 {status}",
-        "format-connected":"󰂱 {status}",
+        "format-on":"",
+        "format-off":"󰂲",
+        "format-connected":"󰂱",
         "on-click":"rofi-bluetooth",
         "tooltip":false
     },
     "network":{
         "interface":"wlan0",
-        "format-wifi":"{icon} {essid}",
+        "format-wifi":"{icon}",
         "format-icons":[
             "󰤯",
             "󰤟",
@@ -94,13 +94,12 @@
             "󰤥",
             "󰤨"
         ],
-        "format-disconnected":"󰤮 Wi-Fi not connected",
+        "format-disconnected":"󰤮",
         "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
-        "tooltip": false,
-        // "tooltip-format": "{essid}"
+        "tooltip": false
     },
     "clock":{
-        "format":"󰥔 {:%H:%M}",
-        "format-alt":"󰸗 {:%A %d.%m}"
+        "format":"{:%H:%M}",
+        "format-alt":"{:%A %d.%m}"
     }
 }

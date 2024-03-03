@@ -58,7 +58,7 @@ tooltip {
 }
 
 #memory {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 0px;
 	color: #F8BD96;
 }
 #cpu {
@@ -77,7 +77,7 @@ tooltip {
 }
 
 #language {
-  border-radius: 0px;
+  border-radius: 10px 0px 0px 10px;
 	color: #B5E8E0;
 }
 
@@ -121,7 +121,6 @@ tooltip {
   padding-right: 10px;
 }
 
-#window,
 #clock {
   padding-right: 10px;
 }
