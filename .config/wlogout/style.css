@@ -1,9 +1,9 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
-  font-size:18px;
+  font-size: 18px;
   font-family: "JetBrainsMono Nerd Font";
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 window {
@@ -11,40 +11,41 @@ window {
 }
 
 button {
-	color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
   outline-style: none;
   border: none;
-  border-width: 0px;
+  box-shadow: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20%;
-  box-shadow: none;
-  text-shadow: none;
-  animation: gradient_f 20s ease-in infinite;
+  background-size: 30%;
 }
 
+button:hover,
 button:focus {
-  background-color: rgba(0, 0, 0, 0.4);
-  background-size: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: 40%;
 }
 
 #logout {
-	margin: 3px;
 	background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
-	margin: 3px;
 	background-image: image(url("icons/suspend.png"));
 }
 
 #shutdown {
-	margin: 3px;
 	background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-	margin: 3px;
 	background-image: image(url("icons/reboot.png"));
+}
+
+#logout,
+#suspend,
+#shutdown,
+#reboot {
+  margin: 2px;
 }
