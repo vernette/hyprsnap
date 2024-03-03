@@ -23,6 +23,7 @@ button {
 
 button:hover,
 button:focus {
+  color: @color6;
   background-color: rgba(0, 0, 0, 0.6);
   background-size: 40%;
 }
