@@ -12,7 +12,7 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 18.0
+size = 14.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -37,5 +37,5 @@ dynamic_title = true
 opacity = 0.5
 
 [window.padding]
-x = 10
-y = 10
+x = 20
+y = 20
