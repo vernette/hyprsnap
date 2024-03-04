@@ -60,20 +60,13 @@
     "battery":{
         "format":"{icon}",
         "format-charging": "󰚥 {icon}",
-        "format-full": "󰂄",
+        "format-full": "",
         "format-icons":[
-            "󱉞",
-            "󰂎",
-            "󰁺",
-            "󰁻",
-            "󰁼",
-            "󰁽",
-            "󰁾",
-            "󰁿",
-            "󰂀",
-            "󰂁",
-            "󰂂",
-            "󰁹"
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         "tooltip-format":"{timeTo}"
     },
