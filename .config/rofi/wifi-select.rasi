@@ -1,9 +1,10 @@
-/* config - Wallpaper select */
+
+/* config - WiFi select */
 
 /* ---- Configuration ---- */
 configuration {
-    modi:                        "drun";
-    font:                        "JetBrains Mono Nerd Font 14";
+    modi:                        "wifi";
+    font:                        "JetBrains Mono Nerd Font 12";
     show-icons:                  true;
     drun-display-format:         "{name}";
     hover-select:                true;
@@ -22,11 +23,11 @@ configuration {
     selected:                    @selected-normal-background; // Button selected
     active:                      @selected-urgent-background; // Window activated
     urgent:                      @selected-normal-background; // When hovering the activated window (maybe more?)
-    text-selected:               @selected-active-background;
+
+    text-selected:               @background;
     text-color:                  @foreground;
     border-color:                @selected;
 }
-
 
 /* ---- Window ---- */
 window {
@@ -43,27 +44,39 @@ window {
     // Style Values
     border:                      2px;
     border-color:                #000000b3;
-    width:                       75%;
+    width:                       40%;
     background-color:            #00000033;
 }
 
 /* ---- Mainbox ---- */
 mainbox {
     enabled:                     true;
-    children:                    [ "listview" ];
+    children:                    [ "inputbar", "listview" ]; // Add inputbar
     background-color:            transparent;
+}
+
+/* ---- Input Bar ---- */
+inputbar {
+    enabled:                      true;
+    text-color:                   #ffffff;
+    spacing:                      10px;
+    padding:                      15px;
+    border-radius:                10px;
+    border-color:                 transparent;
+    background-color:             #000000cc;
+    children:                     [ "textbox-prompt-colon", "entry" ];
 }
 
 /* ---- List ---- */
 listview {
     enabled:                     true;
-    columns:                     5; /* Number of elements in a row */
-    lines:                       1; /* One row */
-    padding:                     26px 36px;
+    columns:                     1;
+    lines:                       8;
+    padding:                     10px;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
-    layout:                      vertical; /* Vertical arrangement */
+    layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
@@ -78,7 +91,7 @@ listview {
 /* ---- Elements ---- */
 element {
     enabled:                     true;
-    orientation:                 vertical; /* Vertical arrangement */
+    orientation:                 horizontal; // Change to horizontal
     expand:                      false;
     spacing:                     0px;
     padding:                     5px 10px;
@@ -88,7 +101,7 @@ element {
 }
 
 element normal.normal {
-    background-color:            #00000033;
+    background-color:            #00000000;
     text-color:                  inherit;
 }
 element normal.urgent {
@@ -101,35 +114,46 @@ element normal.active {
 }
 
 element selected.normal {
-    background-color:            #00000080;
-    text-color:                  @text-selected;
-}
-// Adapt rofi theme
-element alternate.normal {
     background-color:            #00000033;
-    text-color:                  inherit;
-}
-element alternate.urgent {
-    background-color:            #00000000;
-    text-color:                  inherit;
-}
-element alternate.active {
-    background-color:            #00000000;
-    text-color:                  inherit;
+    text-color:                  @text-selected;
 }
 
 /* ---- Image Box ---- */
 element-icon {
-    size:                        50%;
+    size:                        6ch;
     cursor:                      inherit;
-    expand:                      false;
+    expand: false;
     padding:                     0px;
     background-color:            #00000000;
 }
-
-/* ---- Text Box ---- */
 element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
     cursor:                      inherit;
     background-color:            transparent;
-    padding-left:                10px; /* Add padding to the left of the text */
+}
+
+element.alternate.normal {
+    background-color:            #00000000;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+/* ---- Text Entry ---- */
+entry {
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search or enter password";
+    placeholder-color:           inherit;
+}
+
+/* ---- Prompt ---- */
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            transparent;
+    text-color:                  inherit;
 }
