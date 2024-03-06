@@ -89,7 +89,7 @@
             "󰤨"
         ],
         "format-disconnected":"󰤮",
-        "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
+        "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu' -theme wifi-select.rasi",
         "tooltip": false
     },
     "clock":{
