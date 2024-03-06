@@ -1,25 +1,24 @@
 # dotfiles
 
 - **OS:** Arch Linux
-- **WM:** hyprland
+- **Window Compositor:** Hyprland
 - **File Manager:** lf
-- **Browser:** librewolf
-- **Terminal:** alacritty
-- **Shell:** zsh
-- **Editor:** neovim
-- **Bar:** waybar
-- **App Launcher:** rofi
-- **Notification daemon:** dunst
+- **Browser:** Librewolf
+- **Terminal:** Alacritty
+- **Shell:** zsh with oh-my-zsh
+- **Editor:** Neovim
+- **Bar:** Waybar
+- **App Launcher:** Rofi
+- **Notification daemon:** Dunst
 - **WiFi menu:** iwdrofimenu
 - **Bluetooth menu:** rofi-bluetooth
-- **Music Player:** spotify with spicetify, based on Rosepine theme
+- **Music Player:** Spotify with spicetify, based on Rosepine theme with pywal colors
 - **Audio Visualizer:** cava
 - **Font:** JetBrainsMono Nerd Font
-- **Font icon theme:** Material Icons
 - **Lockscreen:** swaylock
 - **Power menu:** wlogout
 - **Colorscheme:** pywal16
-- **Wallpaper:** https://wallhaven.cc/w/2yoo1m
+- **Wallpaper:** https://github.com/vernette/wallpapers/blob/main/22.png
 
 ![image_2023-10-30_01-16-23](https://github.com/vernette/dotfiles/assets/38386813/efd98fd6-f1b6-49fa-a464-5deeec63d1ae)
 ![image_2023-10-30_01-13-50](https://github.com/vernette/dotfiles/assets/38386813/50eaae9e-ea02-41f5-b43c-f123f712477b)
