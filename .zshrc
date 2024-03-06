@@ -101,24 +101,31 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Automatically activate venv when cd'ing into a directory
-function cd() {
-  builtin cd "$@"
-
-  if [[ -z "$VIRTUAL_ENV" ]] ; then
-    ## If env folder is found then activate the vitualenv
-      if [[ -d ./venv ]] ; then
-        source ./venv/bin/activate
-      fi
-  else
-    ## check the current folder belong to earlier VIRTUAL_ENV folder
-    # if yes then do nothing
-    # else deactivate
-      parentdir="$(dirname "$VIRTUAL_ENV")"
-      if [[ "$PWD"/ != "$parentdir"/* ]] ; then
-        deactivate
-      fi
-  fi
+function activate_virtualenv() {
+    if [ -d "venv" ]; then
+        source venv/bin/activate
+    elif [ -d ".venv" ]; then
+        source .venv/bin/activate
+    fi
 }
+
+function check_and_deactivate() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        parentdir="$(dirname "$VIRTUAL_ENV")"
+        if [[ "$PWD"/ != "$parentdir"/* ]]; then
+            echo "Deactivating current virtual environment..."
+            deactivate
+        fi
+    fi
+}
+
+zoxide_cd() {
+    check_and_deactivate
+    cd "$@"
+    activate_virtualenv
+}
+
+alias cd="zoxide_cd"
 
 export EDITOR=nvim
 alias lf=lfrun
