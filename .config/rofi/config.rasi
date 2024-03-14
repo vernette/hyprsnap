@@ -27,10 +27,8 @@ listbox {
 inputbar {
     enabled:                      true;
     text-color:                   #ffffff4d;
-    padding:                      20px;
+    padding:                      5px;
     margin:                       10px;
-    border-radius:                20px;
-    background-color:             #00000033;
     children:                     [ "entry" ];
 }
 
