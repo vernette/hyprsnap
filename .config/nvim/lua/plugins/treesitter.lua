@@ -1,13 +1,38 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
-	config = function()
-		local configs = require("nvim-treesitter.configs")
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  config = function()
+    local configs = require("nvim-treesitter.configs")
 
-		configs.setup({
-			auto_install = true,
-			highlight = { enable = true },
-			indent = { enable = true },
-		})
-	end,
+    configs.setup({
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "jsdoc",
+        "json",
+        "jsonc",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "regex",
+        "xml",
+        "yaml",
+        "hyprlang",
+        "rasi",
+      },
+      auto_install = true,
+      highlight = { enable = true },
+      indent = { enable = true },
+
+      vim.filetype.add({
+        extension = { rasi = "rasi" },
+        pattern = {
+          [".*/waybar/config"] = "jsonc",
+          [".*/hypr/.*%.conf"] = "hyprlang",
+        },
+      }),
+    })
+  end,
 }

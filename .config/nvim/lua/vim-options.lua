@@ -6,4 +6,5 @@ vim.cmd("set noswapfile")
 vim.cmd("set ignorecase")
 vim.cmd("set smartcase")
 vim.cmd("set number")
+vim.cmd("set termguicolors")
 vim.g.mapleader = " "
