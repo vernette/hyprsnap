@@ -5,9 +5,6 @@ return {
     { "rktjmp/lush.nvim" },
     { "rktjmp/shipwright.nvim" },
   },
-  on_colors = function(colors)
-    colors.bg_statusline = colors.none -- To check if its working try something like "#ff00ff" instead of colors.none
-  end,
   config = function()
     vim.g.lushwal_configuration = {
       addons = {
