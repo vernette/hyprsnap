@@ -6,7 +6,9 @@ return {
       options = {
         theme = "dracula",
       },
-      sections = { lualine_c = { "lsp_progress" }, lualine_x = { "tabnine" } },
+      sections = {
+        lualine_x = { "tabnine" },
+      },
     })
   end,
 }
