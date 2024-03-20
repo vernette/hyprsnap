@@ -211,7 +211,7 @@ gradient_color_4 = '{color4}'
 # Noise reduction, int 0 - 100. default 77
 # the raw visualization is very noisy, this factor adjusts the integral and gravity filters to keep the signal smooth
 # 100 will be very slow and smooth, 0 will be fast but noisy.
-; noise_reduction = 77
+noise_reduction = 77
 
 
 [eq]
