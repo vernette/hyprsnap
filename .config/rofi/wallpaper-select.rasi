@@ -41,8 +41,6 @@ window {
     anchor:                      center;
 
     // Style Values
-    border:                      2px;
-    border-color:                #000000b3;
     width:                       75%;
     background-color:            #00000033;
 }
