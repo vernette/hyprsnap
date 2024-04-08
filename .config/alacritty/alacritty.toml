@@ -4,6 +4,14 @@ live_config_reload = true
 background = "#000000"
 foreground = "#FFFFFF"
 
+[cursor]
+# Set to false to disable completely
+smooth_motion = true
+# 0.0 = cursor is not moving, 1.0 = cursor moves instantly
+smooth_motion_factor = 0.9
+# 0.0 = broken, 1.0 = cursor shape is unaffected by movement
+smooth_motion_spring = 0.7
+
 [cursor.style]
 blinking = "Always"
 shape = "Block"
