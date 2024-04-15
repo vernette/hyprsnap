@@ -79,8 +79,9 @@
         "tooltip":false
     },
     "network":{
-        "interface":"wlan0",
+        //"interface":"enp4s0",
         "format-wifi":"{icon}",
+        "format-ethernet": "󰈀",
         "format-icons":[
             "󰤯",
             "󰤟",
@@ -88,7 +89,7 @@
             "󰤥",
             "󰤨"
         ],
-        "format-disconnected":"󰤮",
+        "format-disconnected":"󰪎",
         "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
         "tooltip": false
     },
