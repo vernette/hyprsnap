@@ -1,21 +1,28 @@
 configuration {
   drun-display-format: "{name}";
-  font: "JetBrainsMono Nerd Font 16";
+  font: "JetBrainsMono Nerd Font 14";
   modi: "drun";
   show-icons: true;
   icon-theme: "la-capitaine";
 }
 
 window {
-    width:                        900px;
+    width:                        800px;
     border:                       none;
     border-radius:                10px;
     background-color:             #0000004d; /* 30% */
+    children:                     [ "image", "mainbox" ];
+}
+
+image {
+    enabled:                      true;
+    border-radius: 10px;
+    background-image:             url("~/Pictures/wallpaper.png", width);
 }
 
 mainbox {
     orientation:                  horizontal;
-    children:                     ["listbox"];
+    children:                     [ "listbox" ];
 }
 
 listbox {
@@ -40,7 +47,7 @@ entry {
 
 listview {
     enabled:                      true;
-    columns:                      1;
+    columns:                      2;
     lines:                        7;
     cycle:                        true;
     dynamic:                      true;
