@@ -39,7 +39,7 @@
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 10px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   transition: background 0.15s ease-in-out;
   background: rgba(0, 0, 0, 0.1);
 }
