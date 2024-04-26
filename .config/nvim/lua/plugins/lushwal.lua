@@ -13,6 +13,8 @@ return {
         indent_blankline_nvim = true,
         lualine = true,
         which_key_nvim = true,
+        nvim_tree_lua = true,
+        telescope_nvim = true,
       },
     }
   end,
