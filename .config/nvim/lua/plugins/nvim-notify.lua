@@ -7,6 +7,6 @@ return {
 			render = "compact",
 			timeout = 1000,
 		})
-		vim.keymap.set("n", "np", ":Telescope notify<CR>", {})
+		vim.keymap.set("n", "<leader>n", ":Telescope notify<CR>", {})
 	end,
 }
