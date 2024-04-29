@@ -8,9 +8,10 @@ configuration {
 
 window {
     width:                        800px;
-    border:                       none;
     border-radius:                10px;
     background-color:             #0000004d; /* 30% */
+    border:                       1px;
+    border-color:                 rgba(0, 0, 0, 0.3);
     children:                     [ "image", "mainbox" ];
 }
 

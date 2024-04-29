@@ -120,6 +120,7 @@ export AUTO_NOTIFY_THRESHOLD=20
 export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 export GPG_TTY=$(tty)
+export WAYLAND_DISPLAY=wayland-1
 
 [[ -z $(command -v arTTY) ]] || arTTY
 eval "$(zoxide init --cmd cd zsh)"

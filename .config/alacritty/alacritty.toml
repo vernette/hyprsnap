@@ -42,7 +42,7 @@ program = "/usr/bin/zsh"
 
 [window]
 dynamic_title = true
-opacity = 0.5
+opacity = 0.6
 
 [window.padding]
 x = 20
