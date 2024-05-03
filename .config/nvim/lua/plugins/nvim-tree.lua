@@ -14,6 +14,10 @@ return {
       renderer = {
         group_empty = true,
         indent_width = 1,
+        indent_markers = {
+          enable = true,
+          inline_arrows = false,
+        },
       },
       filters = {
         dotfiles = false,
