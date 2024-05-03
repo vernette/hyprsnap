@@ -15,6 +15,17 @@ cache() {
   fi
 }
 
+batorcat() {
+  file="$1"
+  shift
+  if command -v bat > /dev/null 2>&1; then
+    bat --color=always --style=plain --pager=never "$file" "$@"
+  else
+    cat "$file"
+  fi
+}
+
+width="${1:-80}"
 file="$1"
 shift
 
@@ -37,8 +48,32 @@ if [ -n "$FIFO_UEBERZUG" ]; then
       ffmpegthumbnailer -i "$file" -o "$cache" -s 0
       draw "$cache" "$@"
       ;;
+    application/zip)
+      unzip -l "$file"
+      ;;
+    application/x-tar)
+      tar tf "$file"
+      ;;
+    application/x-7z-compressed)
+      7z l "$file"
+      ;;
+    application/x-rar-compressed)
+      unrar l "$file"
+      ;;
+    text/*)
+      batorcat "$file"
+      ;;
+    application/json)
+      batorcat --language=json "$file"
+      ;;
+    *)
+      if file -Lb --mime-type -- "$file" | grep -q 'application/octet-stream'; then
+        echo 'Binary'
+      else
+        file -Lb -- "$1" | fold -s -w "$width"
+      fi
+      ;;
   esac
 fi
 
-file -Lb -- "$1" | fold -s -w "$width"
 exit 0
