@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==2{print $2}')
+HYPRGAMEMODE=$(hyprctl getoption animations:enabled | grep -Po '(?<=int: ).*')
 if [ "$HYPRGAMEMODE" = 1 ] ; then
     hyprctl --batch "\
         keyword animations:enabled 0;\
@@ -8,9 +8,10 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword general:gaps_in 0;\
         keyword general:gaps_out 0;\
         keyword general:border_size 0;\
-        keywork decoration:blur false\
-        keyword decoration:drop_shadow false\
+        keyword decoration:blur false;\
+        keyword decoration:drop_shadow false;\
         keyword decoration:rounding 0"
     exit
 fi
 hyprctl reload
+
