@@ -1,0 +1,22 @@
+separator = ""
+spacing = 3
+padding = 2
+prefer_small_ascii = false
+
+[palette]
+type = "Dark"
+glyph = "󰊠 "
+visible = true
+
+[custom_ascii]
+path = "~/.config/macchina/archlogo.txt"
+color = "Cyan"
+
+[keys]
+kernel          = " Kernel"
+de              = " DE"
+distro          = " Distro"
+terminal        = " Terminal"
+shell           = " Shell"
+packages        = "󰊠 Packages"
+uptime          = "󰅐 Uptime"
