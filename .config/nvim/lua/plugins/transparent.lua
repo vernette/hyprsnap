@@ -39,5 +39,7 @@ return {
     transparent.clear_prefix("NvimTree")
     transparent.clear_prefix("whichkey")
     transparent.clear_prefix("barbecue")
+    transparent.clear_prefix("Lazy")
+    transparent.clear_prefix("Mason")
   end,
 }
