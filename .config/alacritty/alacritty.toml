@@ -20,7 +20,7 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 14.0
+size = 12.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
