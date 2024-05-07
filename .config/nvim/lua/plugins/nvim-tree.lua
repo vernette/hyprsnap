@@ -12,7 +12,7 @@ return {
         side = "left",
       },
       renderer = {
-        group_empty = true,
+        group_empty = false,
         indent_width = 1,
         indent_markers = {
           enable = true,
