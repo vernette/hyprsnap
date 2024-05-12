@@ -76,6 +76,10 @@
 
 ![image](assets/screenshots/applications_rofi.png)
 
+#### Rofi wallpaper selector
+
+![image](assets/screenshots/applications_rofi_wallpapers.png)
+
 #### Spotify
 
 ![image](assets/screenshots/applications_spotify.png)
