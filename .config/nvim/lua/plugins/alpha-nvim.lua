@@ -23,12 +23,12 @@ return {
       [[ ⠀⠀⠀⠀⠀⣇⠸⣿⣿⣿⣿⠘⢿⣿⣿⡇⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠀⠀⡞⠀⠀⠀⠀ ]],
       [[ ⠀⠀⠀⠀⠀⠹⡄⢻⣿⣿⣿⡆⠀⠉⠛⠃⠀⠀⠀⠀⠙⠿⠿⠿⠋⢹⣿⣿⣿⣿⣧⣤⡖⠀⠀⠀⠀⠀⠀⠀ ]],
       [[ ⠀⠀⠀⠀⠀⠀⠙⠆⠙⢿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠿⢻⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀ ]],
-      [[ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠠⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ]]
+      [[ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠠⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ]],
     }
 
     dashboard.section.buttons.val = {
-      dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-      dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+      dashboard.button("f", "  Find File", ":Telescope find_files <CR>"),
+      dashboard.button("e", "  New File", ":ene <BAR> startinsert <CR>"),
       dashboard.button("r", "  Recently Used Files", "<Cmd>Telescope oldfiles<CR>"),
       dashboard.button("g", "󰊄  Find Word", "<Cmd>Telescope live_grep<CR>"),
       dashboard.button("q", "󰅚  Quit Neovim", ":qa<CR>"),
