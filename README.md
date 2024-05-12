@@ -86,6 +86,10 @@
 
 ![image](assets/screenshots/applications_vscode.png)
 
+#### Neovim
+
+![image](assets/screenshots/applications_nvim.png)
+
 #### Telegram (AyuGram)
 
 ![image](assets/screenshots/applications_telegram.png)
