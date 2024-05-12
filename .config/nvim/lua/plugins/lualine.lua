@@ -6,14 +6,25 @@ return {
       options = {
         theme = "pywal",
         globalstatus = true,
+        section_separators = "",
+        component_separators = "",
+        disabled_filetypes = {
+          "alpha",
+        },
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch", "diff", "diagnostics" },
-        lualine_c = {},
-        lualine_x = { "tabnine" },
-        lualine_y = { "encoding", "filetype", "progress" },
+        lualine_b = { "branch" },
+        lualine_c = { "diff", "diagnostics" },
+        lualine_x = { "encoding", "filetype" },
+        lualine_y = { "progress" },
         lualine_z = { "location" },
+      },
+      extensions = {
+        "mason",
+        "nvim-tree",
+        "nvim-dap-ui",
+        "toggleterm",
       },
     })
   end,
