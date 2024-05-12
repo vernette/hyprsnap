@@ -61,6 +61,12 @@
 | Telegram Pywal Theme               | [wal-telegram](https://github.com/guillaumeboehm/wal-telegram)                   |
 | VS Code Pywal Theme                | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension                                             |
 
+### Wallpapers
+
+Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
+
+[Wallpaper](https://github.com/vernette/wallpapers/blob/main/18.png) used in screenshots
+
 ## Screenshots
 
 ### Workflow
