@@ -1,100 +1,118 @@
 {
-    "hyprland/workspaces":{
-        "format": "{icon} {name}",
-        "format-icons": {
-          "active": "",
-          "default": ""
-        }
-    },
-    "hyprland/window":{
-        "format":"󰣆 {title}",
-        "max-length":60,
-        "separate-outputs":false
-    },
-    "cpu":{
-        "interval":5,
-        "format":"󰘚 {usage}%",
-        "max-length":10,
-        "on-click": "alacritty -e bashtop"
-    },
-    "memory":{
-        "interval":5,
-        "format":"󰆼 {percentage}%",
-        "max-length":10,
-        "on-click": "alacritty -e bashtop"
-    },
-    "backlight":{
-        "device":"intel_backlight",
-        "format":"{icon}",
-        "format-icons":[
-            "󰃜",
-            "󰃛",
-            "󰃝",
-            "󰃞",
-            "󰃟",
-            "󰃠"
-        ],
-        "scroll-step":5.0,
-        "tooltip":false
-    },
-    "wireplumber":{
-        "format":"{icon}",
-        "format-muted":"󰖁",
-        "format-icons":[
-            "󰕿",
-            "󰖀",
-            "󰕾"
-        ],
-        "tooltip":false,
-        "on-click":"changevolume mute",
-        "scroll-step":5.0
-    },
-    "hyprland/language":{
-        "format": "{}",
-        "format-en":"en",
-        "format-ru":"ru",
-        "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
-        // "keyboard-name":"at-translated-set-2-keyboard",
-        "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
-    },
-    "battery":{
-        "format":"{icon}",
-        "format-charging": "󰚥 {icon}",
-        "format-full": "",
-        "format-icons":[
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "tooltip-format":"{timeTo}"
-    },
-    "bluetooth":{
-        "format": "",
-        "format-on":"",
-        "format-off":"󰂲",
-        "format-connected":"󰂱",
-        "on-click":"rofi-bluetooth",
-        "tooltip":false
-    },
-    "network":{
-        //"interface":"enp4s0",
-        "format-wifi":"{icon}",
-        "format-ethernet": "󰈀",
-        "format-icons":[
-            "󰤯",
-            "󰤟",
-            "󰤢",
-            "󰤥",
-            "󰤨"
-        ],
-        "format-disconnected":"󰪎",
-        "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
-        "tooltip": false
-    },
-    "clock":{
-        "format":"{:%H:%M}",
-        "format-alt":"{:%A %d.%m}"
+  "hyprland/workspaces":{
+    "format": "{icon} {name}",
+    "format-icons": {
+      "active": "",
+      "default": ""
     }
+  },
+  "hyprland/window":{
+    "format":"󰣆 {title}",
+    "max-length":60,
+    "separate-outputs":false
+  },
+  "cpu":{
+    "interval":5,
+    "format":"󰘚 {usage}%",
+    "max-length":10,
+    "on-click": "alacritty -e bashtop"
+  },
+  "memory":{
+    "interval":5,
+    "format":"󰆼 {percentage}%",
+    "max-length":10,
+    "on-click": "alacritty -e bashtop"
+  },
+  "backlight":{
+    "device":"intel_backlight",
+    "format":"{icon}",
+    "format-icons":[
+      "󰃜",
+      "󰃛",
+      "󰃝",
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "scroll-step":5.0,
+    "tooltip":false
+  },
+  "wireplumber":{
+    "format":"{icon}",
+    "format-muted":"󰖁",
+    "format-icons":[
+      "󰕿",
+      "󰖀",
+      "󰕾"
+    ],
+    "tooltip":false,
+    "on-click":"changevolume mute",
+    "scroll-step":5.0
+  },
+  "hyprland/language":{
+    "format": "{}",
+    "format-en":"en",
+    "format-ru":"ru",
+    "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
+    // "keyboard-name":"at-translated-set-2-keyboard",
+    "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
+  },
+  "battery":{
+    "format":"{icon}",
+    "format-charging": "󰚥 {icon}",
+    "format-full": "",
+    "format-icons":[
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tooltip-format":"{timeTo}"
+  },
+  "bluetooth":{
+    "format": "",
+    "format-on":"",
+    "format-off":"󰂲",
+    "format-connected":"󰂱",
+    "on-click":"rofi-bluetooth",
+    "tooltip":false
+  },
+  "network":{
+    //"interface":"enp4s0",
+    "format-wifi":"{icon}",
+    "format-ethernet": "󰈀",
+    "format-icons":[
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "format-disconnected":"󰪎",
+    "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
+    "tooltip": false
+  },
+  "clock":{
+    "format":"{:%H:%M}",
+    "format-alt":"{:%A %d.%m}",
+    //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    "calendar": {
+      "mode"          : "month",
+      "on-scroll"     : 1,
+      "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions":  {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  }
 }
