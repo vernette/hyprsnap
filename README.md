@@ -2,7 +2,7 @@
 
 ![image](assets/screenshots/workflow.png)
 
-- [Used software](#used_software)
+- [Used software](#used-software)
 - [Screenshots](#screenshots)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
