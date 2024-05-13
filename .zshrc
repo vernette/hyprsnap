@@ -2,16 +2,13 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="gozilla"
 
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 7
-
-ENABLE_CORRECTION="true"
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search auto-notify)
 
 source $ZSH/oh-my-zsh.sh
 
-Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
