@@ -18,6 +18,7 @@ return {
 			require("mason-tool-installer").setup({
 				ensure_installed = {
 					"python-lsp-server",
+					"lua-language-server",
 					"mypy",
 				},
 			})
@@ -33,6 +34,15 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.pylsp.setup({
+				settings = {
+					pylsp = {
+						plugins = {
+							jedi_completion = {
+								include_params = true,
+							},
+						},
+					},
+				},
 				capabilities = capabilities,
 			})
 			lspconfig.html.setup({
