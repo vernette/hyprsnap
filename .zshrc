@@ -15,8 +15,28 @@ else
   export EDITOR='nvim'
 fi
 
+function zcd() {
+  z "$@"
+  if [[ -z "$VIRTUAL_ENV" ]] ; then
+    # If env folder is found, activate the virtualenv
+    if [[ -d ./venv ]] ; then
+      source ./venv/bin/activate
+    elif [[ -d ./.venv ]] ; then
+      source ./.venv/bin/activate
+    fi
+  else
+    # Check if the current folder belongs to the earlier VIRTUAL_ENV folder
+    # If not, deactivate the virtual environment
+    parentdir="$(dirname "$VIRTUAL_ENV")"
+    if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+      deactivate
+    fi
+  fi
+}
+
 alias lf=lfrun
 alias ls="lsd --tree --depth 1 --total-size --group-dirs=first"
+alias cd="zcd"
 alias wayconf="$EDITOR ~/.config/waybar/config"
 alias waymoduleconf="$EDITOR ~/.config/waybar/modules.json"
 alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
@@ -36,4 +56,4 @@ export GPG_TTY=$(tty)
 export WAYLAND_DISPLAY=wayland-1
 
 [[ -z $(command -v arTTY) ]] || arTTY
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
