@@ -9,4 +9,5 @@ vim.cmd("set number")
 vim.cmd("set termguicolors")
 vim.cmd("set clipboard=unnamedplus")
 vim.cmd("set colorcolumn=79")
+vim.opt.fillchars = {eob = " "}
 vim.g.mapleader = " "

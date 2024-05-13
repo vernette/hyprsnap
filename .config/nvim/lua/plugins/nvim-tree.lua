@@ -10,6 +10,7 @@ return {
       view = {
         width = 20,
         side = "left",
+        signcolumn = "no",
       },
       renderer = {
         group_empty = false,
