@@ -16,7 +16,7 @@ else
 fi
 
 alias lf=lfrun
-alias ls=lsd
+alias ls="lsd --tree --depth 1 --total-size --group-dirs=first"
 alias wayconf="$EDITOR ~/.config/waybar/config"
 alias waymoduleconf="$EDITOR ~/.config/waybar/modules.json"
 alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
