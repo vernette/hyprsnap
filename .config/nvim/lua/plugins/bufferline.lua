@@ -4,10 +4,11 @@ return {
     options = {
       offsets = {
         {
-          filetype = "neo-tree",
-          text = "Neo-tree",
+          filetype = "NvimTree",
+          text = "File Explorer",
+          text_align = "center",
           highlight = "Directory",
-          text_align = "left",
+          separator = true,
         },
       },
     },
