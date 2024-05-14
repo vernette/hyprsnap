@@ -15,12 +15,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-
--- Move to separate file
-vim.cmd("colorscheme lushwal")
-require("lushwal").add_reload_hook({
-	vim.cmd("LushwalCompile"),
-})
-
--- Same
-vim.cmd("TransparentEnable")
+require("colorscheme")
