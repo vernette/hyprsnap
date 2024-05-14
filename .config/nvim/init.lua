@@ -1,3 +1,5 @@
+require("options")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -11,14 +13,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local opts = {}
-
-require("vim-options")
 require("lazy").setup("plugins")
 
+-- Move to separate file
 vim.cmd("colorscheme lushwal")
 require("lushwal").add_reload_hook({
 	vim.cmd("LushwalCompile"),
 })
 
+-- Same
 vim.cmd("TransparentEnable")
