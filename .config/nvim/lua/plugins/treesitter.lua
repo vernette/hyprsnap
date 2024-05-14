@@ -8,8 +8,6 @@ return {
       ensure_installed = {
         "bash",
         "html",
-        "javascript",
-        "jsdoc",
         "json",
         "jsonc",
         "lua",
@@ -17,7 +15,6 @@ return {
         "markdown_inline",
         "python",
         "regex",
-        "xml",
         "yaml",
         "hyprlang",
         "rasi",
