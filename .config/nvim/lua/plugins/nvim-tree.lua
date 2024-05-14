@@ -26,7 +26,5 @@ return {
     })
     vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
     vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>")
-    vim.keymap.set("n", "<C-l>", ":NvimTreeResize +1<CR>")
-    vim.keymap.set("n", "<C-h>", ":NvimTreeResize -1<CR>")
   end,
 }
