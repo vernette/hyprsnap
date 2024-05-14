@@ -1,8 +1,7 @@
 live_config_reload = true
 
-[colors.primary]
-background = "#000000"
-foreground = "#FFFFFF"
+[colors]
+transparent_background_colors = true
 
 [cursor]
 # Set to false to disable completely
