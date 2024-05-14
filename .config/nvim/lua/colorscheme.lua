@@ -5,7 +5,7 @@ end
 
 vim.cmd("colorscheme lushwal")
 lushwal.add_reload_hook({
-	vim.cmd("LushwalCompile"),
+  vim.cmd("LushwalCompile"),
 })
 
 local status_ok, _ = pcall(require, "transparent")
