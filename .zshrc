@@ -37,6 +37,7 @@ function zcd() {
 alias lf=lfrun
 alias ls="lsd --tree --depth 1 --total-size --group-dirs=first"
 alias cd="zcd"
+alias v="nvim"
 alias wayconf="$EDITOR ~/.config/waybar/config"
 alias waymoduleconf="$EDITOR ~/.config/waybar/modules.json"
 alias waystyleconf="$EDITOR ~/.config/waybar/style.css"
