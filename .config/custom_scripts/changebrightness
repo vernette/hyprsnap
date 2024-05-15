@@ -7,7 +7,7 @@ send_notification() {
 	brightness=$(cat /sys/class/backlight/intel_backlight/actual_brightness)
   max_brightness=$(cat /sys/class/backlight/intel_backlight/max_brightness)
   brightness_percentage=$((brightness * 100 / max_brightness))
-  dunstify -a "changebrightness" -u normal -r 9994 -h int:value:"$brightness_percentage" -i "brightness-$1" "Brightness" "Currently at ${brightness_percentage}%" -t 2000
+  notify-send -a brightnessctl -i ~/.config/custom_scripts/icons/brightness-$1.png -u normal -r 9994 -h int:value:"$brightness_percentage" "Brightness" "Currently at ${brightness_percentage}" -t 2000
 }
 
 case $1 in
