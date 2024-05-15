@@ -1,6 +1,3 @@
-/* config - Wallpaper select */
-
-/* ---- Configuration ---- */
 configuration {
     modi:                        "drun";
     font:                        "JetBrains Mono Nerd Font 14";
@@ -13,10 +10,8 @@ configuration {
     dpi:                         1;
 }
 
-/* ---- Load pywal colors ---- */
 @theme "~/.cache/wal/colors-rofi-dark.rasi"
 
-/* ---- Global Properties ---- */
 * {
     background-alt:              @selected-active-background; // Buttons background
     selected:                    @selected-normal-background; // Button selected
@@ -28,9 +23,7 @@ configuration {
 }
 
 
-/* ---- Window ---- */
 window {
-    // Default
     enabled:                     true;
     fullscreen:                  false;
     transparency:                "real";
@@ -39,22 +32,33 @@ window {
     border-radius:               10px;
     location:                    center;
     anchor:                      center;
-
-    // Style Values
     width:                       75%;
-    background-color:            #00000033;
-    border:                      1px;
+    background-color:            #0000001a;
+    border:                      2px;
     border-color:                rgba(0, 0, 0, 0.3);
 }
 
-/* ---- Mainbox ---- */
 mainbox {
     enabled:                     true;
-    children:                    [ "listview" ];
+    children:                    [ "inputbar", "listview"  ];
     background-color:            transparent;
 }
 
-/* ---- List ---- */
+inputbar {
+    enabled:                      true;
+    text-color:                   #ffffff4d;
+    background-color:             transparent;
+    padding:                      5px;
+    margin:                       10px;
+    children:                     [ "entry" ];
+}
+
+entry {
+    enabled:                      true;
+    text-color:                   inherit;
+    background-color:             transparent;
+}
+
 listview {
     enabled:                     true;
     columns:                     5; /* Number of elements in a row */
@@ -71,11 +75,9 @@ listview {
     background-color:            transparent;
     spacing:                     20px;
     
-    //  Adapt rofi theme
     border:                      0px;
 }
 
-/* ---- Elements ---- */
 element {
     enabled:                     true;
     orientation:                 vertical; /* Vertical arrangement */
@@ -104,7 +106,6 @@ element selected.normal {
     background-color:            #00000080;
     text-color:                  @text-selected;
 }
-// Adapt rofi theme
 element alternate.normal {
     background-color:            #00000033;
     text-color:                  inherit;
@@ -118,7 +119,6 @@ element alternate.active {
     text-color:                  inherit;
 }
 
-/* ---- Image Box ---- */
 element-icon {
     size:                        50%;
     cursor:                      inherit;
@@ -127,7 +127,6 @@ element-icon {
     background-color:            #00000000;
 }
 
-/* ---- Text Box ---- */
 element-text {
     cursor:                      inherit;
     background-color:            transparent;
