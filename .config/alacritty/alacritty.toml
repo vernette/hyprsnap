@@ -1,8 +1,5 @@
 live_config_reload = true
 
-[colors]
-transparent_background_colors = true
-
 [cursor]
 # Set to false to disable completely
 smooth_motion = true
@@ -34,10 +31,6 @@ history = 10000
 
 [selection]
 save_to_clipboard = true
-
-[shell]
-args = ["--login"]
-program = "/usr/bin/zsh"
 
 [window]
 dynamic_title = true
