@@ -10,7 +10,7 @@ if [ ! -d "$screenshots_dir" ]; then
 fi
 
 send_notification() {
-  dunstify -a "screenshot" -u normal "Screenshot taken" "$output" -i $output -t 2000
+  notify-send -a screenshot -u normal "Screenshot taken" "$output" -i $output -t 2000
 }
 
 case $1 in
