@@ -20,6 +20,6 @@ done
 if [ -n "$selected_image_path" ]; then
   ln -sf "$selected_image_path" ~/Pictures/wallpaper.png
   hyprctl reload
-  notify-send "Wallpaper changed" "$selected_image_path" -i ~/Pictures/wallpaper.png
+  notify-send -a "Wallpaper selector" "Wallpaper changed" "$selected_image_path" -i ~/Pictures/wallpaper.png
 fi
 
