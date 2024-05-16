@@ -49,6 +49,7 @@ zinit cdreplay -q
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^ ' forward-word
 
 # History
 HISTSIZE=10000
@@ -80,7 +81,11 @@ alias v="nvim"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' matcher-list \
+    'm:{[:lower:]}={[:upper:]}' \
+    '+r:|[._-]=* r:|=*' \
+    '+l:|=*'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:zcd:*' fzf-preview 'lsd --color=always --icon=always $realpath'
