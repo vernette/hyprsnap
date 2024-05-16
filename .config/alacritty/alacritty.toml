@@ -33,7 +33,7 @@ history = 10000
 save_to_clipboard = true
 
 [window]
-dynamic_title = true
+dynamic_title = false
 opacity = 0.3
 
 [window.padding]
