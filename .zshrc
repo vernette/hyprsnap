@@ -75,7 +75,7 @@ export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 
 # Aliases
-alias ls='lsd --tree --depth 1 --total-size --group-dirs=first'
+alias ls='lsd --tree --depth 1 --group-dirs=first'
 alias cd="zcd"
 alias v="nvim"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
