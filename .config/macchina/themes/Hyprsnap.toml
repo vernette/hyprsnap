@@ -4,13 +4,13 @@ padding = 2
 prefer_small_ascii = false
 
 [palette]
-type = "Dark"
+type = "Full"
 glyph = "󰊠 "
 visible = true
 
 [custom_ascii]
 path = "~/.config/macchina/archlogo.txt"
-color = "Cyan"
+color = "Green"
 
 [keys]
 kernel = " Kernel"
