@@ -1,55 +1,108 @@
 {
-  "hyprland/workspaces":{
-    "format": "{icon} {name}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    }
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "all-outputs": true,
+  },
+  "group/info": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/dmark",
+      "cpu",
+      "memory",
+      "disk"
+    ]
+  },
+  "custom/dmark": {
+    "format": "󰁙",
+    "tooltip": false
+  },
+  "cpu": {
+    "format": "󰘚 {usage}󱉸"
+  },
+  "memory": {
+    "format": " {:2}󱉸"
+  },
+  "disk": {
+    "interval": 600,
+    "format": "󰋊 {percentage_used}󱉸",
+    "path": "/"
   },
   "hyprland/window":{
     "format":"󰣆 {title}",
-    "max-length":60,
+    "max-length":80,
     "separate-outputs":false
   },
-  "cpu":{
-    "interval":5,
-    "format":"󰘚 {usage}%",
-    "max-length":10,
-    "on-click": "alacritty -e bashtop"
+  "group/sound": {
+    "orientation": "inherit",
+    "modules": [
+      "group/audio",
+      "custom/notifications",
+      "hyprland/language"
+    ]
   },
-  "memory":{
-    "interval":5,
-    "format":"󰆼 {percentage}%",
-    "max-length":10,
-    "on-click": "alacritty -e bashtop"
+  "group/audio": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "pulseaudio",
+      "pulseaudio#mic",
+      "pulseaudio/slider"
+    ]
   },
-  "backlight":{
-    "device":"intel_backlight",
-    "format":"{icon}",
-    "format-icons":[
-      "󰃜",
-      "󰃛",
-      "󰃝",
-      "󰃞",
-      "󰃟",
-      "󰃠"
-    ],
-    "scroll-step":5.0,
-    "tooltip":false
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "tooltip": false,
+    // "tooltip-format": "{volume}% {icon} | {desc}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphones": "󰋌",
+      "handsfree": "󰋌",
+      "headset": "󰋌",
+      "phone": "",
+      "portable": "",
+      "car": " ",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "on-click": "changevolume mute",
+    "on-click-middle": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "smooth-scrolling-threshold": 1
   },
-  "wireplumber":{
-    "format":"{icon}",
-    "format-muted":"󰖁",
-    "format-icons":[
-      "󰕿",
-      "󰖀",
-      "󰕾"
-    ],
-    "tooltip":false,
-    "on-click":"changevolume mute",
-    "scroll-step":5.0
+  "pulseaudio#mic": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "tooltip": false,
+    // "tooltip-format": "{volume}% {format_source} ",
+    "on-click": "pactl set-source-mute 0 toggle",
+    "on-scroll-down": "pactl set-source-volume 0 -1%",
+    "on-scroll-up": "pactl set-source-volume 0 +1%"
   },
-  "hyprland/language":{
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+  "custom/notifications": {
+    "format": "󰂚",
+    "on-click": "swaync-client -t -sw",
+    "tooltip": false
+  },
+  "hyprland/language": {
     "format": "{}",
     "format-en":"en",
     "format-ru":"ru",
@@ -57,46 +110,111 @@
     // "keyboard-name":"at-translated-set-2-keyboard",
     "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
   },
-  "battery":{
-    "format":"{icon}",
-    "format-charging": "󰚥 {icon}",
-    "format-full": "",
-    "format-icons":[
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "tooltip-format":"{timeTo}"
+  "group/connection": {
+    "orientation": "inherit",
+    "modules": [
+      "group/network",
+      "group/bluetooth"
+    ]
   },
-  "bluetooth":{
-    "format": "",
-    "format-on":"",
-    "format-off":"󰂲",
-    "format-connected":"󰂱",
-    "on-click":"rofi-bluetooth",
-    "tooltip":false
+  "group/network": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "network",
+      "network#speed"
+    ]
   },
-  "network":{
-    //"interface":"enp4s0",
-    "format-wifi":"{icon}",
+  "group/bluetooth": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "bluetooth",
+      "bluetooth#status"
+    ]
+  },
+  "network": {
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": [
+        "󰤨"
+      ],
+      "ethernet": [
+        "󰈀"
+      ],
+      "disconnected": [
+        "󰖪"
+      ]
+    },
+    "format-wifi": "󰤨",
     "format-ethernet": "󰈀",
-    "format-icons":[
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ],
-    "format-disconnected":"󰪎",
-    "on-click": "rofi -show wifi -modi 'wifi:iwdrofimenu'",
-    "tooltip": false
+    "format-disconnected": "󰖪",
+    "format-linked": "󰈁",
+    "tooltip": false,
+    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu"
   },
-  "clock":{
-    "format":"{:%H:%M}",
+  "network#speed": {
+    "format": " {bandwidthDownBits} ",
+    "interval": 5,
+    "tooltip-format": "{ipaddr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} ",
+    "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
+    "tooltip-format-disconnected": "Not Connected to any type of Network",
+    "tooltip": true,
+    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu"
+  },
+  "bluetooth": {
+    "format-on": "",
+    "format-off": "󰂲",
+    "format-disabled": "",
+    "format-connected": "",
+    "tooltip": false,
+    // "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    // "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    // "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
+  },
+  "bluetooth#status": {
+    "format-on": "",
+    "format-off": "",
+    "format-disabled": "",
+    "format-connected": "<b>{num_connections}</b>",
+    "format-connected-battery": "<small><b>{device_battery_percentage}%</b></small>",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
+  },
+  "group/together": {
+    "orientation": "inherit",
+    "modules": [
+      "group/utils",
+      "clock"
+    ]
+  },
+  "group/utils": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/mark",
+      "custom/weather",
+      "custom/theme-switcher"
+    ]
+  },
+  "clock": {
+    "format": "{:%H:%M}",
     "format-alt":"{:%A %d.%m}",
-    //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
     "calendar": {
       "mode"          : "month",
@@ -114,5 +232,105 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     }
-  }
+  },
+  "custom/mark": {
+    "format": "󰁒",
+    "tooltip": false
+  },
+  "custom/weather": {
+    "format": "{}",
+    "tooltip": false,
+    "interval": 3600,
+    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}' --location Moscow",
+    "return-type": "json"
+  },
+  "custom/theme-switcher": {
+    "format": "󰏘",
+    "tooltip": false,
+    "on-click": "~/.config/hypr/scripts/toggle_theme.sh"
+  },
+  "group/brightness": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "backlight",
+      "backlight/slider"
+    ]
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-scroll-down": "brightnessctl s 5%-",
+    "on-scroll-up": "brightnessctl s +5%",
+    "tooltip": true,
+    "tooltip-format": "Brightness: {percent}% ",
+    "smooth-scrolling-threshold": 1
+  },
+  "backlight/slider": {
+    "min": 5,
+    "max": 100,
+    "orientation": "vertical",
+    "device": "intel_backlight"
+  },
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "<b>{icon} </b>",
+    "format-full": "<span color='#82A55F'><b>{icon}</b></span>",
+    "format-icons": [
+      "󰁻",
+      "󰁼",
+      "󰁾",
+      "󰂀",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "{timeTo} {capacity} % | {power} W"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "<span color='#B37F34'><small></small></span>",
+      "balanced": "<span><small> </small></span>",
+      "power-saver": "<span color='#a6e3a1'><small></small></span>"
+    }
+  },
 }
