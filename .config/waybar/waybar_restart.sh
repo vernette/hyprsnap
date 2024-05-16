@@ -1,4 +1,7 @@
-killall waybar
+#!/bin/bash
 
-sleep 1
+if pgrep -x "waybar" >/dev/null; then
+    killall waybar
+fi
+
 waybar &
