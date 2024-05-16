@@ -19,8 +19,8 @@ done
 
 if [ -n "$selected_image_path" ]; then
   ln -sf "$selected_image_path" ~/Pictures/wallpaper.png
-  wal -i ~/Pictures/wallpaper.png --cols16 -n -e
-  hyprctl reload
+  . ~/.config/hypr/scripts/set_wallpaper.sh
+  . ~/.config/hypr/scripts/apply_wal_theme.sh
   notify-send -a "Wallpaper selector" "Wallpaper changed" "$selected_image_path" -i ~/Pictures/wallpaper.png
 fi
 
