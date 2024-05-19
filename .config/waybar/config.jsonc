@@ -13,8 +13,10 @@
     "hyprland/window"
   ],
   "modules-right": [
+    "group/brightness",
     "group/sound",
     "group/connection",
-    "group/together"
+    "group/together",
+    "group/power"
   ],
 }
