@@ -60,7 +60,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     command_execution_time    # previous command duration
     virtualenv                # python virtual environment
-    context                   # user@host
+    # context                   # user@host
     # time                    # current time
   )
 
@@ -96,6 +96,9 @@
 
   # Blue current directory.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=$blue
+  
+  # Show current dir instead of absolute path
+  typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
 
   # Context format when root: user@host. The first part white, the rest grey.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="%F{$white}%n%f%F{$grey}@%m%f"
