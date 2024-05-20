@@ -1,6 +1,14 @@
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = {
+    {
+      "nvim-tree/nvim-web-devicons"
+    },
+    {
+      "linrongbin16/lsp-progress.nvim",
+      config = function() require("lsp-progress").setup() end,
+    }
+  },
   config = function()
     require("lualine").setup({
       options = {
@@ -49,6 +57,11 @@ return {
           }
         },
         lualine_x = {
+          {
+            function()
+              return require('lsp-progress').progress()
+            end
+          },
           {
             "encoding",
             icon = "󱁻"
