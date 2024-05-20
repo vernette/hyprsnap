@@ -1,35 +1,74 @@
-local function codeium()
-	return "󱃖 Codeium:" .. vim.fn["codeium#GetStatusString"]()
-end
-
 return {
-	"nvim-lualine/lualine.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
-	config = function()
-		require("lualine").setup({
-			options = {
-				theme = "pywal",
-				globalstatus = true,
-				section_separators = "",
-				component_separators = "",
-				disabled_filetypes = {
-					"alpha",
-				},
-			},
-			sections = {
-				lualine_a = { "mode" },
-				lualine_b = { "branch" },
-				lualine_c = { "diff", "diagnostics" },
-				lualine_x = { codeium, "encoding", "filetype" },
-				lualine_y = { "progress" },
-				lualine_z = { "location" },
-			},
-			extensions = {
-				"mason",
-				"nvim-tree",
-				"nvim-dap-ui",
-				"toggleterm",
-			},
-		})
-	end,
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  config = function()
+    require("lualine").setup({
+      options = {
+        theme = "pywal",
+        globalstatus = true,
+        section_separators = "",
+        component_separators = "",
+        disabled_filetypes = {
+          "alpha",
+        },
+      },
+      sections = {
+        lualine_a = {
+          {
+            "mode",
+            icon = ""
+          }
+        },
+        lualine_b = {
+          {
+            "branch",
+            icon = "",
+            color = { gui = 'bold' }
+          }
+        },
+        lualine_c = {
+          { "filetype" },
+          {
+            "diff",
+            padding = { left = 0, right = 1 },
+            separator = "|",
+            symbols = {
+              added = " ",
+              modified = " ",
+              removed = " ",
+            }
+          },
+          {
+            "diagnostics",
+            symbols = {
+              error = ' ',
+              warn = ' ',
+              info = ' ',
+              hint = ' '
+            },
+          }
+        },
+        lualine_x = {
+          {
+            "encoding",
+            icon = "󱁻"
+          }
+        },
+        lualine_y = {
+          {
+            "location",
+            icon = "",
+          }
+        },
+        lualine_z = { { "progress" } },
+      },
+      extensions = {
+        "lazy",
+        "mason",
+        "nvim-tree",
+        "nvim-dap-ui",
+        "toggleterm",
+      },
+    })
+  end
 }
