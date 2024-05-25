@@ -6,18 +6,22 @@
 - [Screenshots](#screenshots)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
+- [TODO](#todo)
 
 ## Used software
 
 ### Base
 
-| Type              | Name                                                                                           |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| OS                | [Arch Linux](https://archlinux.org/)                                                           |
-| Window Compositor | [Hyprland](https://hyprland.org/)                                                              |
-| Terminal          | Alacritty [fork](https://github.com/GregTheMadMonk/alacritty-smooth-cursor) with smooth cursor |
-| Shell             | zsh with [oh-my-zsh](https://ohmyz.sh/)                                                        |
-| Colorscheme       | [pywal16](https://github.com/eylles/pywal16)                                                   |
+| Type               | Name                                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------- |
+| OS                 | [Arch Linux](https://archlinux.org/)                                                           |
+| Window Compositor  | [Hyprland](https://hyprland.org/)                                                              |
+| Bar                | [Waybar](https://github.com/Alexays/Waybar)                                                    |
+| Terminal           | Alacritty [fork](https://github.com/GregTheMadMonk/alacritty-smooth-cursor) with smooth cursor |
+| Shell              | zsh                                                                                            |
+| ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit)                                            |
+| ZSH Theme          | [powerlevel10k](https://github.com/romkatv/powerlevel10k)                                      |
+| Colorscheme        | [pywal16](https://github.com/eylles/pywal16)                                                   |
 
 ### UI
 
@@ -40,7 +44,6 @@
 | GTK File Manager                   | Nautilus                                                                         |
 | Icons for ls                       | [lsd](https://github.com/lsd-rs/lsd)                                             |
 | AUR Wrapper                        | [paru](https://github.com/Morganamilo/paru)                                      |
-| Bar                                | [Waybar](https://github.com/Alexays/Waybar)                                      |
 | App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                       |
 | Screenshot Utilities               | grim + slurp                                                                     |
 | System Info                        | [macchina](https://github.com/Macchina-CLI/macchina)                             |
@@ -51,15 +54,15 @@
 | Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                   |
 | Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                 |
 | WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                     |
-| Bluetooth Menu                     | [rofi-bluetooth](https://github.com/nickclyde/rofi-bluetooth)                    |
+| Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                              |
 | Terminal Art                       | [arTTY](https://github.com/mjwhitta/artty)                                       |
 
 ### Pywal themes for Applications
 
-| Type                               | Name                                                                             |
-| ---------------------------------- | -------------------------------------------------------------------------------- |
-| Telegram Pywal Theme               | [wal-telegram](https://github.com/guillaumeboehm/wal-telegram)                   |
-| VS Code Pywal Theme                | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension                                             |
+| Type                               | Name                                                                                          |
+| ---------------------------------- | --------------------------------------------------------------------------------------------- |
+| Telegram Pywal Theme               | [wal-telegram](https://github.com/guillaumeboehm/wal-telegram)                                |
+| VS Code Pywal Theme                | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
 
 ### Wallpapers
 
@@ -130,13 +133,23 @@ sudo pacman -S ttf-jetbrains-mono-nerd lf grim slurp wl-clipboard hyprland wayba
 ```bash
 paru -S alacritty-smooth-cursor-git ttf-twemoji-color ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
 ```
-### Neovim specific
 
->[!Note]
-> To install Neovim plugins correctly, you must have npm installed
+### ZSH specific
 
 ```bash
-sudo pacman -S npm ripgrep unzip
+sudo pacman -S fzf zoxide
+```
+
+### Waybar specific
+
+```bash
+paru -S wttrbar
+```
+
+### Neovim specific
+
+```bash
+sudo pacman -S ripgrep unzip
 ```
 
 ## Installation
@@ -154,3 +167,14 @@ git clone https://github.com/vernette/hyprsnap ~/.dotfiles
 cd ~/.dotfiles
 stow .
 ```
+
+If you want stow to overwrite existing files, then add `--adopt` flag:
+
+```bash
+stow . --adopt
+```
+
+## TODO
+
+- [ ] Installation script
+- [ ] Custom SDDM theme
