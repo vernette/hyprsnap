@@ -20,6 +20,8 @@ return {
 					"python-lsp-server",
 					"lua-language-server",
 					"mypy",
+          "black",
+          "isort"
 				},
 			})
 		end,
