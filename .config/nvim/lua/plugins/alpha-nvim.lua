@@ -48,7 +48,7 @@ return {
 		dashboard.section.header.opts.hl = "Include"
 		dashboard.section.buttons.opts.hl = "Keyword"
 
-		dashboard.opts.opts.noautocmd = true
 		alpha.setup(dashboard.opts)
+    vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
 	end,
 }
