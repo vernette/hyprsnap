@@ -1,6 +1,3 @@
-# Pywal
-(cat ~/.cache/wal/sequences &)
-
 # Terminal art
 [[ -z $(command -v arTTY) ]] || arTTY
 

@@ -1,3 +1,5 @@
+import = ["~/.cache/wal/colors-alacritty.toml"]
+
 live_config_reload = true
 
 [cursor]
