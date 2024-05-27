@@ -17,7 +17,7 @@
 | OS                 | [Arch Linux](https://archlinux.org/)                                                           |
 | Window Compositor  | [Hyprland](https://hyprland.org/)                                                              |
 | Bar                | [Waybar](https://github.com/Alexays/Waybar)                                                    |
-| Terminal           | Alacritty [fork](https://github.com/GregTheMadMonk/alacritty-smooth-cursor) with smooth cursor |
+| Terminal           | kitty                                                                                          |
 | Shell              | zsh                                                                                            |
 | ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit)                                            |
 | ZSH Theme          | [powerlevel10k](https://github.com/romkatv/powerlevel10k)                                      |
@@ -125,13 +125,13 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ### Main repo
 
 ```bash
-sudo pacman -S ttf-jetbrains-mono-nerd lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim 
+sudo pacman -S kitty ttf-jetbrains-mono-nerd lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim 
 ```
 
 ### AUR
 
 ```bash
-paru -S alacritty-smooth-cursor-git ttf-twemoji-color ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
+paru -S ttf-twemoji-color ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
 ```
 
 ### ZSH specific
