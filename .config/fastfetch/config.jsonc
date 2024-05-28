@@ -1,0 +1,98 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/macchina/archlogo.txt",
+    "padding": {
+      "top": 5
+    }
+  },
+  "display": {
+    "separator": " -> "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "──────────────────── Base ────────────────────"
+    },
+    {
+      "type": "os",
+      "key": "󰣇 os",
+      "keyColor": "31"
+    },
+    {
+      "type": "kernel",
+      "key": " kernel",
+      "keyColor": "31"
+    },
+    {
+      "type": "packages",
+      "key": "󰊠 packages",
+      "keyColor": "31"
+    },
+    {
+      "type": "wm",
+      "key": " window compositor",
+      "keyColor": "31"
+    },
+    {
+      "type": "terminal",
+      "key": " terminal",
+      "keyColor": "31"
+    },
+    {
+      "type": "shell",
+      "key": "󱓞 shell",
+      "keyColor": "31"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "───────────────────── UI ─────────────────────",
+    },
+    {
+      "type": "wmtheme",
+      "key": " theme",
+      "keyColor": "32"
+    },
+    {
+      "type": "icons",
+      "key": " icons",
+      "keyColor": "32"
+    },
+    {
+      "type": "terminalfont",
+      "key": " font",
+      "keyColor": "32"
+    },
+    "break",
+    {
+      "type": "colors",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "────────────────── Hardware ──────────────────",
+    },
+    {
+      "type": "host",
+      "key": " host",
+    },
+    {
+      "type": "cpu",
+      "key": "󰘚 cpu"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 gpu"
+    },
+    {
+      "type": "memory",
+      "key": " ram"
+    },
+    {
+      "type": "display",
+      "key": "󰹑 display"
+    },
+    "break",
+  ]
+}

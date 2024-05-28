@@ -46,7 +46,7 @@
 | AUR Wrapper                        | [paru](https://github.com/Morganamilo/paru)                                      |
 | App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                       |
 | Screenshot Utilities               | grim + slurp                                                                     |
-| System Info                        | [macchina](https://github.com/Macchina-CLI/macchina)                             |
+| System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
 | Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
 | Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                 |
 | Audio Visualizer                   | [cava](https://github.com/karlstav/cava)                                         |
@@ -125,7 +125,7 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ### Main repo
 
 ```bash
-sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim 
+sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim fastfetch
 ```
 
 ### AUR
