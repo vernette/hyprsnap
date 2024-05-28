@@ -4,7 +4,8 @@
     "source": "~/.config/fastfetch/archlogo.txt",
     "padding": {
       "top": 5
-    }
+    },
+    "color": {"1": "blue"}
   },
   "display": {
     "separator": " -> "
