@@ -61,7 +61,7 @@
 
 | Type                               | Name                                                                                          |
 | ---------------------------------- | --------------------------------------------------------------------------------------------- |
-| Telegram Pywal Theme               | [wal-telegram](https://github.com/guillaumeboehm/wal-telegram)                                |
+| Telegram Pywal Theme               | [walogram](https://codeberg.org/thirtysixpw/walogram)                                         |
 | VS Code Pywal Theme                | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
 
 ### Wallpapers
@@ -131,7 +131,7 @@ sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-c
 ### AUR
 
 ```bash
-paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
+paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3 walogram-git
 ```
 
 ### ZSH specific
