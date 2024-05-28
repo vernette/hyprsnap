@@ -131,7 +131,7 @@ sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-c
 ### AUR
 
 ```bash
-paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3 walogram-git
+paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk3 walogram-git
 ```
 
 ### ZSH specific
