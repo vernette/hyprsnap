@@ -1,0 +1,22 @@
+add_newline = false
+format = """$directory$character"""
+right_format = """$all"""
+
+[directory]
+truncation_length = 2
+
+[git_branch]
+symbol = "🌱 "
+format =  "[$symbol$branch (:$remote_branch)]($style)"
+
+[cmd_duration]
+min_time = 20_000
+
+[sudo]
+symbol = "⚡ "
+format = "[$symbol]($style)"
+disabled = false
+
+[custom.docker]
+command = "echo 🐋"
+files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]

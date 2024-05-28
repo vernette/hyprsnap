@@ -1,13 +1,6 @@
 # Terminal art
 [[ -z $(command -v arTTY) ]] || arTTY
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Plugin manager
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -17,9 +10,6 @@ if [ ! -d $ZINIT_HOME ]; then
 fi
 
 source "$ZINIT_HOME/zinit.zsh"
-
-# Shell theme
-zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Plugins
 zinit light zsh-users/zsh-autosuggestions
@@ -40,15 +30,12 @@ zinit snippet OMZP::virtualenv
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Keybindings
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
-
 
 # History
 HISTSIZE=10000
@@ -117,3 +104,4 @@ eval "$(fzf --zsh)"
 # Zoxide
 eval "$(zoxide init zsh)"
 
+eval "$(starship init zsh)"

@@ -20,7 +20,7 @@
 | Terminal           | kitty                                                                                          |
 | Shell              | zsh                                                                                            |
 | ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit)                                            |
-| ZSH Theme          | [powerlevel10k](https://github.com/romkatv/powerlevel10k)                                      |
+| ZSH Theme          | [starship](https://github.com/starship/starship)                                               |
 | Colorscheme        | [pywal16](https://github.com/eylles/pywal16)                                                   |
 
 ### UI
@@ -125,19 +125,19 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ### Main repo
 
 ```bash
-sudo pacman -S kitty ttf-jetbrains-mono-nerd lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim 
+sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim 
 ```
 
 ### AUR
 
 ```bash
-paru -S ttf-twemoji-color ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
+paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git rofi-bluetooth-git spicetify-cli cava adw-gtk3
 ```
 
 ### ZSH specific
 
 ```bash
-sudo pacman -S fzf zoxide
+sudo pacman -S fzf zoxide starship
 ```
 
 ### Waybar specific
