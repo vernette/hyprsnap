@@ -5,47 +5,47 @@
 * {
   font: bold 16px "JetBrainsMono Nerd Font Propo";
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
 }
 
 window#waybar {
   background: alpha(@background, 0.3);
-  border-radius: 10;
+  border-radius: 10px;
 }
 
 #window {
   padding: 2px 10px;
   margin: 4px 2px 4px 8px;
   background: alpha(@background, 0.3);
-  border-radius: 10;
+  border-radius: 10px;
   color: lighter(@main-color);
 }
 
 #custom-arrow-right {
   color: @main-color;
-  margin: 0 4px;
+  margin: 0px 4px;
 }
 
 #cpu,
 #memory,
 #disk {
-  padding: 0 6px;
+  padding: 0px 6px;
   margin: 8px 4px;
   background: alpha(darker(@main-color), 0.3);
   color: @main-color;
-  border-radius: 10;
+  border-radius: 10px;
 }
 
 #workspaces {
   margin: 4px 4px;
   background: alpha(@background, 0.5);
-  border-radius: 10;
+  border-radius: 10px;
 }
 
 #workspaces button {
-  padding: 0 4px;
+  padding: 0px 4px;
   margin: 4px 4px;
   color: alpha(@foreground, 0.5);
 }
@@ -62,17 +62,17 @@ window#waybar {
 }
 
 #control-center {
-  padding: 0 8px;
+  padding: 0px 8px;
   margin: 8px 4px;
   color: lighter(@main-color);
   background: alpha(@background, 0.3);
-  border-radius: 10;
+  border-radius: 10px;
 }
 
 #bluetooth,
 #network,
 #pulseaudio {
-  padding: 0 0 0 4px;
+  padding: 0px 0 0 4px;
 }
 
 #pulseaudio-slider slider {
@@ -93,25 +93,25 @@ window#waybar {
 }
 
 #language {
-  padding: 0 3px 2px 0;
+  padding: 0px 3px 2px 0px;
 }
 
 #custom-arrow-left {
   color: lighter(@main-color);
-  margin: 0 4px;
+  margin: 0px 4px;
 }
 
 #custom-weather,
 #custom-theme-switcher {
-  padding: 0 8px;
+  padding: 0px 8px;
   margin: 8px 4px;
   color: @main-color;
   background: alpha(darker(@main-color), 0.3);
-  border-radius: 10;
+  border-radius: 10px;
 }
 
 #clock {
-  padding: 0 4px;
+  padding: 0px 4px;
   margin: 4px 8px 4px 2px;
   background: alpha(@background, 0.3);
   border-radius: 10px;

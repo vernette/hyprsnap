@@ -1,39 +1,34 @@
 {
-  "hyprland/window":{
-    "format":"󰣆 {title}",
-    "max-length":80,
-    "separate-outputs":false,
+  "hyprland/window": {
+    "format": "󰣆 {title}",
+    "max-length": 80,
+    "separate-outputs": false,
     "rewrite": {
-       "(.*) ": " Empty"
-    }
+      "(.*) ": " Empty",
+    },
   },
   "group/load": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": false
+      "transition-left-to-right": false,
     },
-    "modules": [
-      "custom/arrow-right",
-      "cpu",
-      "memory",
-      "disk"
-    ]
+    "modules": ["custom/arrow-right", "cpu", "memory", "disk"],
   },
   "custom/arrow-right": {
     "format": "󰁙",
-    "tooltip": false
+    "tooltip": false,
   },
   "cpu": {
-    "format": "󰘚 {usage}󱉸"
+    "format": "󰘚 {usage}󱉸",
   },
   "memory": {
-    "format": " {:2}󱉸"
+    "format": " {:2}󱉸",
   },
   "disk": {
     "interval": 600,
     "format": "󰆼 {percentage_used}󱉸",
-    "path": "/"
+    "path": "/",
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -49,36 +44,32 @@
       "7": "󰭠",
       "8": "󰭠",
       "9": "󰭠",
-      "10": "󰭠"
-    }
+      "10": "󰭠",
+    },
   },
   "group/control-center": {
     "orientation": "inherit",
-    "modules": [
-      "hyprland/language",
-      "group/audio",
-      "group/connection"
-    ]
+    "modules": ["hyprland/language", "group/audio", "group/connection"],
   },
   "hyprland/language": {
     "format": "{}",
-    "format-en":"en",
-    "format-ru":"ru",
-    "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
+    "format-en": "en",
+    "format-ru": "ru",
+    "keyboard-name": "kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
     // "keyboard-name":"at-translated-set-2-keyboard",
-    "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
+    "on-click": "hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next",
   },
   "group/audio": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": false
+      "transition-left-to-right": false,
     },
     "modules": [
       "pulseaudio",
-      "pulseaudio#mic"
+      "pulseaudio#mic",
       // "pulseaudio/slider"
-    ]
+    ],
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -93,17 +84,13 @@
       "phone": "",
       "portable": "",
       "car": " ",
-      "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
-      ]
+      "default": ["󰕿", "󰖀", "󰕾"],
     },
     "on-click": "changevolume mute",
     "on-click-middle": "pavucontrol",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
-    "smooth-scrolling-threshold": 1
+    "smooth-scrolling-threshold": 1,
   },
   "pulseaudio#mic": {
     "format": "{format_source}",
@@ -113,61 +100,46 @@
     // "tooltip-format": "{volume}% {format_source} ",
     "on-click": "pactl set-source-mute 0 toggle",
     "on-scroll-down": "pactl set-source-volume 0 -1%",
-    "on-scroll-up": "pactl set-source-volume 0 +1%"
+    "on-scroll-up": "pactl set-source-volume 0 +1%",
   },
   "pulseaudio/slider": {
     "min": 0,
     "max": 100,
-    "orientation": "horizontal"
+    "orientation": "horizontal",
   },
   "group/connection": {
     "orientation": "inherit",
-    "modules": [
-      "group/network",
-      "group/bluetooth"
-    ]
+    "modules": ["group/network", "group/bluetooth"],
   },
   "group/network": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": true
+      "transition-left-to-right": true,
     },
-    "modules": [
-      "network",
-      "network#speed"
-    ]
+    "modules": ["network", "network#speed"],
   },
   "group/bluetooth": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": true
+      "transition-left-to-right": true,
     },
-    "modules": [
-      "bluetooth",
-      "bluetooth#status"
-    ]
+    "modules": ["bluetooth", "bluetooth#status"],
   },
   "network": {
     "format": "{icon}",
     "format-icons": {
-      "wifi": [
-        "󰤨"
-      ],
-      "ethernet": [
-        "󰌗"
-      ],
-      "disconnected": [
-        ""
-      ]
+      "wifi": ["󰤨"],
+      "ethernet": ["󰌗"],
+      "disconnected": [""],
     },
     "format-wifi": "󰤨",
     "format-ethernet": "󰌗",
     "format-disconnected": "󰖪",
     "format-linked": "󰈁",
     "tooltip": false,
-    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu"
+    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu",
   },
   "network#speed": {
     "format": " {bandwidthDownBits} ",
@@ -177,7 +149,7 @@
     "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
     "tooltip-format-disconnected": "Not Connected to any type of Network",
     "tooltip": true,
-    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu"
+    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu",
   },
   "bluetooth": {
     "format-on": "",
@@ -189,7 +161,7 @@
     // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     // "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     // "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "overskride"
+    "on-click": "overskride",
   },
   "bluetooth#status": {
     "format-on": "",
@@ -201,62 +173,55 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
+    "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i",
   },
   "group/hub": {
     "orientation": "inherit",
-    "modules": [
-      "group/utils",
-      "clock"
-    ]
+    "modules": ["group/utils", "clock"],
   },
   "group/utils": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": true
+      "transition-left-to-right": true,
     },
-    "modules": [
-      "custom/arrow-left",
-      "custom/weather",
-      "custom/theme-switcher"
-    ]
+    "modules": ["custom/arrow-left", "custom/weather", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁒",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/weather": {
     "format": "{}",
     "tooltip": false,
     "interval": 3600,
     "exec": "wttrbar --custom-indicator '{ICON}{temp_C}' --location Moscow",
-    "return-type": "json"
+    "return-type": "json",
   },
   "custom/theme-switcher": {
     "format": "󰏘",
     "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/toggle_theme.sh"
+    "on-click": "~/.config/hypr/scripts/toggle_theme.sh",
   },
   "clock": {
     "format": "{:%H:%M}",
-    "format-alt":"{:%A %d.%m}",
+    "format-alt": "{:%A %d.%m}",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
     "calendar": {
-      "mode"          : "month",
-      "on-scroll"     : 1,
+      "mode": "month",
+      "on-scroll": 1,
       "format": {
-        "months":     "<span color='#ffead3'><b>{}</b></span>",
-        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
     },
-    "actions":  {
+    "actions": {
       "on-click-right": "mode",
       "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
+      "on-scroll-down": "shift_down",
+    },
   },
 }
