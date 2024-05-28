@@ -5,7 +5,10 @@ return {
 
     null_ls.setup({
       sources = {
+        -- Lua
         null_ls.builtins.formatting.stylua,
+
+        -- Python
         null_ls.builtins.formatting.black.with({
           extra_args = {
             "--skip-string-normalization",
@@ -18,6 +21,10 @@ return {
           },
         }),
         null_ls.builtins.diagnostics.djlint,
+
+        -- JS, TS, Vue, YAML, JSON, HTML, Markdown, CSS, etc
+        null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.diagnostics.stylelint,
       },
     })
 

@@ -21,11 +21,13 @@ return {
     config = function()
       require("mason-tool-installer").setup({
         ensure_installed = {
-          "python-lsp-server",
           "lua-language-server",
+          "python-lsp-server",
           "mypy",
           "black",
-          "isort"
+          "isort",
+          "prettierd",
+          "stylelint"
         },
       })
     end,
