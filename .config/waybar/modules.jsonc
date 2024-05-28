@@ -67,9 +67,9 @@
     },
     "modules": [
       "pulseaudio",
-      "pulseaudio#mic",
+      "pulseaudio#mic"
       // "pulseaudio/slider"
-    ],
+    ]
   },
   "pulseaudio": {
     "format": "{icon}",
