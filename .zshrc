@@ -66,6 +66,7 @@ alias ls='lsd --tree --depth 1 --group-dirs=first'
 alias cd="zcd"
 alias v="nvim"
 alias cat="bat --theme base16"
+alias bt="btop"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
