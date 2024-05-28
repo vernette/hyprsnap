@@ -13,5 +13,5 @@ wal -i ~/Pictures/wallpaper.png --cols16 $wal_arguments -q -n -e
 
 pgrep -x "waybar" > /dev/null && killall -SIGUSR2 waybar
 
-wal-telegram --wal --tiled > /dev/null
+walogram -s > /dev/null
 spicetify apply -q -n
