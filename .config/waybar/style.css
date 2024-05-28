@@ -1,197 +1,119 @@
 @import "../../.cache/wal/colors-waybar.css";
 
-@define-color main-color @color6;
+@define-color main-color @color13;
 
 * {
   font: bold 16px "JetBrainsMono Nerd Font Propo";
-  min-width: 8px;
   border: none;
   border-radius: 0;
   box-shadow: none;
   text-shadow: none;
-  padding: 0;
-}
-
-#workspaces {
-  padding: 4px;
-}
-
-#workspaces button {
-  padding: 0 8px;
-  transition: background-color 0.5s;
-  color: alpha(@foreground, 0.5);
-  background: transparent;
-  border-radius: 4px;
-}
-
-#workspaces button.urgent {
-  color: @color10;
-}
-
-#workspaces button.active {
-  background: alpha(@main-color, 0.4);
-  color: lighter(@main-color);
-}
-
-#disk,
-#memory,
-#cpu {
-  padding: 0 4px;
-}
-
-#custom-dmark {
-  color: @main-color;
-  padding: 0 8px 0 4px;
-}
-
-#window {
-  padding: 0 8px;
-  background: alpha(@background, 0.3);
-  border-radius: 4px;
-}
-
-window#waybar.empty #window {  
-  background: transparent;
-  color: transparent;
 }
 
 window#waybar {
-  transition: background-color 0.5s;
-  border-radius: 8px;
-  border: 1px solid alpha(@main-color, 0.5);
   background: alpha(@background, 0.3);
+  border-radius: 10;
+}
+
+#window {
+  padding: 2px 10px;
+  margin: 4px 2px 4px 8px;
+  background: alpha(@background, 0.3);
+  border-radius: 10;
   color: lighter(@main-color);
 }
 
-#brightness {
+#custom-arrow-right {
+  color: @main-color;
+  margin: 0 4px;
+}
+
+#cpu,
+#memory,
+#disk {
+  padding: 0 6px;
+  margin: 8px 4px;
+  background: alpha(darker(@main-color), 0.3);
+  color: @main-color;
+  border-radius: 10;
+}
+
+#workspaces {
+  margin: 4px 4px;
+  background: alpha(@background, 0.5);
+  border-radius: 10;
+}
+
+#workspaces button {
   padding: 0 4px;
+  margin: 4px 4px;
+  color: alpha(@foreground, 0.5);
 }
 
-#audio,
-#pulseaudio.mic
-#power,
-#brightness {
-  border-radius: 4px;
-  padding: 0 4px 0 4px;
+#workspaces button.active {
+  transition: color 0.5s;
+  color: lighter(@main-color);
 }
 
-#pulseaudio.mic {
-  color: @background;
-  background: alpha(darker(@foreground), 0.6);
-  margin: 4px 2px;
-}
-
-#backlight-slider slider,
-#pulseaudio-slider slider {
+#workspaces button.urgent,
+#workspaces button:hover {
+  color: @color5;
   background-color: transparent;
+}
+
+#control-center {
+  padding: 0 8px;
+  margin: 8px 4px;
+  color: lighter(@main-color);
+  background: alpha(@background, 0.3);
+  border-radius: 10;
+}
+
+#bluetooth,
+#network,
+#pulseaudio {
+  padding: 0 0 0 4px;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  background-color: transparent;
+  border: none;
   box-shadow: none;
 }
 
-#backlight-slider trough,
-#pulseaudio-slider trough {
-  margin: 4px 8px;
-  min-width: 100px;
-  min-height: 6px;
-  border-radius: 8px;
-  background-color: alpha(@background, 0.6);
+#pulseaudio-slider {
+  margin: 10px;
 }
 
-#backlight-slider highlight,
 #pulseaudio-slider highlight {
   border-radius: 8px;
   background-color: lighter(@main-color);
 }
 
-#custom-notifications,
-#network.wifi,
-#network.ethernet {
-  padding: 0 4px;
-}
-
 #language {
-  padding: 0 4px 2px 4px;
+  padding: 0 3px 2px 0;
 }
 
-#bluetooth {
-  margin-right: 2px;
+#custom-arrow-left {
+  color: lighter(@main-color);
+  margin: 0 4px;
 }
 
-#bluetooth.discoverable,
-#bluetooth.discovering,
-#bluetooth.pairable {
-  border-radius: 8px;
-  animation: blink-active 1s linear infinite alternate;
-}
-
-#custom-mark,
 #custom-weather,
 #custom-theme-switcher {
-  padding: 0 4px;
+  padding: 0 8px;
+  margin: 8px 4px;
+  color: @main-color;
+  background: alpha(darker(@main-color), 0.3);
+  border-radius: 10;
 }
 
 #clock {
-  padding: 0 4px 0 0;
-}
-
-.modules-left,
-.modules-right {
-  transition: background-color 0.5s;
-  margin: 6px;
-  border-radius: 4px;
-  background: alpha(@background, 0.3);
-  color: lighter(@main-color);
-}
-
-.modules-center {
-  margin: 6px;
-  color: lighter(@main-color);
-}
-
-#memory,
-#disk,
-#cpu,
-#together,
-#custom-weather,
-#custom-theme-switcher,
-#connection,
-#sound {
-  border-radius: 4px;
-  margin: 4px 2px;
-  background: alpha(darker(@main-color), 0.3);
-}
-
-#power {
   padding: 0 4px;
-}
-
-#battery {
-  border-radius: 8px;
-  padding: 4px 0;
-  margin: 4px 2px;
-}
-
-#battery.discharging.warning,
-#battery.discharging.critical {
-  animation: blink-red 1s linear infinite alternate;
-}
-
-@keyframes blink-main-color {
-  to {
-    background-color: @main-color;
-    color: @foreground;
-  }
-}
-
-@keyframes blink-red {
-  to {
-    background-color: #c64d4f;
-    color: @foreground;
-  }
-}
-
-@keyframes blink-yellow {
-  to {
-    background-color: #cf9022;
-    color: @foreground;
-  }
+  margin: 4px 8px 4px 2px;
+  background: alpha(@background, 0.3);
+  border-radius: 10px;
+  color: lighter(@main-color);
 }

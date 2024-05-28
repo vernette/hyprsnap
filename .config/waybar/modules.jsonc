@@ -1,23 +1,26 @@
 {
-  "hyprland/workspaces": {
-    "format": "{name}",
-    "on-click": "activate",
-    "all-outputs": true,
+  "hyprland/window":{
+    "format":"󰣆 {title}",
+    "max-length":80,
+    "separate-outputs":false,
+    "rewrite": {
+       "(.*) ": " Empty"
+    }
   },
-  "group/info": {
+  "group/load": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 500,
+      "transition-duration": 300,
       "transition-left-to-right": false
     },
     "modules": [
-      "custom/dmark",
+      "custom/arrow-right",
       "cpu",
       "memory",
       "disk"
     ]
   },
-  "custom/dmark": {
+  "custom/arrow-right": {
     "format": "󰁙",
     "tooltip": false
   },
@@ -29,32 +32,52 @@
   },
   "disk": {
     "interval": 600,
-    "format": "󰋊 {percentage_used}󱉸",
+    "format": "󰆼 {percentage_used}󱉸",
     "path": "/"
   },
-  "hyprland/window":{
-    "format":"󰣆 {title}",
-    "max-length":80,
-    "separate-outputs":false
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "",
+      "2": "󰖟",
+      "3": "󰅩",
+      "4": "󰞶",
+      "5": "",
+      "6": "󰓇",
+      "7": "󰭠",
+      "8": "󰭠",
+      "9": "󰭠",
+      "10": "󰭠"
+    }
   },
-  "group/sound": {
+  "group/control-center": {
     "orientation": "inherit",
     "modules": [
+      "hyprland/language",
       "group/audio",
-      "custom/notifications",
-      "hyprland/language"
+      "group/connection"
     ]
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en":"en",
+    "format-ru":"ru",
+    "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
+    // "keyboard-name":"at-translated-set-2-keyboard",
+    "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
   },
   "group/audio": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 500,
+      "transition-duration": 300,
       "transition-left-to-right": false
     },
     "modules": [
       "pulseaudio",
-      "pulseaudio#mic",
-      "pulseaudio/slider"
+      "pulseaudio#mic"
+      // "pulseaudio/slider"
     ]
   },
   "pulseaudio": {
@@ -97,19 +120,6 @@
     "max": 100,
     "orientation": "horizontal"
   },
-  "custom/notifications": {
-    "format": "󰂚",
-    "on-click": "swaync-client -t -sw",
-    "tooltip": false
-  },
-  "hyprland/language": {
-    "format": "{}",
-    "format-en":"en",
-    "format-ru":"ru",
-    "keyboard-name":"kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
-    // "keyboard-name":"at-translated-set-2-keyboard",
-    "on-click":"hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next"
-  },
   "group/connection": {
     "orientation": "inherit",
     "modules": [
@@ -120,7 +130,7 @@
   "group/network": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 500,
+      "transition-duration": 300,
       "transition-left-to-right": true
     },
     "modules": [
@@ -131,7 +141,7 @@
   "group/bluetooth": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 500,
+      "transition-duration": 300,
       "transition-left-to-right": true
     },
     "modules": [
@@ -146,14 +156,14 @@
         "󰤨"
       ],
       "ethernet": [
-        "󰈀"
+        "󰌗"
       ],
       "disconnected": [
-        "󰖪"
+        ""
       ]
     },
     "format-wifi": "󰤨",
-    "format-ethernet": "󰈀",
+    "format-ethernet": "󰌗",
     "format-disconnected": "󰖪",
     "format-linked": "󰈁",
     "tooltip": false,
@@ -193,7 +203,7 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
   },
-  "group/together": {
+  "group/hub": {
     "orientation": "inherit",
     "modules": [
       "group/utils",
@@ -203,14 +213,30 @@
   "group/utils": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 500,
+      "transition-duration": 300,
       "transition-left-to-right": true
     },
     "modules": [
-      "custom/mark",
+      "custom/arrow-left",
       "custom/weather",
       "custom/theme-switcher"
     ]
+  },
+  "custom/arrow-left": {
+    "format": "󰁒",
+    "tooltip": false
+  },
+  "custom/weather": {
+    "format": "{}",
+    "tooltip": false,
+    "interval": 3600,
+    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}' --location Moscow",
+    "return-type": "json"
+  },
+  "custom/theme-switcher": {
+    "format": "󰏘",
+    "tooltip": false,
+    "on-click": "~/.config/hypr/scripts/toggle_theme.sh"
   },
   "clock": {
     "format": "{:%H:%M}",
@@ -231,106 +257,6 @@
       "on-click-right": "mode",
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
-    }
-  },
-  "custom/mark": {
-    "format": "󰁒",
-    "tooltip": false
-  },
-  "custom/weather": {
-    "format": "{}",
-    "tooltip": false,
-    "interval": 3600,
-    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}' --location Moscow",
-    "return-type": "json"
-  },
-  "custom/theme-switcher": {
-    "format": "󰏘",
-    "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/toggle_theme.sh"
-  },
-  "group/brightness": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "transition-left-to-right": false
-    },
-    "modules": [
-      "backlight",
-      "backlight/slider"
-    ]
-  },
-  "backlight": {
-    "device": "acpi_video0",
-    "format": "{icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "on-scroll-down": "brightnessctl s 5%-",
-    "on-scroll-up": "brightnessctl s +5%",
-    "tooltip": true,
-    "tooltip-format": "Brightness: {percent}% ",
-    "smooth-scrolling-threshold": 1
-  },
-  "backlight/slider": {
-    "min": 5,
-    "max": 100,
-    "orientation": "horizontal",
-    "device": "intel_backlight"
-  },
-  "group/power": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "transition-left-to-right": false
-    },
-    "modules": [
-      "battery",
-      "power-profiles-daemon"
-    ]
-  },
-  "battery": {
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{icon}",
-    "format-charging": "<b>{icon} </b>",
-    "format-full": "<span color='#82A55F'><b>{icon}</b></span>",
-    "format-icons": [
-      "󰁻",
-      "󰁼",
-      "󰁾",
-      "󰂀",
-      "󰂂",
-      "󰁹"
-    ],
-    "tooltip-format": "{timeTo} {capacity} % | {power} W"
-  },
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "<span color='#B37F34'><small></small></span>",
-      "balanced": "<span><small> </small></span>",
-      "power-saver": "<span color='#a6e3a1'><small></small></span>"
     }
   },
 }

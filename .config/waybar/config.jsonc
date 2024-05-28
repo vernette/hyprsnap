@@ -1,22 +1,21 @@
 {
   "layer": "top",
-  "position": "top",
+  "position": "bottom",
+  "margin": "0 200 5 200",
   "fixed-center": true,
-  "margin": "5 15 0 15",
   "reload_style_on_change": true,
-  "include": ["~/.config/waybar/modules.json"],
+  "include": ["~/.config/waybar/modules.jsonc"],
   "modules-left": [
-    "hyprland/workspaces",
-    "group/info"
+    "hyprland/window",
+    "group/load"
   ],
+  
   "modules-center": [
-    "hyprland/window"
+    "hyprland/workspaces"
   ],
+
   "modules-right": [
-    "group/brightness",
-    "group/sound",
-    "group/connection",
-    "group/together",
-    "group/power"
+    "group/control-center",
+    "group/hub"
   ],
 }
