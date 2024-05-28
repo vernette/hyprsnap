@@ -17,6 +17,10 @@ symbol = "⚡ "
 format = "[$symbol]($style)"
 disabled = false
 
+[python]
+detect_extensions = []
+detect_files = ["__init__.py", "requirements.txt", "pyproject.toml", "setup.py"]
+
 [custom.docker]
 command = "echo 🐋"
 files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
