@@ -131,11 +131,11 @@
     "format": "{icon}",
     "format-icons": {
       "wifi": ["󰤨"],
-      "ethernet": ["󰌗"],
+      "ethernet": ["󰈁"],
       "disconnected": [""],
     },
     "format-wifi": "󰤨",
-    "format-ethernet": "󰌗",
+    "format-ethernet": "󰈁",
     "format-disconnected": "󰖪",
     "format-linked": "󰈁",
     "tooltip": false,
