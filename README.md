@@ -12,16 +12,16 @@
 
 ### Base
 
-| Type               | Name                                                                                           |
-| ------------------ | ---------------------------------------------------------------------------------------------- |
-| OS                 | [Arch Linux](https://archlinux.org/)                                                           |
-| Window Compositor  | [Hyprland](https://hyprland.org/)                                                              |
-| Bar                | [Waybar](https://github.com/Alexays/Waybar)                                                    |
-| Terminal           | kitty                                                                                          |
-| Shell              | zsh                                                                                            |
-| ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit)                                            |
-| ZSH Theme          | [starship](https://github.com/starship/starship)                                               |
-| Colorscheme        | [pywal16](https://github.com/eylles/pywal16)                                                   |
+| Type               | Name                                                |
+| ------------------ | --------------------------------------------------- |
+| OS                 | [Arch Linux](https://archlinux.org/)                |
+| Window Compositor  | [Hyprland](https://hyprland.org/)                   |
+| Bar                | [Waybar](https://github.com/Alexays/Waybar)         |
+| Terminal           | kitty                                               |
+| Shell              | zsh                                                 |
+| ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit) |
+| ZSH Theme          | [starship](https://github.com/starship/starship)    |
+| Colorscheme        | [pywal16](https://github.com/eylles/pywal16)        |
 
 ### UI
 
@@ -59,10 +59,10 @@
 
 ### Pywal themes for Applications
 
-| Type                               | Name                                                                                          |
-| ---------------------------------- | --------------------------------------------------------------------------------------------- |
-| Telegram Pywal Theme               | [walogram](https://codeberg.org/thirtysixpw/walogram)                                         |
-| VS Code Pywal Theme                | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
+| Type                 | Name                                                                                          |
+| -------------------- | --------------------------------------------------------------------------------------------- |
+| Telegram Pywal Theme | [walogram](https://codeberg.org/thirtysixpw/walogram)                                         |
+| VS Code Pywal Theme  | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
 
 ### Wallpapers
 
