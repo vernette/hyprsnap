@@ -12,7 +12,7 @@
 
 window#waybar {
   background: alpha(@background, 0.3);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #window {
