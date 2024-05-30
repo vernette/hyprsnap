@@ -99,6 +99,14 @@ function zcd() {
   fi
 }
 
+ddac() {
+    docker rm -vf $(docker ps -aq)
+}
+
+ddai() {
+    docker rmi -f $(docker images -aq)
+}
+
 # Shell integrations
 eval "$(fzf --zsh)"
 
