@@ -24,14 +24,15 @@ return {
         lualine_a = {
           {
             "mode",
-            icon = ""
+            icon = "",
+            separator = { right = "" }
           }
         },
         lualine_b = {
           {
             "branch",
             icon = "",
-            color = { gui = 'bold' }
+            separator = { right = "" }
           }
         },
         lualine_c = {
@@ -71,9 +72,14 @@ return {
           {
             "location",
             icon = "",
+            separator = { left = "", right = "" }
           }
         },
-        lualine_z = { { "progress" } },
+        lualine_z = {
+          {
+            "progress"
+          }
+        },
       },
       extensions = {
         "lazy",
