@@ -163,7 +163,7 @@ sudo pacman -S stow
 Clone repo into home folder and stow dotfiles:
 
 ```bash
-git clone https://github.com/vernette/hyprsnap ~/.dotfiles
+git clone --depth 1 https://github.com/vernette/hyprsnap ~/.dotfiles
 cd ~/.dotfiles
 stow .
 ```
