@@ -69,6 +69,7 @@ alias cat="bat --theme base16"
 alias bt="btop"
 alias dil="docker images"
 alias dcl="docker container ls -a"
+alias gc="git clone"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
