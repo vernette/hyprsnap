@@ -7,6 +7,7 @@ return {
   },
   config = function()
     vim.g.lushwal_configuration = {
+      compile_to_vimscript = false,
       addons = {
         bufferline_nvim = true,
         gitsigns_nvim = true,
