@@ -27,7 +27,8 @@ return {
           "black",
           "isort",
           "prettierd",
-          "stylelint"
+          "stylelint",
+          "bash-language-server"
         },
       })
     end,
