@@ -55,7 +55,7 @@
 | Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                 |
 | WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                     |
 | Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                              |
-| Terminal Art                       | [arTTY](https://github.com/mjwhitta/artty)                                       |
+| Terminal Art                       | [rustmon](https://github.com/Vomitblood/rustmon)                                 |
 
 ### Pywal themes for Applications
 
@@ -137,7 +137,8 @@ paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofime
 ### ZSH specific
 
 ```bash
-sudo pacman -S fzf zoxide starship
+sudo pacman -S fzf zoxide starship pkgfile
+sudo pkgfile -u
 ```
 
 ### Waybar specific

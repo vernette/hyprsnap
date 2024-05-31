@@ -1,5 +1,5 @@
 # Terminal art
-[[ -z $(command -v arTTY) ]] || arTTY
+rustmon print --hide-name --name random
 
 # Plugin manager
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
