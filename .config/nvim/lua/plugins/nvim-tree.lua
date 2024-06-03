@@ -11,6 +11,7 @@ return {
         width = 20,
         side = "left",
         signcolumn = "no",
+        preserve_window_proportions = false,
       },
       renderer = {
         group_empty = false,
@@ -18,6 +19,11 @@ return {
         indent_markers = {
           enable = true,
           inline_arrows = false,
+        },
+      },
+      actions = {
+        open_file = {
+          resize_window = false,
         },
       },
       filters = {
