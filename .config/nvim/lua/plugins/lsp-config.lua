@@ -28,7 +28,8 @@ return {
           "isort",
           "prettierd",
           "stylelint",
-          "bash-language-server"
+          "bash-language-server",
+          "html-lsp"
         },
       })
     end,
