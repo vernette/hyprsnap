@@ -4,7 +4,7 @@ return {
 		require("notify").setup({
 			background_colour = "#000000",
 			fps = 60,
-			render = "compact",
+			render = "wrapped-compact",
 			timeout = 1000,
 		})
 		vim.keymap.set("n", "<leader>n", ":Telescope notify<CR>", {})
