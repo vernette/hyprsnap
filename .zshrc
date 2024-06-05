@@ -63,10 +63,12 @@ export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 # Aliases
 alias lf="lfrun"
 alias ls='lsd --tree --depth 1 --group-dirs=first'
+alias lsr='lsd --recursive --depth 1 --group-dirs=first'
 alias cd="zcd"
 alias v="nvim"
 alias cat="bat --theme base16"
 alias bt="btop"
+alias catnip="catnip --device alsa_output.pci-0000_00_1f.3.analog-stereo --fps 60 --dont-normalize"
 alias dil="docker images"
 alias dcl="docker container ls -a"
 alias gc="git clone"
