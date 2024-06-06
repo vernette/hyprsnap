@@ -75,11 +75,12 @@ alias gc="git clone"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' matcher-list \
     'm:{[:lower:]}={[:upper:]}' \
-    '+r:|[._-]=* r:|=*' \
-    '+l:|=*'
+    'l:|=* r:|=*' \
+    'r:|=*'
+zstyle ':completion:*' completer _complete _approximate
+zstyle ':completion:*:*:*:*:files' ignored-patterns ''
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:zcd:*' fzf-preview 'lsd --color=always --icon=always $realpath'
