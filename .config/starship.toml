@@ -5,6 +5,10 @@ right_format = """$all"""
 [directory]
 truncation_length = 2
 
+[hostname]
+ssh_symbol = "🔗 "
+format = "[$ssh_symbol$hostname]($style) "
+
 [git_branch]
 symbol = "🌱 "
 format =  "[$symbol$branch (:$remote_branch)]($style)"
