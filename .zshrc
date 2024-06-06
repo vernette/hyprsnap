@@ -21,10 +21,7 @@ zinit light MichaelAquilina/zsh-auto-notify
 # Snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::systemd
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
-zinit snippet OMZP::virtualenv
 
 # Load completions
 autoload -Uz compinit && compinit
