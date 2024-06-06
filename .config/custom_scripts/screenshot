@@ -3,27 +3,19 @@
 # Take a screenshot and send a notification
 
 screenshots_dir="/home/$USER/Pictures/screenshots"
-output="$screenshots_dir/$(date +%s).png"
+filename="$(date +%s).png"
 
 if [ ! -d "$screenshots_dir" ]; then
   mkdir -p "$screenshots_dir"
 fi
 
-send_notification() {
-  notify-send -a screenshot -u normal "Screenshot taken" "$output" -i $output -t 2000
-}
-
 case $1 in
-window)
-  grim "$output"
-  wl-copy < "$output"
+fullscreen)
+  hyprshot -m active -m output --output-folder "$screenshots_dir" -f "$filename"
   ;;
 select)
-  grim -g "$(slurp)" "$output"
-  wl-copy < "$output"
+  hyprshot -m region --output-folder "$screenshots_dir" -f "$filename"
   ;;
+window)
+  hyprshot -m window --output-folder "$screenshots_dir" -f "$filename"
 esac
-
-if [ -f "$output" ]; then
-  send_notification
-fi
