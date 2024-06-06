@@ -6,31 +6,41 @@ right_format = """$all"""
 truncation_length = 2
 
 [hostname]
-ssh_symbol = "🔗 "
-format = "[$ssh_symbol$hostname]($style) "
+ssh_symbol = " "
+format = "[$ssh_symbol $hostname]($style) "
 
 [git_branch]
-symbol = "🌱 "
+symbol = " "
 format =  "[$symbol$branch (:$remote_branch)]($style)"
 
 [git_status]
-added = "  "
-modified = "  "
-deleted = "  "
-untracked = " ? "
+style = "bold blue"
+format = "[$all_status$ahead_behind]($style) "
+modified = " "
+deleted = " "
+untracked = " "
+ahead = " "
+behind = " "
+up_to_date = "up-to-date"
 
 [cmd_duration]
 min_time = 20_000
 
 [sudo]
-symbol = "⚡ "
-format = "[$symbol]($style)"
+style = "bold white"
+format = "[$symbol]($style) "
+symbol = ""
 disabled = false
 
 [python]
+style = "bold yellow"
+format = "via [${symbol} ${pyenv_prefix}(${version} )]($style)"
+symbol = "󱔎"
 detect_extensions = []
 detect_files = ["__init__.py", "requirements.txt", "pyproject.toml", "setup.py"]
 
 [custom.docker]
-command = "echo 🐋"
+style = "bold grey"
+format = "[$symbol]($style) "
+symbol = " "
 files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
