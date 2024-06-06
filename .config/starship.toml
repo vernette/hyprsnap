@@ -10,8 +10,8 @@ ssh_symbol = " "
 format = "[$ssh_symbol $hostname]($style) "
 
 [git_branch]
-symbol = " "
-format =  "[$symbol$branch (:$remote_branch)]($style)"
+symbol = ""
+format =  "[$symbol $branch (:$remote_branch)]($style)"
 
 [git_status]
 style = "bold blue"
