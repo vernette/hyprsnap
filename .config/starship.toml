@@ -15,13 +15,13 @@ format =  "[$symbol$branch (:$remote_branch)]($style)"
 
 [git_status]
 style = "bold blue"
-format = "[$all_status$ahead_behind]($style) "
+format = "[$modified$deleted$untracked$ahead_behind]($style) "
 modified = " "
 deleted = " "
 untracked = " "
 ahead = " "
 behind = " "
-up_to_date = "up-to-date"
+up_to_date = " "
 
 [cmd_duration]
 min_time = 20_000
