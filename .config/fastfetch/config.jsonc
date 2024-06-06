@@ -5,8 +5,8 @@
     "type": "kitty",
     "height": 18,
     "padding": {
-      "top": 1,
-      "bottom": 1,
+      "top": 2,
+      "bottom": 2,
       "right": 1
     },
   },
