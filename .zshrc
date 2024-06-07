@@ -69,6 +69,8 @@ alias catnip="catnip --device alsa_output.pci-0000_00_1f.3.analog-stereo --fps 6
 alias dil="docker images"
 alias dcl="docker container ls -a"
 alias gc="git clone"
+alias upgr="sudo pacman -Syyu"
+alias aupgr="paru -Sua"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
