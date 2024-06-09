@@ -12,14 +12,14 @@
 
 window#waybar {
   background: alpha(@background, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #window {
   padding: 2px 10px;
-  margin: 4px 2px 4px 6px;
+  margin: 4px 2px 4px 4px;
   background: alpha(@background, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
   color: lighter(@main-color);
 }
 
@@ -77,7 +77,7 @@ tooltip label {
   margin: 8px 4px;
   color: lighter(@main-color);
   background: alpha(@background, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #bluetooth,
@@ -123,8 +123,8 @@ tooltip label {
 
 #clock {
   padding: 0px 8px;
-  margin: 4px 6px 4px 2px;
+  margin: 4px 4px 4px 2px;
   background: alpha(@background, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
   color: lighter(@main-color);
 }
