@@ -23,6 +23,16 @@ window#waybar {
   color: lighter(@main-color);
 }
 
+tooltip {
+  background: alpha(@background, 0.5);
+  border: 1px solid alpha(lighter(@main-color), 0.3);
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
 #custom-arrow-right {
   color: @main-color;
   margin: 0px 4px;
