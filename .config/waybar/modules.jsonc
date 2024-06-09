@@ -7,13 +7,13 @@
       "(.*) ": " Empty",
     },
   },
-  "group/load": {
+  "group/info": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["custom/arrow-right", "cpu", "memory", "disk"],
+    "modules": ["custom/arrow-right", "cpu", "memory", "disk", "custom/updates"],
   },
   "custom/arrow-right": {
     "format": "󰁙",
@@ -29,6 +29,13 @@
     "interval": 600,
     "format": "󰆼 {percentage_used}󱉸",
     "path": "/",
+  },
+  "custom/updates": {
+    "format": "󱧕 {}",
+    "tooltip": true,
+    "interval": 43200, // 12 hours
+    "exec": "~/.config/waybar/scripts/check_updates.sh",
+    "return-type": "json",
   },
   "hyprland/workspaces": {
     "format": "{icon}",

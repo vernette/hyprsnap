@@ -1,5 +1,5 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "position": "bottom",
   "margin": "0 200 5 200",
   "fixed-center": true,
@@ -7,7 +7,7 @@
   "include": ["~/.config/waybar/modules.jsonc"],
   "modules-left": [
     "hyprland/window",
-    "group/load"
+    "group/info"
   ],
   
   "modules-center": [

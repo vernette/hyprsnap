@@ -30,7 +30,8 @@ window#waybar {
 
 #cpu,
 #memory,
-#disk {
+#disk,
+#custom-updates {
   padding: 0px 6px;
   margin: 8px 4px;
   background: alpha(darker(@main-color), 0.3);
