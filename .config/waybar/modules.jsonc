@@ -6,6 +6,7 @@
     "rewrite": {
       "(.*) ": " Empty",
       "(.*) — LibreWolf": "󰈹 LibreWolf",
+      "(.*)LibreWolf": "󰈹 LibreWolf",
       "(.*)v(.*)": " Neovim",
       "(.*)~": "󰄛 Kitty"
     },
