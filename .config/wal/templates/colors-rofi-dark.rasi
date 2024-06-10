@@ -1,0 +1,10 @@
+* {{
+    main-color: {color13}1a;
+    main-color-selected: {color13}33;
+    background: {background}1a;
+    element-background: {background}33;
+    foreground: {foreground}cc;
+    border-color: {foreground}33;
+    text-color: #{foreground.lighten(90%)}e6;
+    text-color-selected: #{foreground.darken(90%)}e6;
+}}

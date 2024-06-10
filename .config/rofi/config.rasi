@@ -91,17 +91,17 @@ element.normal.active {
 }
 
 element.selected.normal {
-  background-color: @main-color-selected;
+  background-color: @main-color;
   text-color: @foreground;
 }
 
 element.selected.urgent {
-  background-color: @main-color-selected;
+  background-color: @main-color;
   text-color: @foreground;
 }
 
 element.selected.active {
-  background-color: @main-color-selected;
+  background-color: @main-color;
   text-color: @foreground;
 }
 

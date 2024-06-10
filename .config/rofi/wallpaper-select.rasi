@@ -1,3 +1,5 @@
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
 configuration {
     modi:                        "drun";
     font:                        "JetBrains Mono Nerd Font 14";
@@ -9,8 +11,6 @@ configuration {
     window-format:               "{w} · {c} · {t}";
     dpi:                         1;
 }
-
-@theme "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
     background-alt:              @selected-active-background; // Buttons background
