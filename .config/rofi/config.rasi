@@ -1,3 +1,7 @@
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
+// TODO Fix light theme colors
+
 configuration {
   drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font 14";
@@ -7,124 +11,128 @@ configuration {
 }
 
 window {
-    width:                        800px;
-    border-radius:                10px;
-    background-color:             #0000001a; /* 10% */
-    border:                       2px;
-    border-color:                 rgba(0, 0, 0, 0.3);
-    children:                     [ "image", "mainbox" ];
+  width: 900px;
+  border-radius: 10px;
+  background-color: @background;
+  border: 2px;
+  border-color: @border-color;
+  children: [ "image", "mainbox" ];
 }
 
 image {
-    enabled:                      true;
-    border-radius: 10px;
-    background-image:             url("~/Pictures/wallpaper.png", width);
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  background-image: url("~/Pictures/wallpaper.png", width);
 }
 
 mainbox {
-    orientation:                  horizontal;
-    children:                     [ "listbox" ];
+  background-color: transparent;
+  orientation: horizontal;
+  children: [ "listbox" ];
 }
 
 listbox {
-    spacing:                     10px;
-    orientation:                 vertical;
-    children:                    [ "inputbar", "message", "listview" ];
+  background-color: transparent;
+  spacing: 10px;
+  orientation: vertical;
+  children: [ "inputbar", "listview" ];
 }
 
 inputbar {
-    enabled:                      true;
-    text-color:                   #ffffff4d;
-    padding:                      5px;
-    margin:                       10px;
-    children:                     [ "entry" ];
+  text-color: @text-color;
+  padding: 6px;
+  margin: 10px;
+  background-color: @background;
+  border: 1px;
+  border-color: @border-color;
+  border-radius: 10px;
+  children: [ "entry" ];
 }
 
 entry {
-    enabled:                      true;
-    text-color:                   inherit;
-    placeholder-color:            inherit;
+  background-color: transparent;
+  text-color: @text-color;
+  placeholder-color: inherit;
 }
 
 listview {
-    enabled:                      true;
-    columns:                      2;
-    lines:                        7;
-    cycle:                        true;
-    dynamic:                      true;
-    scrollbar:                    false;
-    layout:                       vertical;
-    reverse:                      false;
-    fixed-height:                 true;
-    fixed-columns:                true;
-    padding:                      5px;
-    border:                       none;
+  columns: 2;
+  lines: 7;
+  cycle: true;
+  scrollbar: false;
+  layout: vertical;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
 }
 
 element {
-    enabled:                      true;
-    padding:                      8px;
-    margin:                       2px;
-    text-color:                   inherit;
-    border-radius:                20px;
+  enabled: true;
+  padding: 8px;
+  margin: 2px;
+  text-color: inherit;
+  border-radius: 10px;
 }
 
-element normal.normal {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.normal.normal {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
-element normal.urgent {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.normal.urgent {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
-element normal.active {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.normal.active {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
-element selected.normal {
-    background-color:            #0000004d;
-    text-color:                  inherit;
+element.selected.normal {
+  background-color: @main-color-selected;
+  text-color: @foreground;
 }
 
-element selected.urgent {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.selected.urgent {
+  background-color: @main-color-selected;
+  text-color: @foreground;
 }
 
-element selected.active {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.selected.active {
+  background-color: @main-color-selected;
+  text-color: @foreground;
 }
 
-element alternate.normal {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.alternate.normal {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
-element alternate.urgent {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.alternate.urgent {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
-element alternate.active {
-    background-color:            inherit;
-    text-color:                  inherit;
+element.alternate.active {
+  background-color: @element-background;
+  text-color: @foreground;
 }
 
 element-icon {
-    background-color:            transparent;
-    text-color:                  inherit;
-    size:                        5ch;
+  background-color: transparent;
+  text-color: inherit;
+  size: 5ch;
 }
 
 element-text {
-    text-color:                  #ffffff66;
-    vertical-align: 0.5;
+  text-color: @text-color;
+  background-color: transparent;
+  vertical-align: 0.5;
 }
 
 element-text selected.normal {
-    text-color:                  #ffffffcc;
+  text-color: @text-color-selected;
+  background-color: transparent;
 }
