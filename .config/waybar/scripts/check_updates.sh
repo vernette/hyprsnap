@@ -1,5 +1,8 @@
 #!/bin/bash
 
+PACKAGE_STRING_LEN=25
+VERSION_STRING_LEN=10
+
 stringToLen() {
   local STRING="$1"
   local LEN="$2"
@@ -22,11 +25,11 @@ tooltip=""
 
 if [ "$pacman_updates_count" -gt 0 ]; then
   tooltip+="󰮯 <b>Pacman</b>\n"
-  tooltip+="<b>$(stringToLen "Package" 30) $(stringToLen "Prev " 10) $(stringToLen "Next " 10)</b>\n\n"
+  tooltip+="<b>$(stringToLen "Package" $PACKAGE_STRING_LEN) $(stringToLen "Prev " $VERSION_STRING_LEN) $(stringToLen "Next " $VERSION_STRING_LEN)</b>\n\n"
   while IFS= read -r line; do
-    update="$(stringToLen "$(echo "$line" | awk '{print $1}')" 30)"
-    prev="$(stringToLen "$(echo "$line" | awk '{print $2}')" 10)"
-    next="$(stringToLen "$(echo "$line" | awk '{print $4}')" 10)"
+    update="$(stringToLen "$(echo "$line" | awk '{print $1}')" $PACKAGE_STRING_LEN)"
+    prev="$(stringToLen "$(echo "$line" | awk '{print $2}')" $VERSION_STRING_LEN)"
+    next="$(stringToLen "$(echo "$line" | awk '{print $4}')" $VERSION_STRING_LEN)"
     tooltip+="$update $prev $next\n"
   done <<< "$pacman_updates"
   tooltip+="\n"
@@ -34,11 +37,11 @@ fi
 
 if [ "$aur_updates_count" -gt 0 ]; then
   tooltip+="󰣇 <b>AUR</b>\n"
-  tooltip+="<b>$(stringToLen "Package" 30) $(stringToLen "Prev " 10) $(stringToLen "Next " 10)</b>\n\n"
+  tooltip+="<b>$(stringToLen "Package" $PACKAGE_STRING_LEN) $(stringToLen "Prev " $VERSION_STRING_LEN) $(stringToLen "Next " $VERSION_STRING_LEN)</b>\n\n"
   while IFS= read -r line; do
-    update="$(stringToLen "$(echo "$line" | awk '{print $1}')" 30)"
-    prev="$(stringToLen "$(echo "$line" | awk '{print $2}')" 10)"
-    next="$(stringToLen "$(echo "$line" | awk '{print $4}')" 10)"
+    update="$(stringToLen "$(echo "$line" | awk '{print $1}')" $PACKAGE_STRING_LEN)"
+    prev="$(stringToLen "$(echo "$line" | awk '{print $2}')" $VERSION_STRING_LEN)"
+    next="$(stringToLen "$(echo "$line" | awk '{print $4}')" $VERSION_STRING_LEN)"
     tooltip+="$update $prev $next\n"
   done <<< "$aur_updates"
 fi
