@@ -1,7 +1,5 @@
 @theme "~/.cache/wal/colors-rofi-dark.rasi"
 
-// TODO Fix light theme colors
-
 configuration {
   drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font 14";
@@ -44,8 +42,6 @@ inputbar {
   padding: 6px;
   margin: 10px;
   background-color: @background;
-  border: 1px;
-  border-color: @border-color;
   border-radius: 10px;
   children: [ "entry" ];
 }
