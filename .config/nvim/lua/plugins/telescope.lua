@@ -1,6 +1,7 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    event = "VeryLazy",
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
@@ -10,6 +11,11 @@ return {
           prompt_prefix = " ",
           selection_caret = "󱞩 ",
           path_display = { "smart" },
+          layout_config = {
+            horizontal = {
+              preview_cutoff = 0,
+            },
+          },
           mappings = {
             i = {
               ["<C-n>"] = actions.cycle_history_next,
@@ -80,6 +86,7 @@ return {
   },
   {
     "nvim-telescope/telescope-ui-select.nvim",
+    event = "VeryLazy",
     config = function()
       require("telescope").setup({
         extensions = {
