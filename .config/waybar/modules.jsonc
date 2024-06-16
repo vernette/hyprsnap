@@ -197,17 +197,37 @@
       "transition-duration": 300,
       "transition-left-to-right": true,
     },
-    "modules": ["custom/arrow-left", "custom/weather", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "custom/notifications", "custom/weather", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁒",
     "tooltip": false,
   },
+  "custom/notifications": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󰂚",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰂛"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
   "custom/weather": {
     "format": "{}",
     "tooltip": false,
     "interval": 3600,
-    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}' --location Moscow",
+    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}'",
     "return-type": "json",
   },
   "custom/theme-switcher": {
