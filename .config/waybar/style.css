@@ -112,6 +112,7 @@ tooltip label {
   margin: 0px 4px;
 }
 
+#custom-notifications,
 #custom-weather,
 #custom-theme-switcher {
   padding: 0px 8px;
