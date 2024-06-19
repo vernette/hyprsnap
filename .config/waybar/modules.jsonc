@@ -4,12 +4,10 @@
     "max-length": 80,
     "separate-outputs": false,
     "rewrite": {
-      "(.*) ": " Empty",
-      "(.*) — LibreWolf": "󰈹 LibreWolf",
-      "(.*)LibreWolf": "󰈹 LibreWolf",
-      "(.*)v": " Neovim",
-      "(.*)v (.*)": " Neovim",
-      "(.*)~": "󰄛 Kitty"
+      "^.*( — LibreWolf|LibreWolf)$": "󰈹 LibreWolf",
+      "^.*v( .*|$)": " Neovim",
+      "^.*~$": "󰄛 Kitty",
+      "(.*) ": " Empty"
     },
   },
   "group/info": {
