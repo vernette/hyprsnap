@@ -27,6 +27,9 @@ zinit snippet OMZP::command-not-found
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 
+autoload -U select-word-style
+select-word-style bash
+
 # Keybindings
 bindkey -e
 bindkey '^p' history-search-backward
