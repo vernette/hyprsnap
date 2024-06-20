@@ -2,6 +2,8 @@
 
 ![image](assets/screenshots/workflow.png)
 
+> Please keep in mind that this is my daily driver. Use my config files as a reference.
+
 - [Used software](#used-software)
 - [Screenshots](#screenshots)
 - [Dependencies](#dependencies)
@@ -17,11 +19,10 @@
 | OS                 | [Arch Linux](https://archlinux.org/)                |
 | Window Compositor  | [Hyprland](https://hyprland.org/)                   |
 | Bar                | [Waybar](https://github.com/Alexays/Waybar)         |
-| Terminal           | kitty                                               |
+| Terminal           | [kitty](https://github.com/kovidgoyal/kitty)        |
 | Shell              | zsh                                                 |
 | ZSH Plugin Manager | [zinit](https://github.com/zdharma-continuum/zinit) |
-| ZSH Theme          | [starship](https://github.com/starship/starship)    |
-| Colorscheme        | [pywal16](https://github.com/eylles/pywal16)        |
+| ZSH Prompt         | [starship](https://github.com/starship/starship)    |
 
 ### UI
 
@@ -31,33 +32,37 @@
 | Rofi Icon Theme | [la-capitaine](https://github.com/keeferrourke/la-capitaine-icon-theme) |
 | GTK Icon Theme  | Adwaita                                                                 |
 | Main Font       | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)     |
-| Emoji Font      | [Twitter Color Emoji](https://github.com/13rac1/twemoji-color-font)     |
+| Emoji Font      | [Noto Emoji](https://github.com/googlefonts/noto-emoji)                 |
+| Colorscheme     | [pywal16](https://github.com/eylles/pywal16)                            |
 
 ### Other
 
-| Type                               | Name                                                                             |
-| ---------------------------------- | -------------------------------------------------------------------------------- |
-| Browser                            | [Librewolf](https://librewolf.net/)                                              |
-| Editor                             | [Neovim](https://neovim.io/)                                                     |
-| Terminal File Manager              | [lf](https://github.com/gokcehan/lf)                                             |
-| Wallpaper Daemon                   | [swww](https://github.com/LGFae/swww)                                            |
-| GTK File Manager                   | Nautilus                                                                         |
-| Icons for ls                       | [lsd](https://github.com/lsd-rs/lsd)                                             |
-| AUR Wrapper                        | [paru](https://github.com/Morganamilo/paru)                                      |
-| App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                       |
-| Screenshot Utilities               | grim + slurp                                                                     |
-| System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
-| Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
-| Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                 |
-| Audio Visualizer                   | [cava](https://github.com/karlstav/cava)                                         |
-| Lockscreen App                     | [hyprlock](https://github.com/hyprwm/hyprlock)                                   |
-| Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                   |
-| Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                 |
-| WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                     |
-| Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                              |
-| Terminal Art                       | [rustmon](https://github.com/Vomitblood/rustmon)                                 |
+| Type                               | Name                                                                                 |
+| ---------------------------------- | ------------------------------------------------------------------------------------ |
+| Browser                            | [Librewolf](https://librewolf.net/)                                                  |
+| Browser Startpage                  | [startpage](https://gitlab.com/fazzi/startpage) by fazzi                             |
+| Browser CSS                        | [FirefoxCSS](https://github.com/Bali10050/FirefoxCSS) by Bali10050                   |
+| Text Editor                        | [Neovim](https://neovim.io/)                                                         |
+| Terminal File Manager              | [lf](https://github.com/gokcehan/lf)                                                 |
+| GTK File Manager                   | Nautilus                                                                             |
+| Wallpaper Daemon                   | [swww](https://github.com/LGFae/swww)                                                |
+| Better ls                          | [lsd](https://github.com/lsd-rs/lsd)                                                 |
+| Better cd                          | [zoxide](https://github.com/ajeetdsouza/zoxide)                                      |
+| AUR Helper                         | [paru](https://github.com/Morganamilo/paru)                                          |
+| App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                           |
+| Screenshot Utility                 | [hyprshot](https://github.com/Gustash/Hyprshot)                                      |
+| System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                              |
+| Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter)     |
+| Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                     |
+| Audio Visualizers                  | [cava](https://github.com/karlstav/cava), [catnip](https://github.com/noriah/catnip) |
+| Lockscreen App                     | [hyprlock](https://github.com/hyprwm/hyprlock)                                       |
+| Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                       |
+| Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                     |
+| WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                         |
+| Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                                  |
+| Terminal Art                       | [rustmon](https://github.com/Vomitblood/rustmon)                                     |
 
-### Pywal themes for Applications
+### Pywal themes for applications
 
 | Type                 | Name                                                                                          |
 | -------------------- | --------------------------------------------------------------------------------------------- |
@@ -68,7 +73,7 @@
 
 Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
-[Wallpaper](https://github.com/vernette/wallpapers/blob/main/18.png) used in screenshots
+[Wallpaper](https://github.com/vernette/wallpapers/blob/main/53.png) used in screenshots
 
 ## Screenshots
 
@@ -80,6 +85,10 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ![image](assets/screenshots/workflow_3.png)
 
 ### Applications
+
+#### Librewolf
+
+![image](assets/screenshots/applications_librewolf.png)
 
 #### Rofi
 
@@ -94,10 +103,6 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ![image](assets/screenshots/applications_spotify.png)
 ![image](assets/screenshots/applications_spotify_2.png)
 ![image](assets/screenshots/applications_spotify_3.png)
-
-#### VS Code
-
-![image](assets/screenshots/applications_vscode.png)
 
 #### Neovim
 
@@ -131,14 +136,13 @@ sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-c
 ### AUR
 
 ```bash
-paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk3 walogram-git
+paru -S ueberzugpp swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava catnip adw-gtk3 walogram-git rustmon-git hyprshot
 ```
 
 ### ZSH specific
 
 ```bash
 sudo pacman -S fzf zoxide starship pkgfile
-sudo pkgfile -u
 ```
 
 ### Waybar specific
@@ -150,7 +154,7 @@ paru -S wttrbar
 ### Neovim specific
 
 ```bash
-sudo pacman -S ripgrep unzip
+sudo pacman -S ripgrep unzip npm
 ```
 
 ## Installation
@@ -175,7 +179,22 @@ If you want stow to overwrite existing files, then add `--adopt` flag:
 stow . --adopt
 ```
 
+To get the `command-not-found` [plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found) working, run this command:
+
+```bash
+pkgfile -u
+sudo systemctl enable --now pkgfile-update.timer # Enable automatic updates https://wiki.archlinux.org/title/Pkgfile#Automatic_updates
+```
+
+Also for `rustmon`:
+
+```bash
+rustmon fetch
+```
+
 ## TODO
 
 - [ ] Installation script
 - [ ] Custom SDDM theme
+- [x] Custom Librewolf CSS
+- [x] Custom Librewolf startpage
