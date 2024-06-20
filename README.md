@@ -179,7 +179,7 @@ If you want stow to overwrite existing files, then add `--adopt` flag:
 stow . --adopt
 ```
 
-To get the `command-not-found` [plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found) working, run this command:
+To get the `command-not-found` [plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found) working, run this commands:
 
 ```bash
 pkgfile -u
