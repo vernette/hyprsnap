@@ -1,15 +1,18 @@
-@define-color cc-bg rgba(0, 0, 0, 0.3);
-@define-color noti-bg rgba(0, 0, 0, 0.4);
-@define-color noti-bg-opaque rgba(0, 0, 0, 0.5);
-@define-color noti-bg-darker rgba(0, 0, 0, 0.5);
-@define-color noti-bg-hover rgba(0, 0, 0, 0.4);
-@define-color noti-bg-hover-opaque rgba(0, 0, 0, 0.5);
-@define-color noti-bg-focus rgba(0, 0, 0, 0.5);
-@define-color noti-close-bg rgba(255, 255, 255, 0.1);
-@define-color noti-close-bg-hover rgba(0, 0, 0, 0.5);
-@define-color text-color rgba(255, 255, 255, 0.7);
-@define-color text-color-disabled rgba(255, 255, 255, 0.4);
-@define-color bg-selected rgba(0, 0, 0, 0.5);
+@import "../../.cache/wal/colors-waybar.css";
+
+@define-color main-color @color13;
+@define-color cc-bg alpha(@main-color, 0.2);
+@define-color border alpha(lighter(@foreground), 0.1);
+@define-color text-color @foreground;
+@define-color text-color-disabled darker(@text-color);
+@define-color noti-bg @cc-bg;
+@define-color noti-bg-hover alpha(darker(@background), 0.2);
+@define-color noti-close-bg alpha(darker(@background), 0.1);
+@define-color noti-close-bg-hover alpha(darker(@background), 0.3);
+
+@define-color noti-bg-opaque rgb(48, 48, 48);
+@define-color noti-bg-darker rgb(38, 38, 38);
+@define-color noti-bg-focus rgba(68, 68, 68, 0.6);
 
 .notification-row {
   outline: none;
@@ -27,21 +30,31 @@
   /* The notification Close Button */
   background: @noti-close-bg;
   color: @text-color;
+  text-shadow: none;
+  padding: 0;
   border-radius: 100%;
-  margin-top: 3px;
-  margin-right: 2px;
+  margin-top: 5px;
+  margin-right: 5px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
 }
 
 .notification-row .notification-background .close-button:hover {
+  box-shadow: none;
+  background: @noti-close-bg-hover;
   transition: background 0.15s ease-in-out;
+  border: none;
 }
 
 .notification-row .notification-background .notification {
   /* The actual notification */
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 2px solid @border;
+  padding: 0;
   transition: background 0.15s ease-in-out;
-  background: rgba(0, 0, 0, 0.1);
+  background: @noti-bg;
 }
 
 .notification-row .notification-background .notification.low {
@@ -68,12 +81,12 @@
 
 .notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
   -gtk-icon-effect: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: @noti-bg-hover;
 }
 
 .notification-row .notification-background .notification .notification-default-action {
   /* The large action that also displays the notification summary and body */
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:not(:only-child) {
@@ -84,7 +97,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
   background: transparent;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 4px;
 }
 
@@ -105,7 +118,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .summary {
   /* Notification summary/title */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   background: transparent;
   color: @text-color;
@@ -118,7 +131,8 @@
   font-weight: bold;
   background: transparent;
   color: @text-color;
-  margin-right: 40px;
+  text-shadow: none;
+  margin-right: 30px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
@@ -127,6 +141,7 @@
   font-weight: normal;
   background: transparent;
   color: @text-color;
+  text-shadow: none;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content progressbar {
@@ -151,12 +166,14 @@
   background: @noti-bg-darker;
   color: @text-color;
   caret-color: @text-color;
+  border: 1px solid @border;
   border-radius: 12px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
   background: @noti-bg;
+  border: 1px solid @border;
   border-radius: 12px;
   color: @text-color;
 }
@@ -164,6 +181,7 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:disabled {
   background: initial;
   color: @text-color-disabled;
+  border: 1px solid @border;
   border-color: transparent;
 }
 
@@ -173,7 +191,9 @@
 
 .notification-row .notification-background .notification .notification-action {
   /* The alternative actions below the default action */
+  border-top: 1px solid @border;
   border-radius: 0px;
+  border-right: 1px solid @border;
 }
 
 .notification-row .notification-background .notification .notification-action:first-child {
@@ -245,13 +265,13 @@
   /* The Control Center which contains the old notifications + widgets */
   background: @cc-bg;
   color: @text-color;
-  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  border: 2px solid @border;
 }
 
 .control-center .control-center-list-placeholder {
   /* The placeholder when there are no notifications */
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .control-center .control-center-list {
@@ -290,14 +310,18 @@
 /* Title widget */
 .widget-title {
   color: @text-color;
-  margin: 10px;
-  font-size: 1.6rem;
+  text-shadow: 1px 1px 3px @background;
+  margin: 8px;
+  font-size: 1.8rem;
 }
 
 .widget-title > button {
-  font-size: 1.3rem;
+  font-size: initial;
   color: @text-color;
+  text-shadow: 1px 1px 3px @background;
   background: @noti-bg;
+  border: 1px solid @border;
+  box-shadow: none;
   border-radius: 12px;
 }
 
@@ -308,22 +332,25 @@
 /* DND widget */
 .widget-dnd {
   color: @text-color;
+  text-shadow: 1px 1px 3px @background;
   margin: 8px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 12px;
-  background: rgba(0, 0, 0, 0.3);
+  background: @noti-bg;
+  border: 1px solid @border;
+  box-shadow: none;
 }
 
 .widget-dnd > switch:checked {
-  background: rgba(255, 255, 255, 0.2);
+  background: @main-color;
 }
 
 .widget-dnd > switch slider {
-  background: rgba(0, 0, 0, 0.5);
+  background: @noti-bg-hover;
   border-radius: 12px;
 }
 
@@ -389,17 +416,15 @@
 
 /* Buttons widget */
 .widget-buttons-grid {
-  font-size: 1.5rem;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: @noti-bg;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
-  margin: 4px 10px;
-  padding: 6px 12px;
-  background: rgba(0, 0, 0, 0.3);
+  background: @noti-bg;
+  border-radius: 12px;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
@@ -472,6 +497,7 @@
   color: @text-color;
   text-shadow: none;
   background: @noti-bg;
+  border: 1px solid @border;
   box-shadow: none;
   border-radius: 12px;
 }
