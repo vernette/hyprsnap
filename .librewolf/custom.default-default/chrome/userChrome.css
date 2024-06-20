@@ -138,21 +138,6 @@ findbar{height: 50px; border: none !important; background-color: -moz-Dialog !im
 [inFullscreen] .browserContainer:has(> findbar)  .browserStack>browser{margin-bottom: -10px !important; border-bottom-right-radius: 10px !important; border-bottom-left-radius: 10px !important; transition: border-radius .2s !important}
 #main-window{background-color: -moz-Dialog}
 
-/*  Devtools  */
-.devtools-horizontal-splitter{margin-top: 7px !important;margin-bottom:-12px !important;opacity: 0;}
-.devtools-side-splitter{opacity: 0;}
-.devtools-toolbox-side-iframe{margin-top: -10px; border-radius: 10px;}
-
-#customization-panelWrapper {max-width: 30em!important}  /*  Fixes the customization page  */
-#customization-container > *{margin-top: -10px; background-color: -moz-Dialog !important}  /*  Customizes the customization page  */
-
-#urlbar:not([open]){color: currentColor!important} #urlbar[open]{color: var(--toolbar-field-focus-color)}  /*  Fixes the urlbar color on some themes  */
-
-/*  Makes sidebars nicer  */
-#sidebar-box{margin-top: -10px !important; border-radius: 0 10px 0 0!important; z-index: 1}
-#sidebar-box[positionend="true"]{border-radius: 10px 0 0 0!important}
-#sidebar-box > *{background-image:none;}
-
 /*  Drop menus  */
 [position="bottomright topright"]{--panel-border-radius: 0 5px 5px 5px!important}
 [position="bottomleft topleft"]{--panel-border-radius: 5px 0 5px 5px!important}
