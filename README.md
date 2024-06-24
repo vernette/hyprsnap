@@ -2,6 +2,7 @@
 
 ![image](assets/screenshots/workflow.png)
 
+> [!NOTE]
 > Please keep in mind that this is my daily driver. Use my config files as a reference.
 
 - [Used software](#used-software)
@@ -77,53 +78,62 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
 ## Screenshots
 
-### Workflow
+<details>
+    <summary>Workflow</summary>
+    <img src="assets/screenshots/workflow.png" alt="Workflow" />
+    <img src="assets/screenshots/workflow_1.png" alt="Workflow" />
+    <img src="assets/screenshots/workflow_2.png" alt="Workflow" />
+    <img src="assets/screenshots/workflow_3.png" alt="Workflow" />
+</details>
 
-![image](assets/screenshots/workflow.png)
-![image](assets/screenshots/workflow_1.png)
-![image](assets/screenshots/workflow_2.png)
-![image](assets/screenshots/workflow_3.png)
+<details>
+    <summary>Librewolf</summary>
+    <img src="assets/screenshots/applications_librewolf.png" alt="Librewolf" />
+</details>
 
-### Applications
+<details>
+    <summary>Rofi</summary>
+    <img src="assets/screenshots/applications_rofi.png" alt="Rofi" />
+    <img src="assets/screenshots/applications_rofi_wallpapers.png" alt="Rofi" />
+</details>
 
-#### Librewolf
+<details>
+    <summary>Rofi wallpaper selector</summary>
+    <img src="assets/screenshots/applications_rofi_wallpapers.png" alt="Rofi wallpaper selector" />
+</details>
 
-![image](assets/screenshots/applications_librewolf.png)
+<details>
+    <summary>Spotify</summary>
+    <img src="assets/screenshots/applications_spotify.png" alt="Spotify" />
+    <img src="assets/screenshots/applications_spotify_2.png" alt="Spotify" />
+    <img src="assets/screenshots/applications_spotify_3.png" alt="Spotify" />
+</details>
 
-#### Rofi
+<details>
+    <summary>Neovim</summary>
+    <img src="assets/screenshots/applications_nvim.png" alt="Neovim" />
+</details>
 
-![image](assets/screenshots/applications_rofi.png)
+<details>
+    <summary>Telegram (AyuGram)</summary>
+    <img src="assets/screenshots/applications_telegram.png" alt="Telegram" />
+</details>
 
-#### Rofi wallpaper selector
+<details>
+    <summary>wlogout</summary>
+    <img src="assets/screenshots/applications_wlogout.png" alt="wlogout" />
+</details>
 
-![image](assets/screenshots/applications_rofi_wallpapers.png)
+<details>
+    <summary>hyprlock</summary>
+    <img src="assets/screenshots/applications_hyprlock_1.png" alt="hyprlock" />
+    <img src="assets/screenshots/applications_hyprlock_2.png" alt="hyprlock" />
+</details>
 
-#### Spotify
-
-![image](assets/screenshots/applications_spotify.png)
-![image](assets/screenshots/applications_spotify_2.png)
-![image](assets/screenshots/applications_spotify_3.png)
-
-#### Neovim
-
-![image](assets/screenshots/applications_nvim.png)
-
-#### Telegram (AyuGram)
-
-![image](assets/screenshots/applications_telegram.png)
-
-#### wlogout
-
-![image](assets/screenshots/applications_wlogout.png)
-
-#### hyprlock
-
-![image](assets/screenshots/applications_hyprlock_1.png)
-![image](assets/screenshots/applications_hyprlock_2.png)
-
-#### Sway Notification Center
-
-![image](assets/screenshots/applications_swaync.png)
+<details>
+    <summary>Sway Notification Center</summary>
+    <img src="assets/screenshots/applications_swaync.png" alt="Sway Notification Center" />
+</details>
 
 ## Dependencies
 
