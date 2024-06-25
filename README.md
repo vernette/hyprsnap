@@ -94,7 +94,6 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 <details>
     <summary>Rofi</summary>
     <img src="assets/screenshots/applications_rofi.png" alt="Rofi" />
-    <img src="assets/screenshots/applications_rofi_wallpapers.png" alt="Rofi" />
 </details>
 
 <details>
