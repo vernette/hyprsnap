@@ -1,0 +1,62 @@
+@-moz-document url-prefix(about:){
+/*  Colors  */
+:root{--newtab-background-color: -moz-Dialog !important;
+--in-content-background-color: -moz-Dialog !important;
+--in-content-page-background: -moz-Dialog !important;
+--in-content-table-background: -moz-Dialog !important;
+--in-content-box-background-odd: -moz-Dialog !important;
+--card-background-color: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
+--in-content-box-background: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
+--in-content-button-background: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
+--in-content-box-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--in-content-box-info-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--message-bar-text-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--newtab-background-color-secondary: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--in-content-button-background-hover: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--box-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--button-background-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
+--button-hover-background-color: color-mix(in srgb, currentColor 15%, -moz-Dialog) !important;}
+body{background-color: -moz-Dialog !important} @-moz-document url(about:blank){body{background-color: #eee !important} @media (prefers-color-scheme: dark){body{background-color: #222 !important}}}
+
+/*  Notification fix*/
+#toolbox-notificationbox  .notification{ background: color-mix(in srgb, #000 20%, -moz-Dialog) !important; border: none !important; padding: 3px !important; }
+
+/*  Checkbox background fix  */
+.accordion input:not([type="checkbox"]) {border: none !important}
+#browser-style-checkbox:not(:checked):hover, #devtools-cache-checkbox:not(:checked):hover, #record-allocation-stacks-checkbox:not(:checked):hover, .accordion input[type="checkbox"]:not(:checked):hover, #devtools-display-tabbing-order-checkbox:not(:checked):hover{appearance: Dialog !important; border: 2px solid currentColor !important; border-radius: 2px !important;background-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important}
+#browser-style-checkbox:not(:checked), #devtools-cache-checkbox:not(:checked), #record-allocation-stacks-checkbox:not(:checked), .accordion input[type="checkbox"]:not(:checked), #devtools-display-tabbing-order-checkbox:not(:checked){appearance: Dialog !important; border: 2px solid currentColor !important; border-radius: 2px !important}
+
+:root{scrollbar-color: color-mix(in srgb, FieldText 35%, -moz-Dialog) transparent !important;}  /*  Removes scrollbar backround  */
+
+/*  Tabs  */
+.outline-filter{border: none !important;}
+.tabs, .sources-panel{background-color: -moz-Dialog !important}
+.tabs-navigation, .source-outline-tabs{background-color: color-mix(in srgb, currentColor 3%, -moz-Dialog) !important; border: none !important; padding: 0 10px 0 5px; border-radius: 10px !important; margin: 3px !important}
+.all-tabs-menu{right: 10px !important; background-color: transparent !important; border: none !important;}
+.panels{background-color: -moz-Dialog !important}
+pre{margin-right: 20px;}
+
+/*  Fix for light mode  */
+.theme-light .tree-widget-item.theme-selected{color: #000 !important;}
+
+/*  ?  */
+.devtools-toolbar-select{ background-color: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important; border-radius: 4px !important; border: none !important; padding: 4px !important; appearance: dialog !important; }
+#toolbox-deck{border-radius: 10px !important;}
+.theme-dark{background-color: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important}
+ body{background-color: color-mix(in srgb, currentColor 7%, -moz-Dialog) !important}
+#ruleview-container, .layout-container, .devtools-sidebar-tabs .panels{border-radius: 10px !important; background-color: -moz-Dialog; padding: 0 5px 0 5px;}
+.splitter{flex: 0 0 10px !important; margin: 30px -9px 30px -6px !important; justify-content: center; opacity: 0;}
+.devtools-inspector-tab-panel{background-color: -moz-Dialog !important}
+.compatibility-app__container{background-color: -moz-Dialog !important}
+.compatibility-footer{border: none !important;}
+.devtools-separator{display: none !important;}
+
+/*  Changes tab  */
+#sidebar-panel-changes .source .href{background: -moz-Dialog !important; border: none !important}
+#sidebar-panel-changes .source{background: -moz-Dialog !important}
+#sidebar-panel-changes .changes__toolbar{ padding: 6px !important; border: none !important; background: -moz-Dialog !important; padding: 0 !important; }
+#sidebar-panel-changes .changes__rule {background: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important; border-radius: 8px !important; margin-bottom: 2px !important}
+#sidebar-panel-changes{background: -moz-Dialog !important; border: none !important}
+
+.changes__copy-all-changes-button{width: -moz-available; padding: 6px !important; background-color: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important; border-radius: 10px !important; margin: 6px !important; background-position: 13px 9.5px !important; height: 35px !important;}
+.changes__copy-all-changes-button:hover{background-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important}

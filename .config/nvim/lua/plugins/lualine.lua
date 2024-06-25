@@ -3,44 +3,42 @@ return {
   dependencies = {
     {
       "nvim-tree/nvim-web-devicons"
-    },
-    {
-      "linrongbin16/lsp-progress.nvim",
-      config = function() require("lsp-progress").setup() end,
     }
   },
   config = function()
-    require("lualine").setup({
+    local lualine = require("lualine")
+    local theme = require("lualine.themes.pywal")
+
+    lualine.setup({
       options = {
         theme = "pywal",
         globalstatus = true,
         section_separators = "",
         component_separators = "",
-        disabled_filetypes = {
-          "alpha",
-        },
+        disabled_filetypes = { "alpha" },
       },
       sections = {
         lualine_a = {
           {
             "mode",
             icon = "",
-            separator = { right = "" }
           }
         },
         lualine_b = {
           {
             "branch",
             icon = "",
-            separator = { right = "" }
-          }
+            color = {
+              fg = theme.normal.a.fg,
+              bg = theme.replace.a.bg
+            }
+          },
         },
         lualine_c = {
-          { "filetype" },
           {
             "diff",
-            padding = { left = 0, right = 1 },
             separator = "|",
+            color = { fg = theme.normal.a.bg },
             symbols = {
               added = " ",
               modified = " ",
@@ -49,37 +47,39 @@ return {
           },
           {
             "diagnostics",
+            separator = "|",
+            color = { fg = theme.normal.b.bg },
+            padding = { left = 1, right = 1 },
+            update_in_insert = true,
             symbols = {
-              error = ' ',
-              warn = ' ',
-              info = ' ',
-              hint = ' '
+              error = " ",
+              warn = " ",
+              info = " ",
+              hint = " "
             },
+          },
+          {
+            "filetype",
+            padding = { left = 1 }
           }
         },
         lualine_x = {
           {
-            function()
-              return require('lsp-progress').progress()
-            end
-          },
-          {
             "encoding",
-            icon = "󱁻"
+            icon = "󱁻",
           }
         },
         lualine_y = {
           {
             "location",
             icon = "",
-            separator = { left = "", right = "" }
+            color = {
+              fg = theme.normal.a.fg,
+              bg = theme.replace.a.bg
+            }
           }
         },
-        lualine_z = {
-          {
-            "progress"
-          }
-        },
+        lualine_z = { { "progress" } },
       },
       extensions = {
         "lazy",

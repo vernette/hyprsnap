@@ -47,6 +47,7 @@ return {
           { name = "path" },
           { name = "buffer" },
           { name = "cmdline" },
+          { name = "codeium" }
         }),
       })
     end,

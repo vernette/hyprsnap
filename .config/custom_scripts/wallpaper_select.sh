@@ -26,7 +26,7 @@ if [ -n "$selected_image_path" ]; then
     i3-msg restart
   fi
 
-  . ~/.config/hypr/scripts/apply_wal_theme.sh
   notify-send -a "Wallpaper selector" "Wallpaper changed" "$selected_image_path" -i ~/Pictures/wallpaper.png
+  . ~/.config/hypr/scripts/apply_wal_theme.sh
 fi
 
