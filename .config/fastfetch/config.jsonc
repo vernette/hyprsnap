@@ -6,7 +6,8 @@
     "padding": {
       "top": 2,
       "bottom": 2,
-      "right": 2
+      "right": 2,
+      "left": 1
     },
   },
   "display": {
