@@ -74,6 +74,8 @@ alias dcl="docker container ls -a"
 alias gc="git clone"
 alias upgr="sudo pacman -Syyu"
 alias aupgr="paru -Sua"
+alias pinst="pip install"
+alias plist="pip list"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
