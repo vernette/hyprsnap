@@ -87,6 +87,13 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 </details>
 
 <details>
+    <summary>Waybar</summary>
+    <img src="assets/screenshots/applications_waybar.png" alt="Waybar" />
+    <img src="assets/screenshots/applications_waybar_updates.png" alt="Waybar" />
+    <img src="assets/screenshots/applications_waybar_hub.png" alt="Waybar" />
+</details>
+
+<details>
     <summary>Librewolf</summary>
     <img src="assets/screenshots/applications_librewolf.png" alt="Librewolf" />
 </details>
