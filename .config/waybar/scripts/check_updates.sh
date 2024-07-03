@@ -4,6 +4,9 @@ PACKAGE_STRING_LEN=25
 VERSION_STRING_LEN=15
 MAX_PACKAGES=15
 
+PACMAN_HEADER="󰮯 <b>Pacman</b>"
+AUR_HEADER="󰣇 <b>AUR</b>"
+
 stringToLen() {
   local STRING="$1"
   local LEN="$2"
@@ -28,6 +31,7 @@ count_updates() {
 format_updates() {
   local updates="$1"
   local header="$2"
+  local add_newline="$3"
   local tooltip=""
 
   if [ -n "$updates" ]; then
@@ -48,10 +52,24 @@ format_updates() {
     if [ "$total_updates_count" -gt "$MAX_PACKAGES" ]; then
       tooltip+="\nAnd $(($total_updates_count - $MAX_PACKAGES)) more updates\n"
     fi
-    tooltip+="\n"
+    if [ "$add_newline" = true ]; then
+      tooltip+="\n"
+    fi
   fi
 
   echo "$tooltip"
+}
+
+format_pacman_updates() {
+  local updates="$1"
+  local aur_updates_count="$2"
+  local add_newline=false
+  
+  if [ "$aur_updates_count" -gt 0 ]; then
+    add_newline=true
+  fi
+
+  echo "$(format_updates "$updates" "$PACMAN_HEADER" "$add_newline")"
 }
 
 pacman_updates=$(checkupdates)
@@ -64,8 +82,13 @@ total_updates=$((pacman_updates_count + aur_updates_count))
 
 tooltip=""
 
-tooltip+=$(format_updates "$pacman_updates" "󰮯 <b>Pacman</b>")
-tooltip+=$(format_updates "$aur_updates" "󰣇 <b>AUR</b>")
+if [ "$pacman_updates_count" -gt 0 ]; then
+  tooltip+=$(format_pacman_updates "$pacman_updates" "$aur_updates_count")
+fi
+
+if [ "$aur_updates_count" -gt 0 ]; then
+  tooltip+=$(format_updates "$aur_updates" "$AUR_HEADER" false)
+fi
 
 if [ "$total_updates" -gt 0 ]; then
   if [ ${#tooltip} -ge 2 ]; then
