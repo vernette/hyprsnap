@@ -76,6 +76,8 @@ alias upgr="sudo pacman -Syyu"
 alias aupgr="paru -Sua"
 alias pinst="pip install"
 alias plist="pip list"
+alias wgup="wg-quick up"
+alias wgdown="wg-quick down"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
