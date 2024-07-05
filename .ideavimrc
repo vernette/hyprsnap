@@ -8,3 +8,6 @@ set number
 set relativenumber
 set clipboard=unnamedplus
 set smartindent
+
+set easymotion
+map s <Plug>(easymotion-s)
