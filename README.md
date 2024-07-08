@@ -76,7 +76,7 @@
 
 Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
-[Wallpaper](https://github.com/vernette/wallpapers/blob/main/53.png) used in screenshots
+[Wallpaper](https://github.com/vernette/wallpapers/blob/main/7.png) used in screenshots
 
 ## Screenshots
 
