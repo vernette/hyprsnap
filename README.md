@@ -76,7 +76,7 @@
 
 Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
-[Wallpaper](https://github.com/vernette/wallpapers/blob/main/53.png) used in screenshots
+[Wallpaper](https://github.com/vernette/wallpapers/blob/main/7.png) used in screenshots
 
 ## Screenshots
 
@@ -141,6 +141,7 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 <details>
     <summary>Sway Notification Center</summary>
     <img src="assets/screenshots/applications_swaync.png" alt="Sway Notification Center" />
+    <img src="assets/screenshots/applications_swaync_notification.png" alt="Sway Notification Center Notification" />
 </details>
 
 ## Dependencies

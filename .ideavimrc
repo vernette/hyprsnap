@@ -1,0 +1,13 @@
+let mapleader=" "
+
+set so=10
+
+set ignorecase
+set smartcase
+set number
+set relativenumber
+set clipboard=unnamedplus
+set smartindent
+
+set easymotion
+map s <Plug>(easymotion-s)
