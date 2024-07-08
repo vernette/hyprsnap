@@ -124,8 +124,18 @@ tooltip label {
 
 #clock {
   padding: 0px 8px;
-  margin: 4px 4px 4px 2px;
+  margin: 4px 2px 4px 2px;
   background: alpha(@background, 0.3);
   border-radius: 10px;
   color: lighter(@main-color);
+}
+
+#power {
+  background: alpha(@main-color, 0.3);
+  border-radius: 10px;
+  margin: 4px;
+}
+
+#battery {
+  padding: 0px 8px;
 }
