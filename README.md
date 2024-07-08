@@ -141,6 +141,7 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 <details>
     <summary>Sway Notification Center</summary>
     <img src="assets/screenshots/applications_swaync.png" alt="Sway Notification Center" />
+    <img src="assets/screenshots/applications_swaync_notification.png" alt="Sway Notification Center Notification" />
 </details>
 
 ## Dependencies
