@@ -20,4 +20,4 @@ vim.opt.updatetime = 300
 vim.opt.numberwidth = 2
 vim.opt.signcolumn = "yes"
 vim.opt.wrap = false
-vim.opt.termguicolors = true
+vim.opt.so = 10
