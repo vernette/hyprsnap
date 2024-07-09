@@ -21,6 +21,7 @@
 | ------------------ | --------------------------------------------------- |
 | OS                 | [Arch Linux](https://archlinux.org/)                |
 | Window Compositor  | [Hyprland](https://hyprland.org/)                   |
+| Display Manager    | [ly](https://github.com/fairyglade/ly)              |
 | Bar                | [Waybar](https://github.com/Alexays/Waybar)         |
 | Terminal           | [kitty](https://github.com/kovidgoyal/kitty)        |
 | Shell              | zsh                                                 |
@@ -214,6 +215,6 @@ rustmon fetch
 ## TODO
 
 - [ ] Installation script
-- [ ] Custom SDDM theme
+- [x] ~~Custom SDDM theme~~ Moved to ly
 - [x] Custom Librewolf CSS
 - [x] Custom Librewolf startpage
