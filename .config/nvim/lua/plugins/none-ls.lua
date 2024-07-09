@@ -25,6 +25,9 @@ return {
         -- JS, TS, Vue, YAML, JSON, HTML, Markdown, CSS, etc
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.diagnostics.stylelint,
+
+        -- Shell
+        null_ls.builtins.formatting.shfmt
       },
     })
 

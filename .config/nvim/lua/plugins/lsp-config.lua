@@ -29,7 +29,8 @@ return {
           "prettierd",
           "stylelint",
           "bash-language-server",
-          "html-lsp"
+          "html-lsp",
+          "shfmt"
         },
       })
     end,
