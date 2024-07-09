@@ -21,4 +21,4 @@ vim.opt.numberwidth = 2
 vim.opt.signcolumn = "yes"
 vim.opt.wrap = false
 vim.opt.so = 10
-vim.opt.sidescrolloff = 20
+vim.opt.sidescrolloff = 40
