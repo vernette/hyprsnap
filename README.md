@@ -215,6 +215,6 @@ rustmon fetch
 ## TODO
 
 - [ ] Installation script
-- [x] ~~Custom SDDM theme~~ Moved to ly
+- [x] ~~Custom SDDM theme~~ Switched to ly
 - [x] Custom Librewolf CSS
 - [x] Custom Librewolf startpage
