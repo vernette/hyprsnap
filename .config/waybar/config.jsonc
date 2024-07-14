@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "margin": "0 200 5 200",
+  "margin": "0 200 10 200",
   "fixed-center": true,
   "reload_style_on_change": true,
   "include": ["~/.config/waybar/modules.jsonc"],
