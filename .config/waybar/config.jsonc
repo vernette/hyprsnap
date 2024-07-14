@@ -16,7 +16,7 @@
 
   "modules-right": [
     "group/control-center",
-    "group/hub",
-    "group/power"
+    "group/hub"
+    // "group/power"
   ],
 }
