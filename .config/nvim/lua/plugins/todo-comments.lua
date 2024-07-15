@@ -1,5 +1,4 @@
 return {
-	-- TODO
 	"folke/todo-comments.nvim",
 	event = "BufRead",
 	config = function()
