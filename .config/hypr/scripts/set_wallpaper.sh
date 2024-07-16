@@ -3,14 +3,14 @@
 wallpaper_path=~/Pictures/wallpaper.png
 
 if [ ! -f "$wallpaper_path" ]; then
-    echo "$wallpaper_path: No such file."
-    exit 1
+	notify-send -a "swww" "No wallpaper found" "$wallpaper_path"
+	exit 1
 fi
 
 swww img $wallpaper_path \
-  --transition-bezier .43,1.19,1,.4 \
-  --transition-fps 60 \
-  --transition-type "grow" \
-  --transition-duration 0.7 \
-  --invert-y \
-  --transition-pos "$( hyprctl cursorpos )"
+	--transition-bezier .43,1.19,1,.4 \
+	--transition-fps 60 \
+	--transition-type "grow" \
+	--transition-duration 0.7 \
+	--invert-y \
+	--transition-pos "$(hyprctl cursorpos)"
