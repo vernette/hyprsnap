@@ -1,34 +1,64 @@
 #!/bin/bash
 
-image_dir="$HOME/Pictures/wallpapers"
+IMAGE_DIR="$HOME/Pictures/wallpapers"
+CURRENT_IMAGE="$HOME/Pictures/wallpaper.png"
+APP_NAME="Wallpaper selector"
+SET_WALLPAPER_SCRIPT="$HOME/.config/hypr/scripts/set_wallpaper.sh"
+APPLY_WAL_THEME_SCRIPT="$HOME/.config/hypr/scripts/apply_wal_theme.sh"
 
-if [ ! -d "$image_dir" ]; then
-  notify-send -a "Wallpaper selector" "Images directory does not exist" "$image_dir"
-  exit 1
-fi
+validate_image_directory() {
+	if [ ! -d "$IMAGE_DIR" ]; then
+		notify-send -a "$APP_NAME" "Image directory does not exist" "$IMAGE_DIR"
+		exit 1
+	fi
+}
 
-images=("$image_dir"/*)
+validate_images() {
+	if [ "$1" -eq 0 ]; then
+		notify-send -a "$APP_NAME" "No images found" "$IMAGE_DIR"
+		exit 1
+	fi
+}
 
-if [ ${#images[@]} -eq 0 ]; then
-  notify-send -a "Wallpaper selector" "No images found in $image_dir"
-  exit 1
-fi
+select_random_image() {
+	local random_image="${images[RANDOM % ${#images[@]}]}"
+	if [ ! -f "$CURRENT_IMAGE" ]; then
+		echo "$random_image"
+	else
+		local selected_image
+		while :; do
+			selected_image="$random_image"
+			[ "$selected_image" -ef "$CURRENT_IMAGE" ] || break
+		done
+		echo "$selected_image"
+	fi
+}
 
-current_image="$image_dir/wallpaper.png"
+set_new_wallpaper() {
+	ln -sf "$1" "$CURRENT_IMAGE"
+}
 
-random_image="${images[RANDOM % ${#images[@]}]}"
+restart_environment() {
+	if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+		. "$SET_WALLPAPER_SCRIPT"
+	else
+		i3-msg restart
+	fi
+}
 
-while [ "$random_image" -ef "$current_image" ]; do
-	random_image="${images[RANDOM % ${#images[@]}]}"
-done
+send_notification() {
+  notify-send -a "$APP_NAME" "Wallpaper changed" "$random_image" -i "$CURRENT_IMAGE"
+}
 
-ln -sf "$random_image" ~/Pictures/wallpaper.png
+apply_wal_theme() {
+  . "$APPLY_WAL_THEME_SCRIPT"
+}
 
-if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
-	. ~/.config/hypr/scripts/set_wallpaper.sh
-else
-	i3-msg restart
-fi
-
-notify-send -a "Wallpaper selector" "Wallpaper changed" "$random_image" -i ~/Pictures/wallpaper.png
-. ~/.config/hypr/scripts/apply_wal_theme.sh
+validate_image_directory
+images=("$IMAGE_DIR"/*)
+validate_images "${#images[@]}"
+random_image=$(select_random_image)
+set_new_wallpaper "$random_image"
+restart_environment
+send_notification
+apply_wal_theme
