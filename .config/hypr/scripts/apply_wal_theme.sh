@@ -9,7 +9,7 @@ if [ -s "$THEME_FILE" ]; then
   esac
 fi
 
-wal -i ~/Pictures/wallpaper.png --cols16 "$wal_arguments" -q -n -e
+wal -i ~/Pictures/wallpaper.png --cols16 $wal_arguments -q -n -e
 
 pgrep -x "waybar" > /dev/null && killall -SIGUSR2 waybar
 
