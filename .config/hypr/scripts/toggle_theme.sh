@@ -1,12 +1,12 @@
 #!/bin/bash
 
-gnome_schema="org.gnome.desktop.interface"
-theme_file="/tmp/theme_variant"
+GNOME_SCHEMA="org.gnome.desktop.interface"
+THEME_FILE="/tmp/theme_variant"
 
-if [ ! -s "$theme_file" ]; then
-  echo "dark" > "$theme_file"
+if [ ! -s "$THEME_FILE" ]; then
+  echo "dark" > "$THEME_FILE"
 else
-  current_theme_variant=$(<"$theme_file")
+  current_theme_variant=$(<"$THEME_FILE")
 
   case $current_theme_variant in
     "dark")
@@ -17,7 +17,7 @@ else
       ;;
   esac
 
-  echo "$new_theme_variant" > "$theme_file"
+  echo "$new_theme_variant" > "$THEME_FILE"
 fi
 
 . ~/.config/hypr/scripts/apply_wal_theme.sh
@@ -28,5 +28,5 @@ else
   gtk_theme="adw-gtk3"
 fi
 
-gsettings set $gnome_schema gtk-theme "$gtk_theme"
-gsettings set $gnome_schema color-scheme "prefer-$new_theme_variant"
+gsettings set $GNOME_SCHEMA gtk-theme "$gtk_theme"
+gsettings set $GNOME_SCHEMA color-scheme "prefer-$new_theme_variant"
