@@ -40,30 +40,30 @@
 
 ### Other
 
-| Type                               | Name                                                                                 |
-| ---------------------------------- | ------------------------------------------------------------------------------------ |
-| Browser                            | [Librewolf](https://librewolf.net/)                                                  |
-| Browser Startpage                  | [startpage](https://gitlab.com/fazzi/startpage) by fazzi                             |
-| Browser CSS                        | [FirefoxCSS](https://github.com/Bali10050/FirefoxCSS) by Bali10050                   |
-| Text Editor                        | [Neovim](https://neovim.io/)                                                         |
-| Terminal File Manager              | [lf](https://github.com/gokcehan/lf)                                                 |
-| GTK File Manager                   | Nautilus                                                                             |
-| Wallpaper Daemon                   | [swww](https://github.com/LGFae/swww)                                                |
-| Better ls                          | [lsd](https://github.com/lsd-rs/lsd)                                                 |
-| Better cd                          | [zoxide](https://github.com/ajeetdsouza/zoxide)                                      |
-| AUR Helper                         | [paru](https://github.com/Morganamilo/paru)                                          |
-| App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                           |
-| Screenshot Utility                 | [hyprshot](https://github.com/Gustash/Hyprshot)                                      |
-| System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                              |
-| Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter)     |
-| Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                     |
-| Audio Visualizers                  | [cava](https://github.com/karlstav/cava), [catnip](https://github.com/noriah/catnip) |
-| Lockscreen App                     | [hyprlock](https://github.com/hyprwm/hyprlock)                                       |
-| Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                       |
-| Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                     |
-| WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                         |
-| Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                                  |
-| Terminal Art                       | [rustmon](https://github.com/Vomitblood/rustmon)                                     |
+| Type                               | Name                                                                             |
+| ---------------------------------- | -------------------------------------------------------------------------------- |
+| Browser                            | [Librewolf](https://librewolf.net/)                                              |
+| Browser Startpage                  | [startpage](https://gitlab.com/fazzi/startpage) by fazzi                         |
+| Browser CSS                        | [FirefoxCSS](https://github.com/Bali10050/FirefoxCSS) by Bali10050               |
+| Text Editor                        | [Neovim](https://neovim.io/)                                                     |
+| Terminal File Manager              | [lf](https://github.com/gokcehan/lf)                                             |
+| GTK File Manager                   | Nautilus                                                                         |
+| Wallpaper Daemon                   | [swww](https://github.com/LGFae/swww)                                            |
+| Better ls                          | [lsd](https://github.com/lsd-rs/lsd)                                             |
+| Better cd                          | [zoxide](https://github.com/ajeetdsouza/zoxide)                                  |
+| AUR Helper                         | [paru](https://github.com/Morganamilo/paru)                                      |
+| App Launcher                       | [Rofi](https://github.com/davatorium/rofi)                                       |
+| Screenshot Utility                 | [hyprshot](https://github.com/Gustash/Hyprshot)                                  |
+| System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
+| Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
+| Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                 |
+| Audio Visualizers                  | [cava](https://github.com/karlstav/cava)                                         |
+| Lockscreen App                     | [hyprlock](https://github.com/hyprwm/hyprlock)                                   |
+| Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                   |
+| Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                 |
+| WiFi Menu                          | [iwdrofimenu](https://github.com/defname/rofi-iwd-wifi-menu)                     |
+| Bluetooth Manager                  | [Overskride](https://github.com/kaii-lb/overskride)                              |
+| Terminal Art                       | [rustmon](https://github.com/Vomitblood/rustmon)                                 |
 
 ### Pywal themes for applications
 
