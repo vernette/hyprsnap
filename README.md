@@ -1,4 +1,4 @@
-![image](assets/screenshots/workflow.png)
+![image](assets/screenshots/workflow_1.png)
 
 ![Last Commit](https://img.shields.io/github/last-commit/vernette/hyprsnap)
 
@@ -67,25 +67,24 @@
 
 ### Pywal themes for applications
 
-| Type                 | Name                                                                                          |
-| -------------------- | --------------------------------------------------------------------------------------------- |
-| Telegram Pywal Theme | [walogram](https://codeberg.org/thirtysixpw/walogram)                                         |
-| VS Code Pywal Theme  | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
+| Type                  | Name                                                                                          |
+| --------------------- | --------------------------------------------------------------------------------------------- |
+| Telegram Pywal Theme  | [walogram](https://codeberg.org/thirtysixpw/walogram)                                         |
+| VS Code Pywal Theme   | [Wal Theme](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) Extension |
+| Librewolf Pywal Theme | [pywalfox](https://addons.mozilla.org/ru/firefox/addon/pywalfox/)                             |
 
 ### Wallpapers
 
 Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
-[Wallpaper](https://github.com/vernette/wallpapers/blob/main/7.png) used in screenshots
-
 ## Screenshots
 
 <details>
     <summary>Workflow</summary>
-    <img src="assets/screenshots/workflow.png" alt="Workflow" />
     <img src="assets/screenshots/workflow_1.png" alt="Workflow" />
     <img src="assets/screenshots/workflow_2.png" alt="Workflow" />
     <img src="assets/screenshots/workflow_3.png" alt="Workflow" />
+    <img src="assets/screenshots/workflow_4.png" alt="Workflow" />
 </details>
 
 <details>
