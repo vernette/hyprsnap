@@ -11,6 +11,7 @@
 - [Screenshots](#screenshots)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
+- [Hotkeys](#hotkeys)
 - [TODO](#todo)
 
 ## Used software
@@ -168,6 +169,10 @@ sudo pacman -S fzf zoxide starship pkgfile
 ### Waybar specific
 
 ```bash
+sudo pacman -S pacman-contrib
+```
+
+```bash
 paru -S wttrbar
 ```
 
@@ -211,6 +216,32 @@ Also for `rustmon`:
 ```bash
 rustmon fetch
 ```
+
+## Hotkeys
+
+| Key                                           | Command                             |
+| --------------------------------------------- | ----------------------------------- |
+| `Super` + `Enter`                             | Launch kitty                        |
+| `Super` + `D`                                 | Launch rofi                         |
+| `Super` + `F`                                 | Launch Nautilus                     |
+| `Super` + `B`                                 | Launch Librewolf                    |
+| `Super` + `W`                                 | Random wallpaper                    |
+| `Super` + `Shift` + `Q`                       | Kill active window                  |
+| `Super` + `Shift` + `Space`                   | Toggle floating window              |
+| `Super` + `Shift` + `C`                       | Center window                       |
+| `Super` + `Shift` + `L`                       | Power menu                          |
+| `Super` + `Shift` + `W`                       | Wallpaper selector                  |
+| `Super` + `Shift` + `N`                       | Sway Notification Center            |
+| `Super` + `Shift` + `F`                       | Toggle fullscreen                   |
+| `Super` + `Shift` + `O`                       | Restart Waybar                      |
+| `Super` + `Shift` + `R`                       | Restart Hyprland                    |
+| `Super` + `Shift` + `E`                       | Exit Hyprland                       |
+| `PrntScrn`                                    | Take screenshot of an entire screen |
+| `Ctrl` + `PrntScrn`                           | Take screenshot of selected area    |
+| `Ctrl` + `Shift` + `PrntScrn`                 | Take screenshot of selected window  |
+| `Ctrl` + `Super` + `Arrow down/up/left/right` | Resize window                       |
+
+Other hotkeys can be found here `~/.config/hypr/hyprland_configs/binds.conf`
 
 ## TODO
 
