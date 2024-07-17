@@ -57,7 +57,7 @@
 | System Info                        | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
 | Notification Daemon/Control Center | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
 | Music Player                       | Spotify with [Spicetify](https://spicetify.app/)                                 |
-| Audio Visualizers                  | [cava](https://github.com/karlstav/cava)                                         |
+| Audio Visualizer                   | [cava](https://github.com/karlstav/cava)                                         |
 | Lockscreen App                     | [hyprlock](https://github.com/hyprwm/hyprlock)                                   |
 | Idle Daemon                        | [hypridle](https://github.com/hyprwm/hypridle)                                   |
 | Power Menu App                     | [wlogout](https://github.com/ArtsyMacaw/wlogout)                                 |
