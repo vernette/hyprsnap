@@ -2,7 +2,7 @@
 
 ![Last Commit](https://img.shields.io/github/last-commit/vernette/hyprsnap)
 
-> [!NOTE]
+> [!WARNING]
 > Please keep in mind that this is my daily driver. Use my config files as a reference.
 
 - [Used software](#used-software)
