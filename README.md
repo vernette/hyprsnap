@@ -1,5 +1,3 @@
-# Hyprsnap
-
 ![image](assets/screenshots/workflow.png)
 
 ![Last Commit](https://img.shields.io/github/last-commit/vernette/hyprsnap)
