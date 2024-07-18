@@ -1,6 +1,7 @@
 ![image](assets/screenshots/workflow_1.png)
 
 ![Last Commit](https://img.shields.io/github/last-commit/vernette/hyprsnap)
+![GitHub Repo stars](https://img.shields.io/github/stars/vernette/hyprsnap?style=flat)
 
 > [!WARNING]
 > Please keep in mind that this is my daily driver. Use my config files as a reference.
