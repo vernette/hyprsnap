@@ -149,13 +149,13 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 ### Main repo
 
 ```bash
-sudo pacman -S kitty ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim fastfetch
+sudo pacman -S kitty swww ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim fastfetch
 ```
 
 ### AUR
 
 ```bash
-paru -S pistol-bin swww pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk3 walogram-git rustmon-git hyprshot
+paru -S pistol-bin pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk3 walogram-git rustmon-git hyprshot
 ```
 
 ### ZSH specific
