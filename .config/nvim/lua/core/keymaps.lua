@@ -85,3 +85,6 @@ keymap_with_desc("n", "<leader>o", ":Outline<CR>", "Toggle Outline")
 
 -- MarkdownPreview
 keymap_with_desc("n", "<leader>mp", ":MarkdownPreviewToggle<CR>", "Toggle MarkdownPreview")
+
+-- BufDelete
+keymap_with_desc("n", "<A-w>", ":lua require('bufdelete').bufdelete(0, true)<CR>", "Delete buffer")

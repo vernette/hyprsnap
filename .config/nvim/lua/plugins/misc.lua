@@ -83,4 +83,5 @@ return {
 		"Exafunction/codeium.vim",
 		event = "BufEnter",
 	},
+	{ "famiu/bufdelete.nvim" },
 }
