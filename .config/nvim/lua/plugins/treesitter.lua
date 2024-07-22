@@ -3,7 +3,6 @@ return {
 	build = ":TSUpdate",
 	config = function()
 		local configs = require("nvim-treesitter.configs")
-
 		configs.setup({
 			ensure_installed = {
 				"bash",
@@ -26,12 +25,12 @@ return {
 				enable = true,
 				enable_autocmd = false,
 			},
-
 			vim.filetype.add({
 				extension = { rasi = "rasi" },
 				pattern = {
 					[".*/waybar/config"] = "jsonc",
 					[".*/hypr/.*%.conf"] = "hyprlang",
+					[".*/hypr/hyprland_configs/.*%.conf"] = "hyprlang",
 				},
 			}),
 		})

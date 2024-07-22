@@ -10,7 +10,7 @@ vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "79"
-vim.opt.fillchars = {eob = " "}
+vim.opt.fillchars = { eob = " " }
 vim.opt.fileencoding = "utf-8"
 vim.opt.smartindent = true
 vim.opt.splitbelow = true
