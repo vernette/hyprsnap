@@ -119,7 +119,9 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
 <details>
     <summary>Neovim</summary>
-    <img src="assets/screenshots/applications_nvim.png" alt="Neovim" />
+    <img src="assets/screenshots/applications_nvim_1.png" alt="Neovim Dashboard" />
+    <img src="assets/screenshots/applications_nvim_2.png" alt="Neovim Workflow" />
+    <img src="assets/screenshots/applications_nvim_3.png" alt="Neovim Tokyonight" />
 </details>
 
 <details>
@@ -218,8 +220,8 @@ rustmon fetch
 ```
 
 ## Hotkeys
-> [!NOTE]
-> `CapsLock` is used as `Esc`
+
+> [!NOTE] > `CapsLock` is used as `Esc`
 >> You can change this behavior by removing `caps:escape` from the `~/.config/hypr/hyprland_configs/input.conf`
 
 | Key                                           | Command                             |
