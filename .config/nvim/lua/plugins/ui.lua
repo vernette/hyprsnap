@@ -61,10 +61,7 @@ return {
 	{
 		"folke/todo-comments.nvim",
 		config = function()
-			require("todo-comments").setup({
-				highlight = { pattern = [[.*<(KEYWORDS)\s*]] },
-				search = { pattern = [[\b(KEYWORDS)]] },
-			})
+			require("todo-comments").setup()
 		end,
 	},
 	{
@@ -73,7 +70,7 @@ return {
 		config = function()
 			require("lualine").setup({
 				options = {
-					-- NOTE Change theme to `auto` if you are using different colorscheme
+					-- NOTE: Change theme to `auto` if you are using different colorscheme
 					theme = "pywal",
 					globalstatus = true,
 					section_separators = "",
