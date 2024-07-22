@@ -241,6 +241,10 @@ rustmon fetch
 | `Ctrl` + `Shift` + `PrntScrn`                 | Take screenshot of selected window  |
 | `Ctrl` + `Super` + `Arrow down/up/left/right` | Resize window                       |
 
+> [!NOTE]
+> `CapsLock` is used as `Esc`
+> You can change this behavior by removing `caps:escape` from the `~/.config/hypr/hyprland_configs/input.conf`
+
 Other hotkeys can be found here `~/.config/hypr/hyprland_configs/binds.conf`
 
 ## TODO
