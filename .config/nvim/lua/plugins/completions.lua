@@ -17,14 +17,14 @@ return {
 			local lspkind = require("lspkind")
 			require("luasnip.loaders.from_vscode").lazy_load()
 			cmp.setup({
-        formatting = {
-          format = lspkind.cmp_format({
-            mode = 'symbol_text',
-            maxwidth = 50,
-            ellipsis_char = '...',
-            show_labelDetails = true,
-          })
-        },
+				formatting = {
+					format = lspkind.cmp_format({
+						mode = "symbol_text",
+						maxwidth = 50,
+						ellipsis_char = "...",
+						show_labelDetails = true,
+					}),
+				},
 				snippet = {
 					expand = function(args)
 						require("luasnip").lsp_expand(args.body)
