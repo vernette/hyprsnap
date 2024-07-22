@@ -64,7 +64,6 @@ export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 alias lf="lfrun"
 alias ls='lsd --tree --depth 1 --group-dirs=first'
 alias lsr='lsd --recursive --depth 1 --group-dirs=first'
-alias cd="zcd"
 alias v="nvim"
 alias cat="bat --theme base16"
 alias bt="btop"
@@ -91,8 +90,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:zcd:*' fzf-preview 'lsd --color=always --icon=always $realpath'
 
 # Functions
-function zcd() {
-  z "$@"
+detect_virtualenv() {
   if [[ -z "$VIRTUAL_ENV" ]] ; then
     # If env folder is found, activate the virtualenv
     if [[ -d ./venv ]] ; then
@@ -118,10 +116,12 @@ ddai() {
     docker rmi -f $(docker images -aq)
 }
 
+# Run Python virtualenv detection script
+autoload -U add-zsh-hook
+add-zsh-hook chpwd detect_virtualenv
+detect_virtualenv
+
 # Shell integrations
 eval "$(fzf --zsh)"
-
-# Zoxide
 eval "$(zoxide init zsh --cmd cd)"
-
 eval "$(starship init zsh)"
