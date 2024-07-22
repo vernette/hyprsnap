@@ -119,7 +119,6 @@ ddai() {
 # Run Python virtualenv detection script
 autoload -U add-zsh-hook
 add-zsh-hook chpwd detect_virtualenv
-detect_virtualenv
 
 # Shell integrations
 eval "$(fzf --zsh)"
