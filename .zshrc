@@ -61,7 +61,6 @@ export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
 
 # Aliases
-alias lf="lfrun"
 alias ls='lsd --tree --depth 1 --group-dirs=first'
 alias lsr='lsd --recursive --depth 1 --group-dirs=first'
 alias v="nvim"
