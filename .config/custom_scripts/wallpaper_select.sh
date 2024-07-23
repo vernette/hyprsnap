@@ -1,7 +1,7 @@
 #!/bin/bash
 
 image_dir="$HOME/Pictures/wallpapers"
-images=("$image_dir"/*.png)
+images=("$image_dir"/*)
 
 image_list=""
 for img in "${images[@]}"; do
