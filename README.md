@@ -2,6 +2,7 @@
 
 ![Last Commit](https://img.shields.io/github/last-commit/vernette/hyprsnap)
 ![GitHub Repo stars](https://img.shields.io/github/stars/vernette/hyprsnap?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/vernette/hyprsnap)
 
 > [!WARNING]
 > Please keep in mind that this is my daily driver. Use my config files as a reference.
