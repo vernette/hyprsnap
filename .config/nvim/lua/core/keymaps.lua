@@ -78,6 +78,11 @@ keymap_with_desc("n", "<leader>tt", ":TransparentToggle<CR>", "Toggle transparen
 -- GitSigns
 keymap_with_desc("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", "Preview Git hunk")
 
+-- DiffView
+keymap_with_desc("n", "<leader>dv", ":DiffviewOpen<CR>", "Open DiffView")
+keymap_with_desc("n", "<leader>dc", ":DiffviewClose<CR>", "Close DiffView")
+keymap_with_desc("n", "<leader>df", ":DiffviewFileHistory<CR>", "Open file history")
+
 -- LazyGit
 keymap_with_desc("n", "<leader>lg", ":LazyGit<CR>", "Open LazyGit")
 
