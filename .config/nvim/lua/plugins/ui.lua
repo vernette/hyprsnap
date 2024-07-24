@@ -242,4 +242,5 @@ return {
       symbols = { icon_source = "lspkind" },
     },
   },
+  { "RRethy/vim-illuminate", event = "BufReadPost" },
 }
