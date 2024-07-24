@@ -3,6 +3,9 @@ return {
   { "hrsh7th/cmp-path" },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-cmdline" },
+  { "hrsh7th/cmp-emoji" },
+  { "SergioRibera/cmp-dotenv" },
+  { "chrisgrieser/cmp-nerdfont" },
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
@@ -46,6 +49,9 @@ return {
           { name = "luasnip" },
           { name = "path" },
           { name = "buffer" },
+          { name = "dotenv" },
+          { name = "nerdfont" },
+          { name = "emoji" },
           { name = "cmdline" },
           { name = "codeium" },
         }),
