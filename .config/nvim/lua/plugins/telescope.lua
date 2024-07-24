@@ -1,5 +1,6 @@
 return {
   { "nvim-telescope/telescope-ui-select.nvim" },
+  { "piersolenski/telescope-import.nvim" },
   {
     "nvim-telescope/telescope.nvim",
     event = "VeryLazy",
@@ -16,6 +17,7 @@ return {
         },
         extensions = {
           ["ui-select"] = { require("telescope.themes").get_dropdown({}) },
+          import = { insert_at_top = true },
         },
         defaults = {
           prompt_prefix = " ",
@@ -34,6 +36,7 @@ return {
         },
       })
       telescope.load_extension("ui-select")
+      telescope.load_extension("import")
     end,
   },
 }
