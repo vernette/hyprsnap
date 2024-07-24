@@ -1,0 +1,24 @@
+select = [
+  "E",
+  "F",
+  "UP",
+  "N",
+  "I",
+  "ASYNC",
+  "S",
+  "PTH",
+  "B",
+  "W",
+  "Q",
+  "C",
+  # "D",
+  "R",
+  "G",
+  "PT"
+]
+line-length = 79
+respect-gitignore = true
+extend-ignore = ["Q000"] # Ignore preference for double quotes
+
+[format]
+quote-style = "single"
