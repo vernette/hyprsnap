@@ -56,6 +56,7 @@ keymap_with_desc("n", "<leader>km", ":Telescope keymaps<CR>", "Show keymaps")
 keymap_with_desc("n", "<leader>b", ":Telescope buffers<CR>", "List buffers")
 keymap_with_desc("n", "<leader>n", ":Telescope notify<CR>", "Show notifications")
 keymap_with_desc("n", "<leader>td", ":TodoTelescope<CR>", "Show todos")
+keymap_with_desc("n", "<leader>i", ":Telescope import<CR>", "Select imports")
 
 -- Trouble
 keymap_with_desc("n", "<leader>xd", ":Trouble diagnostics toggle<CR>", "Toggle diagnostics")
