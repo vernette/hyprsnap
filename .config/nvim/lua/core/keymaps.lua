@@ -1,17 +1,17 @@
 local opts = {
-	noremap = true,
-	silent = true,
+  noremap = true,
+  silent = true,
 }
 
 local keymap = vim.api.nvim_set_keymap
 
 local function keymap_with_desc(mode, lhs, rhs, desc)
-	local opts_with_desc = vim.tbl_extend("force", opts, { desc = desc })
-	if type(command) == "string" then
-		keymap(mode, bind, command, opts_with_desc)
-	else
-		vim.keymap.set(mode, lhs, rhs, opts_with_desc)
-	end
+  local opts_with_desc = vim.tbl_extend("force", opts, { desc = desc })
+  if type(command) == "string" then
+    keymap(mode, bind, command, opts_with_desc)
+  else
+    vim.keymap.set(mode, lhs, rhs, opts_with_desc)
+  end
 end
 
 keymap("", "<Space>", "<Nop>", opts)
