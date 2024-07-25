@@ -96,7 +96,11 @@ keymap_with_desc("n", "<leader>o", ":Outline<CR>", "Toggle Outline")
 keymap_with_desc("n", "<leader>mp", ":MarkdownPreviewToggle<CR>", "Toggle MarkdownPreview")
 
 -- BufDelete
-keymap_with_desc("n", "<A-w>", function() require("bufdelete").bufdelete(0, true) end, "Delete buffer")
+keymap_with_desc("n", "<A-w>", function()
+  require("bufdelete").bufdelete(0, true)
+end, "Delete buffer")
 
 -- Flash
-keymap_with_desc({ "n", "x", "o" }, "s", function() require("flash").jump() end, "Flash")
+keymap_with_desc({ "n", "x", "o" }, "s", function()
+  require("flash").jump()
+end, "Flash")
