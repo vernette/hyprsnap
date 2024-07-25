@@ -4,6 +4,8 @@ return {
   config = function()
     require("Comment").setup({
       padding = true,
+      -- ignores empty lines
+      ignore = "^$",
     })
   end,
 }
