@@ -81,71 +81,84 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 
 ## Screenshots
 
-<details>
-    <summary>Workflow</summary>
-    <img src="assets/screenshots/workflow_1.png" alt="Workflow" />
-    <img src="assets/screenshots/workflow_2.png" alt="Workflow" />
-    <img src="assets/screenshots/workflow_3.png" alt="Workflow" />
-    <img src="assets/screenshots/workflow_4.png" alt="Workflow" />
-</details>
+### Workflow
 
-<details>
-    <summary>Waybar</summary>
-    <img src="assets/screenshots/applications_waybar.png" alt="Waybar" />
-    <img src="assets/screenshots/applications_waybar_updates.png" alt="Waybar" />
-    <img src="assets/screenshots/applications_waybar_hub.png" alt="Waybar" />
-</details>
+| **Btop, Neovim**                            |
+| ------------------------------------------- |
+| ![image](assets/screenshots/workflow_2.png) |
 
-<details>
-    <summary>Librewolf</summary>
-    <img src="assets/screenshots/applications_librewolf.png" alt="Librewolf" />
-</details>
+| **Nautilis, Obsidian**                      |
+| ------------------------------------------- |
+| ![image](assets/screenshots/workflow_3.png) |
 
-<details>
-    <summary>Rofi</summary>
-    <img src="assets/screenshots/applications_rofi.png" alt="Rofi" />
-</details>
+### Waybar
 
-<details>
-    <summary>Rofi wallpaper selector</summary>
-    <img src="assets/screenshots/applications_rofi_wallpapers.png" alt="Rofi wallpaper selector" />
-</details>
+![image](assets/screenshots/applications_waybar.png)
 
-<details>
-    <summary>Spotify</summary>
-    <img src="assets/screenshots/applications_spotify.png" alt="Spotify" />
-    <img src="assets/screenshots/applications_spotify_2.png" alt="Spotify" />
-    <img src="assets/screenshots/applications_spotify_3.png" alt="Spotify" />
-</details>
+| **Updates, System Info**                                     |
+| ------------------------------------------------------------ |
+| ![image](assets/screenshots/applications_waybar_updates.png) |
 
-<details>
-    <summary>Neovim</summary>
-    <img src="assets/screenshots/applications_nvim_1.png" alt="Neovim Dashboard" />
-    <img src="assets/screenshots/applications_nvim_2.png" alt="Neovim Workflow" />
-    <img src="assets/screenshots/applications_nvim_3.png" alt="Neovim Tokyonight" />
-</details>
+| **Hub**                                                  |
+| -------------------------------------------------------- |
+| ![image](assets/screenshots/applications_waybar_hub.png) |
 
-<details>
-    <summary>Telegram (AyuGram)</summary>
-    <img src="assets/screenshots/applications_telegram.png" alt="Telegram" />
-</details>
+### Librewolf
 
-<details>
-    <summary>wlogout</summary>
-    <img src="assets/screenshots/applications_wlogout.png" alt="wlogout" />
-</details>
+![image](assets/screenshots/applications_librewolf.png)
 
-<details>
-    <summary>hyprlock</summary>
-    <img src="assets/screenshots/applications_hyprlock_1.png" alt="hyprlock" />
-    <img src="assets/screenshots/applications_hyprlock_2.png" alt="hyprlock" />
-</details>
+### Rofi
 
-<details>
-    <summary>Sway Notification Center</summary>
-    <img src="assets/screenshots/applications_swaync.png" alt="Sway Notification Center" />
-    <img src="assets/screenshots/applications_swaync_notification.png" alt="Sway Notification Center Notification" />
-</details>
+![image](assets/screenshots/applications_rofi.png)
+
+| **Wallpaper Selector**                                        |
+| ------------------------------------------------------------- |
+| ![image](assets/screenshots/applications_rofi_wallpapers.png) |
+
+### Spotify
+
+![image](assets/screenshots/applications_spotify.png)
+
+| **Lyrics Tab**                                          |
+| ------------------------------------------------------- |
+| ![image](assets/screenshots/applications_spotify_2.png) |
+
+| **NCS Visualizer**                                      |
+| ------------------------------------------------------- |
+| ![image](assets/screenshots/applications_spotify_3.png) |
+
+### Neovim
+
+| **Dashboard**                                        |
+| ---------------------------------------------------- |
+| ![image](assets/screenshots/applications_nvim_1.png) |
+
+| **Layout**                                           |
+| ---------------------------------------------------- |
+| ![image](assets/screenshots/applications_nvim_2.png) |
+
+### Telegram (AyuGram)
+
+![image](assets/screenshots/applications_telegram.png)
+
+### wlogout
+
+![image](assets/screenshots/applications_wlogout.png)
+
+### hyprlock
+
+![image](assets/screenshots/applications_hyprlock_1.png)
+![image](assets/screenshots/applications_hyprlock_2.png)
+
+### Sway Notification Center
+
+| **Notification Center**                              |
+| ---------------------------------------------------- |
+| ![image](assets/screenshots/applications_swaync.png) |
+
+| **Notification Example**                                          |
+| ----------------------------------------------------------------- |
+| ![image](assets/screenshots/applications_swaync_notification.png) |
 
 ## Dependencies
 
@@ -222,9 +235,9 @@ rustmon fetch
 
 ## Hotkeys
 
-> [!NOTE]
-> `CapsLock` is used as `Esc`
->> You can change this behavior by removing `caps:escape` from the `~/.config/hypr/hyprland_configs/input.conf`
+> [!NOTE] > `CapsLock` is used as `Esc`
+>
+> > You can change this behavior by removing `caps:escape` from the `~/.config/hypr/hyprland_configs/input.conf`
 
 | Key                                           | Command                             |
 | --------------------------------------------- | ----------------------------------- |
