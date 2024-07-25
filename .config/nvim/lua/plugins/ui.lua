@@ -71,7 +71,7 @@ return {
       require("lualine").setup({
         options = {
           -- NOTE: Change theme to `auto` if you are using different colorscheme
-          theme = "auto",
+          theme = "pywal",
           globalstatus = true,
           section_separators = "",
           component_separators = "",
