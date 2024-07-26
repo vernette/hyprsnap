@@ -114,3 +114,8 @@ keymap_with_desc({"n", "x"}, "<leader>re", function() require('refactoring').sel
 -- ToggleTerm
 keymap_with_desc("n", "<C-\\>", ":ToggleTerm<CR>", "Open ToggleTerm")
 keymap_with_desc("t", "<esc>", [[<C-\><C-n>]], "Exit terminal mode")
+
+-- Kulala
+keymap_with_desc("n", "<leader>kn", function() require('kulala').jump_next() end, "Jump to the next request")
+keymap_with_desc("n", "<leader>kp", function() require('kulala').jump_prev() end, "Jump to the previous request")
+keymap_with_desc("n", "<leader>kr", function() require('kulala').run() end, "Send request")
