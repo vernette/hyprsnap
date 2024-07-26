@@ -1,9 +1,3 @@
 lazy-lock.json
-.luarc.json
-lualine
-colors
 .config/spicetify/Backup/
 .config/spicetify/Extracted/
-usage_data.json
-generated-colors.toml
-opacity.toml
