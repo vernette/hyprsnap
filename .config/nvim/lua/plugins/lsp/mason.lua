@@ -1,9 +1,9 @@
 return {
   {
     "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup({ ui = { border = "rounded" } })
-    end,
+    opts = {
+      ui = { border = "rounded" },
+    },
   },
   {
     "williamboman/mason-lspconfig.nvim",
@@ -11,20 +11,18 @@ return {
   },
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    config = function()
-      require("mason-tool-installer").setup({
-        ensure_installed = {
-          "lua-language-server",
-          "stylua",
-          "basedpyright",
-          "ruff_lsp",
-          "prettierd",
-          "stylelint",
-          "bash-language-server",
-          "html-lsp",
-          "shfmt",
-        },
-      })
-    end,
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "basedpyright",
+        "ruff_lsp",
+        "prettierd",
+        "stylelint",
+        "bash-language-server",
+        "html-lsp",
+        "shfmt",
+      },
+    },
   },
 }
