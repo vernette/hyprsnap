@@ -24,3 +24,4 @@ vim.opt.so = 10
 vim.opt.sidescrolloff = 40
 vim.opt.splitkeep = "screen"
 vim.opt.laststatus = 3
+vim.opt.inccommand = "split"
