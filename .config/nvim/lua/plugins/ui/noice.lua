@@ -3,6 +3,8 @@ return {
   event = "VeryLazy",
   dependencies = { "MunifTanjim/nui.nvim" },
   config = function()
-    require("noice").setup()
+    require("noice").setup({
+      presets = { inc_rename = true }
+    })
   end,
 }
