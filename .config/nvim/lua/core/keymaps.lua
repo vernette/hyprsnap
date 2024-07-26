@@ -104,3 +104,9 @@ end, "Delete buffer")
 keymap_with_desc({ "n", "x", "o" }, "s", function()
   require("flash").jump()
 end, "Flash")
+
+-- Inc Rename
+keymap_with_desc("n", "<leader>rn", ":IncRename ", "Inc Rename")
+
+-- Refactoring
+keymap_with_desc({"n", "x"}, "<leader>re", function() require('refactoring').select_refactor() end, "Refactor")
