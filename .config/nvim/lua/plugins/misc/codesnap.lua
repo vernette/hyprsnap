@@ -1,6 +1,6 @@
 return {
   "mistricky/codesnap.nvim",
-  lazy = false,
+  cmd = { "CodeSnap", "CodeSnapSave" },
   build = "make",
   config = function()
     require("codesnap").setup({

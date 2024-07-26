@@ -1,6 +1,6 @@
 return {
   "m4xshen/autoclose.nvim",
-  lazy = false,
+  event = "InsertEnter",
   config = function()
     require("autoclose").setup({
       options = {

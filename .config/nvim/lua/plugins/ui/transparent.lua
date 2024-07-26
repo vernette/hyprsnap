@@ -1,5 +1,6 @@
 return {
   "xiyaowong/transparent.nvim",
+  cmd = { "TransparentEnable", "TransparentDisable", "TransparentToggle" },
   config = function()
     local transparent = require("transparent")
     transparent.setup({

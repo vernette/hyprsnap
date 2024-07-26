@@ -1,1 +1,1 @@
-return { "Bekaboo/deadcolumn.nvim" }
+return { "Bekaboo/deadcolumn.nvim", event = { "BufReadPre", "BufNewFile" } }
