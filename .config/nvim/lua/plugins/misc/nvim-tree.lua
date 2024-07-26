@@ -17,6 +17,14 @@ return {
           enable = true,
           inline_arrows = false,
         },
+        icons = {
+          glyphs = {
+            git = {
+              unstaged = "",
+              untracked = "",
+            },
+          },
+        },
       },
       actions = {
         open_file = { resize_window = false },
