@@ -110,3 +110,7 @@ keymap_with_desc("n", "<leader>rn", ":IncRename ", "Inc Rename")
 
 -- Refactoring
 keymap_with_desc({"n", "x"}, "<leader>re", function() require('refactoring').select_refactor() end, "Refactor")
+
+-- ToggleTerm
+keymap_with_desc("n", "<C-\\>", ":ToggleTerm<CR>", "Open ToggleTerm")
+keymap_with_desc("t", "<esc>", [[<C-\><C-n>]], "Exit terminal mode")
