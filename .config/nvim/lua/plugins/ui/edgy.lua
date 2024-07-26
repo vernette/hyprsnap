@@ -25,12 +25,12 @@ return {
       {
         title = "Outline",
         ft = "Outline",
-        size = { width = 0.2 },
+        size = { width = 0.3 },
       },
       {
         title = "Git Status",
         ft = "fugitive",
-        size = { width = 0.2 },
+        size = { width = 0.3 },
       },
     },
   },
