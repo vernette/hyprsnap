@@ -32,5 +32,7 @@ require("lazy").setup({
     { import = "plugins.colorschemes" },
   },
   install = { colorscheme = { "tokyonight" } },
+  ui = { border = "rounded" },
+  change_detection = { enabled = false },
   checker = { enabled = true },
 })
