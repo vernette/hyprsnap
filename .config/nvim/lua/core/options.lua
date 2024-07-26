@@ -25,3 +25,9 @@ vim.opt.sidescrolloff = 40
 vim.opt.splitkeep = "screen"
 vim.opt.laststatus = 3
 vim.opt.inccommand = "split"
+-- Recognize files with the .http extension as HTTP files
+vim.filetype.add({
+  extension = {
+    ["http"] = "http",
+  },
+})
