@@ -1,5 +1,5 @@
 return {
-  "lukas-reineke/headlines.nvim",
+  "MeanderingProgrammer/markdown.nvim",
   ft = { "markdown" },
   config = true,
 }
