@@ -14,6 +14,9 @@ return {
     })
     lspconfig.basedpyright.setup({
       capabilities = capabilities,
+      on_attach = function(client, bufnr)
+        vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+      end,
       settings = {
         basedpyright = {
           capabilities = capabilities,
