@@ -92,8 +92,9 @@ keymap_with_desc("n", "<leader>lg", ":LazyGit<CR>", "Open LazyGit")
 -- Outline
 keymap_with_desc("n", "<leader>o", ":Outline<CR>", "Toggle Outline")
 
--- MarkdownPreview
+-- Markdown
 keymap_with_desc("n", "<leader>mp", ":MarkdownPreviewToggle<CR>", "Toggle MarkdownPreview")
+keymap_with_desc("n", "<leader>rm", ":RenderMarkdown toggle<CR>", "Toggle markdown rendering")
 
 -- BufDelete
 keymap_with_desc("n", "<A-w>", function()
@@ -122,3 +123,6 @@ keymap_with_desc("n", "<leader>kr", function() require('kulala').run() end, "Sen
 
 -- Pantran
 keymap_with_desc({"n", "x"}, "<leader>tr", ":Pantran<CR>", "Translate")
+
+-- Gen
+keymap_with_desc({"n", "x"}, "<leader>]", ":Gen<CR>", "Open Gen actions")
