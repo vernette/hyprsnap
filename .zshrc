@@ -53,9 +53,7 @@ setopt hist_find_no_dups
 
 # Envs
 export EDITOR=nvim
-export PATH=/home/vernette/.local/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/vernette/.cargo/bin
-export GPG_TTY=$(tty)
-export WAYLAND_DISPLAY=wayland-1
+export PATH=$HOME/.local/bin:$PATH
 export AUTO_NOTIFY_THRESHOLD=20
 export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds"
