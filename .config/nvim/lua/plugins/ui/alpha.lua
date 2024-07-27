@@ -27,6 +27,7 @@ return {
       dashboard.button("e", " " .. " New File", ":ene <BAR> startinsert <CR>"),
       dashboard.button("r", " " .. " Recently Used Files", ":Telescope oldfiles<CR>"),
       dashboard.button("g", "󰈬 " .. " Find Word", ":Telescope live_grep<CR>"),
+      dashboard.button("td", " " .. " Todo", ":TodoTelescope<CR>"),
       dashboard.button("q", "󰅚 " .. " Quit Neovim", ":qa<CR>"),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do
