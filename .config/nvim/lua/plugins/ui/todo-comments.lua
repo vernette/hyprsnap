@@ -1,5 +1,5 @@
 return {
   "folke/todo-comments.nvim",
-  event = "BufReadPost",
+  cmd = "TodoTelescope",
   config = true,
 }
