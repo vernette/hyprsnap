@@ -30,6 +30,7 @@ require("lazy").setup({
     { import = "plugins.ui" },
     { import = "plugins.markdown" },
     { import = "plugins.colorschemes" },
+    { import = "plugins.tests" },
   },
   install = { colorscheme = { "tokyonight" } },
   ui = { border = "rounded" },
