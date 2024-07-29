@@ -21,6 +21,11 @@ return {
         import = { insert_at_top = true },
       },
       defaults = {
+        file_ignore_patterns = {
+          "venv",
+          ".venv",
+          "node_modules",
+        },
         prompt_prefix = " ",
         selection_caret = "󱞩 ",
         path_display = { "smart" },
