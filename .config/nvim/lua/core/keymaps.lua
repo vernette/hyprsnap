@@ -126,3 +126,9 @@ keymap_with_desc({"n", "x"}, "<leader>tr", ":Pantran<CR>", "Translate")
 
 -- Gen
 keymap_with_desc({"n", "x"}, "<leader>]", ":Gen<CR>", "Open Gen actions")
+
+-- Neotest
+keymap_with_desc("n", "<leader>nn", function() require("neotest").run.run() end, "Run the nearest test")
+keymap_with_desc("n", "<leader>nf", function() require("neotest").run.run(vim.fn.expand("%")) end, "Run all the tests in the file")
+keymap_with_desc("n", "<leader>ns", function() require("neotest").summary.toggle() end, "Toggle the test summary")
+keymap_with_desc("n", "<leader>no", function() require("neotest").output_panel.toggle() end, "Toggle output panel")
