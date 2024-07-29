@@ -18,6 +18,7 @@ return {
         "yaml",
         "hyprlang",
         "rasi",
+        "http"
       },
       auto_install = true,
       highlight = { enable = true },
