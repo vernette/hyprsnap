@@ -31,6 +31,7 @@ require("lazy").setup({
     { import = "plugins.markdown" },
     { import = "plugins.colorschemes" },
     { import = "plugins.tests" },
+    { import = "plugins.databases" },
   },
   install = { colorscheme = { "tokyonight" } },
   ui = { border = "rounded" },
