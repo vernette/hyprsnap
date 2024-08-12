@@ -167,7 +167,7 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 #### Main repo
 
 ```bash
-sudo pacman -S kitty swww ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim fastfetch
+sudo pacman -S kitty swww ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp wl-clipboard hyprland waybar zsh playerctl lsd libnotify hyprlang hyprlock hypridle swaync neovim fastfetch xdg-desktop-portal-gtk
 ```
 
 #### AUR
