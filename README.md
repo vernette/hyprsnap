@@ -227,7 +227,7 @@ stow . --adopt
 To get the `command-not-found` [plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found) working, run this commands:
 
 ```bash
-pkgfile -u
+sudo pkgfile -u
 sudo systemctl enable --now pkgfile-update.timer # Enable automatic updates https://wiki.archlinux.org/title/Pkgfile#Automatic_updates
 ```
 
