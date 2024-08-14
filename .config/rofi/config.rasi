@@ -14,14 +14,7 @@ window {
   background-color: @background;
   border: 2px;
   border-color: @border-color;
-  children: [ "image", "mainbox" ];
-}
-
-image {
-  margin: 10px;
-  background-color: transparent;
-  border-radius: 10px;
-  background-image: url("~/Pictures/wallpaper.png", width);
+  children: [ "mainbox" ];
 }
 
 mainbox {
@@ -39,7 +32,7 @@ listbox {
 
 inputbar {
   text-color: @text-color;
-  padding: 6px;
+  padding: 10px;
   margin: 10px;
   background-color: @background;
   border-radius: 10px;
@@ -54,11 +47,11 @@ entry {
 
 listview {
   columns: 2;
-  lines: 7;
+  lines: 5;
   cycle: true;
   scrollbar: false;
   layout: vertical;
-  padding: 5px;
+  padding: 10px;
   border: none;
   background-color: transparent;
 }
