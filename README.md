@@ -103,6 +103,10 @@ Check out my wallpapers [repository](https://github.com/vernette/wallpapers)
 | -------------------------------------------------------- |
 | ![image](assets/screenshots/applications_waybar_hub.png) |
 
+| **Fastfetch, cava**                         |
+| ------------------------------------------- |
+| ![image](assets/screenshots/workflow_4.png) |
+
 ### Librewolf
 
 ![image](assets/screenshots/applications_librewolf.png)
