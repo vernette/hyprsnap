@@ -1,7 +1,9 @@
 return {
   "hedyhli/outline.nvim",
-  lazy = true,
-  cmd = { "Outline", "OutlineOpen" },
+  cmd = {
+    "Outline",
+    "OutlineOpen",
+  },
   opts = {
     outline_window = {
       width = 20,
