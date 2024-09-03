@@ -13,7 +13,7 @@ return {
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.diagnostics.stylelint,
         -- Shell
-        null_ls.builtins.formatting.shfmt,
+        null_ls.builtins.formatting.shfmt.with({ extra_args = { "-i", "2", "-ci" } }),
       },
     })
   end,
