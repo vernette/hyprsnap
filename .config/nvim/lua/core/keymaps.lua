@@ -50,7 +50,7 @@ keymap_with_desc("n", "<leader>e", ":NvimTreeFocus<CR>", "Focus NvimTree")
 -- Telescope
 keymap_with_desc("n", "<leader>th", ":Telescope colorscheme<CR>", "Choose colorscheme")
 keymap_with_desc("n", "<leader>f", ":Telescope find_files<CR>", "Find files")
-keymap_with_desc("n", "<leader>g", ":Telescope live_grep<CR>", "Live grep")
+keymap_with_desc("n", "<leader>gr", ":Telescope live_grep<CR>", "Live grep")
 keymap_with_desc("n", "<leader>r", ":Telescope oldfiles<CR>", "Recent files")
 keymap_with_desc("n", "<leader>km", ":Telescope keymaps<CR>", "Show keymaps")
 keymap_with_desc("n", "<leader>b", ":Telescope buffers<CR>", "List buffers")
