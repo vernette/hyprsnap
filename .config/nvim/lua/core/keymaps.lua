@@ -133,3 +133,7 @@ keymap_with_desc("n", "<leader>nl", function() require("neotest").run.run_last()
 keymap_with_desc("n", "<leader>nf", function() require("neotest").run.run(vim.fn.expand("%")) end, "Run all tests in the current file")
 keymap_with_desc("n", "<leader>ns", function() require("neotest").summary.toggle() end, "Toggle test summary")
 keymap_with_desc("n", "<leader>no", function() require("neotest").output_panel.toggle() end, "Toggle output panel")
+
+-- Compiler
+keymap_with_desc("n", "<leader>co", ":CompilerOpen<CR>", "Open Compiler")
+keymap_with_desc("n", "<leader>ct", ":CompilerToggleResults<CR>", "Toggle Compiler Results")
