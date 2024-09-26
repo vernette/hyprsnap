@@ -5,6 +5,7 @@ return {
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
+      "Zeioth/NormalSnippets",
     },
   },
   {
@@ -49,15 +50,42 @@ return {
           ["<CR>"] = cmp.mapping.confirm({ select = true }),
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },
-          { name = "luasnip" },
-          { name = "path" },
-          { name = "buffer" },
-          { name = "dotenv" },
-          { name = "nerdfont" },
-          { name = "emoji" },
-          { name = "cmdline" },
-          { name = "codeium" },
+          {
+            name = "nvim_lsp",
+            priority = 1000,
+          },
+          {
+            name = "luasnip",
+            priority = 850,
+          },
+          {
+            name = "buffer",
+            priority = 750,
+          },
+          {
+            name = "path",
+            priority = 650,
+          },
+          {
+            name = "codeium",
+            priority = 550,
+          },
+          {
+            name = "cmdline",
+            priority = 450,
+          },
+          {
+            name = "dotenv",
+            priority = 350,
+          },
+          {
+            name = "nerdfont",
+            priority = 250,
+          },
+          {
+            name = "emoji",
+            priority = 150,
+          },
         }),
       })
     end,
