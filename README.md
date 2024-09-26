@@ -179,7 +179,7 @@ sudo pacman -S kitty swww ttf-jetbrains-mono-nerd noto-fonts-emoji lf grim slurp
 #### AUR
 
 ```bash
-paru -S pistol-bin pywal-16-colors wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk-theme-git walogram-git rustmon-git hyprshot
+paru -S pistol-bin python-pywal16 wlogout rofi-lbonn-wayland-git iwdrofimenu-git overskride spicetify-cli cava adw-gtk-theme-git walogram-git rustmon-git hyprshot la-capitaine-icon-theme
 ```
 
 If you are having trouble with installing `iwdrofimenu-git`, use `--nodeps` flag:
