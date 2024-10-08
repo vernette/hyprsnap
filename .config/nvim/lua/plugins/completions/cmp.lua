@@ -88,6 +88,28 @@ return {
           },
         }),
       })
+      -- Completions for / search based on current buffer:
+      cmp.setup.cmdline("/", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+          { name = "buffer" },
+        },
+      })
+      -- Completions for command mode
+      cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({ { name = "path" } }, {
+          {
+            name = "cmdline",
+            option = { ignore_cmds = {
+              "Man",
+              "!",
+              "q",
+              "x",
+            } },
+          },
+        }),
+      })
     end,
   },
 }
