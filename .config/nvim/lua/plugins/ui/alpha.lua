@@ -25,7 +25,7 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("f", " " .. " Find File", ":Telescope find_files <CR>"),
       dashboard.button("e", " " .. " New File", ":ene <BAR> startinsert <CR>"),
-      dashboard.button("r", " " .. " Recently Used Files", ":Telescope oldfiles<CR>"),
+      dashboard.button("rf", " " .. " Recently Used Files", ":Telescope oldfiles<CR>"),
       dashboard.button("gr", "󰈬 " .. " Find Word", ":Telescope live_grep<CR>"),
       dashboard.button("td", " " .. " Todo", ":TodoTelescope<CR>"),
       dashboard.button("q", "󰅚 " .. " Quit Neovim", ":qa<CR>"),
