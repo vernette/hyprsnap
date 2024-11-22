@@ -53,6 +53,7 @@ setopt hist_find_no_dups
 
 # Envs
 export EDITOR=nvim
+export MANPAGER="$EDITOR +Man!"
 export PATH=$HOME/.local/bin:$PATH
 export AUTO_NOTIFY_THRESHOLD=20
 export AUTO_NOTIFY_TITLE="Hey! '%command' has just finished"
@@ -73,6 +74,8 @@ alias pinst="pip install"
 alias plist="pip list"
 alias wgup="wg-quick up"
 alias wgdown="wg-quick down"
+alias awgup="awg-quick up"
+alias awgdown="awg-quick down"
 alias zshconf="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 # Completion styling
@@ -106,11 +109,16 @@ detect_virtualenv() {
 }
 
 ddac() {
-    docker rm -vf $(docker ps -aq)
+  docker rm -vf $(docker ps -aq)
 }
 
 ddai() {
-    docker rmi -f $(docker images -aq)
+  docker rmi -f $(docker images -aq)
+}
+
+traceroute-mapper() {
+traceroute=$(traceroute -q1 $* | sed ':a;N;$!ba;s/\n/%0A/g')
+  xdg-open "https://stefansundin.github.io/traceroute-mapper/?trace=$traceroute"
 }
 
 # Run Python virtualenv detection script
