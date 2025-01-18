@@ -9,13 +9,50 @@ if [ ! -d "$screenshots_dir" ]; then
   mkdir -p "$screenshots_dir"
 fi
 
-case $1 in
-fullscreen)
-  hyprshot -m active -m output --output-folder "$screenshots_dir" -f "$filename"
-  ;;
-select)
-  hyprshot -m region --output-folder "$screenshots_dir" -f "$filename"
-  ;;
-window)
-  hyprshot -m window --output-folder "$screenshots_dir" -f "$filename"
-esac
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  DISPLAY_SERVER="wayland"
+elif [ -n "$DISPLAY" ]; then
+  DISPLAY_SERVER="x11"
+else
+  echo "Could not detect display server"
+  exit 1
+fi
+
+take_screenshot() {
+  local mode=$1
+  local filepath="$screenshots_dir/$filename"
+
+  case $DISPLAY_SERVER in
+    "wayland")
+      case $mode in
+        fullscreen)
+          hyprshot -m output --output-folder "$screenshots_dir" -f "$filename" | wl-copy
+          # wl-copy <"$filepath"
+          ;;
+        select)
+          hyprshot -m region --output-folder "$screenshots_dir" -f "$filename" | wl-copy
+          # wl-copy <"$filepath"
+          ;;
+        window)
+          hyprshot -m window --output-folder "$screenshots_dir" -f "$filename" | wl-copy
+          # wl-copy <"$filepath"
+          ;;
+      esac
+      ;;
+    "x11")
+      case $mode in
+        fullscreen)
+          maim | tee "$filepath" | xclip -selection clipboard -t image/png
+          ;;
+        select)
+          maim --select | tee "$filepath" | xclip -selection clipboard -t image/png
+          ;;
+        window)
+          maim -i "$(xdotool getactivewindow)" | tee "$filepath" | xclip -selection clipboard -t image/png
+          ;;
+      esac
+      ;;
+  esac
+}
+
+take_screenshot "$1"
