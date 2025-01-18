@@ -25,6 +25,8 @@ vim.opt.sidescrolloff = 40
 vim.opt.splitkeep = "screen"
 vim.opt.laststatus = 3
 vim.opt.inccommand = "split"
+-- Uncomment the following line to set the font for Neovide
+-- vim.opt.guifont = "JetBrainsMono Nerd Font"
 -- Recognize files with the .http extension as HTTP files
 vim.filetype.add({
   extension = {
