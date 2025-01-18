@@ -203,7 +203,8 @@
   },
   "custom/notifications": {
     "tooltip": false,
-    "format": "{icon} {}",
+    // I don't know why "{icon} {}" doesn't work
+    "format": "{} {icon}",
     "format-icons": {
       "notification": "󱅫",
       "none": "󰂚",
@@ -225,7 +226,7 @@
     "format": "{}",
     "tooltip": false,
     "interval": 3600,
-    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}'",
+    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}°C'",
     "return-type": "json",
   },
   "custom/theme-switcher": {
