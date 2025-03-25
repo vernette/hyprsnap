@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This repository is no longer maintained and will not receive updates. Feel free to use the existing dotfiles, but no further changes or support will be provided.
+
 ![image](assets/screenshots/workflow_1.png)
 
 <p align="center">
